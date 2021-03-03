@@ -1,39 +1,92 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Router, Switch } from 'react-router-dom';
+import { PublicRoute } from './routes/PublicRoute';
+import { history } from './utils/router';
+import { NotFoundPage } from './pages/notfound/NotFoundPage';
+import { ErrorPage } from './pages/error/ErrorPage';
+import { HomePage } from './pages/home/HomePage';
+import { routes, getByName } from '~/routes/routes';
+import { NewProductsPage } from './pages/latest/NewProductsPage';
+import { ServicesPage } from './pages/services/ServicesPage';
+import { CasesPage } from './pages/cases/CasesPage';
+import { NewsPage } from './pages/news/NewsPage';
+import { FeedbackPage } from './pages/feedback/FeedbackPage';
+import { AzigoCasePage } from './pages/cases/AzigoCasePage';
+import { ConfyrmCasePage } from './pages/cases/ConfyrmCasePage';
+import { PrivoCasePage } from './pages/cases/PrivoCasePage';
+import { BelbellaCasePage } from './pages/cases/BelbellaCasePage';
+import { BlankslateCasePage } from './pages/cases/BlankslateCasePage';
+import { EversanaCasePage } from './pages/cases/EversanaCasePage';
+import { EnkCasePage } from './pages/cases/EnkCasePage';
 
 interface AppProps {}
 
-function App({}: AppProps) {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Create the counter (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
+function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <Router history={history}>
+        <Switch>
+          <PublicRoute
+            exact
+            path={getByName(routes, 'Home').link}
+            component={HomePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'New Products').link}
+            component={NewProductsPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Services').link}
+            component={ServicesPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Case Studies').link}
+            component={CasesPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'News').link}
+            component={NewsPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Contact Us').link}
+            component={FeedbackPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Azigo').link}
+            component={AzigoCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Confyrm').link}
+            component={ConfyrmCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Privo').link}
+            component={PrivoCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'BelBella').link}
+            component={BelbellaCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Blank Slate Technologies').link}
+            component={BlankslateCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'EVERSANA').link}
+            component={EversanaCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'EatNakedKitchen').link}
+            component={EnkCasePage}
+          />
+
+          <PublicRoute
+            path={getByName(routes, 'Error').link}
+            component={ErrorPage}
+          />
+          <PublicRoute component={NotFoundPage} />
+        </Switch>
+      </Router>
     </div>
   );
 }

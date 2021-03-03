@@ -1,0 +1,43 @@
+[0m2021.02.10 04:21:40 INFO  Started: Metals version 0.9.10 in workspace '/Users/sergeykucherenko/dev/swift-web' for client vscode 1.52.1.[0m
+[0m2021.02.10 04:21:44 INFO  time: initialize in 3.85s[0m
+[0m2021.02.10 04:21:50 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.10 04:21:50 WARN  no build tool detected in workspace '/Users/sergeykucherenko/dev/swift-web'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Feb 10, 2021 4:59:12 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 10, 2021 5:06:19 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 10, 2021 5:06:21 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 10, 2021 6:18:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.02.10 13:44:39 INFO  shutting down Metals[0m
+[0m2021.02.17 14:13:16 INFO  Started: Metals version 0.9.10 in workspace '/Users/sergeykucherenko/dev/swift-web' for client vscode 1.53.2.[0m
+[0m2021.02.17 14:13:18 INFO  time: initialize in 1.81s[0m
+[0m2021.02.17 14:13:19 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.17 14:13:19 WARN  no build tool detected in workspace '/Users/sergeykucherenko/dev/swift-web'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Feb 17, 2021 2:56:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 17, 2021 7:25:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 19, 2021 7:18:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 21, 2021 4:58:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.02.22 14:04:43 INFO  Started: Metals version 0.9.10 in workspace '/Users/sergeykucherenko/dev/swift-web' for client vscode 1.53.2.[0m
+[0m2021.02.22 14:04:45 INFO  time: initialize in 1.95s[0m
+[0m2021.02.22 14:04:50 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.22 14:04:50 WARN  no build tool detected in workspace '/Users/sergeykucherenko/dev/swift-web'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Feb 23, 2021 4:10:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 24, 2021 5:33:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Feb 24, 2021 5:33:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.02.25 14:42:06 INFO  shutting down Metals[0m
+[0m2021.02.25 15:03:34 INFO  Started: Metals version 0.10.0 in workspace '/Users/sergeykucherenko/dev/swift-web' for client vscode 1.53.2.[0m
+[0m2021.02.25 15:03:35 INFO  time: initialize in 0.94s[0m
+[0m2021.02.25 15:03:35 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.25 15:03:35 WARN  no build tool detected in workspace '/Users/sergeykucherenko/dev/swift-web'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Feb 26, 2021 4:26:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.03.01 13:46:00 INFO  shutting down Metals[0m
