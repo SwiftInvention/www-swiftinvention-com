@@ -4,29 +4,39 @@ import clsx from 'clsx';
 export interface ArrowedTextProps {
   text: string;
   mainColor?: string;
+  bgColor?: string;
   highlightColor?: string;
+  highlightBgColor?: string;
+  horizontalPadding?: string;
 }
 
 export const ArrowedText: React.FC<ArrowedTextProps> = ({
   text,
   mainColor,
+  bgColor,
   highlightColor,
+  highlightBgColor,
+  horizontalPadding,
 }) => {
   return (
     <div
       className={clsx(
         mainColor && mainColor,
+        bgColor && bgColor,
         highlightColor && `hover:${highlightColor}`,
+        highlightBgColor && `hover:${highlightBgColor}`,
+        horizontalPadding || 'px-2 -ml-2',
         'font-sans',
         'font-medium',
         'text-lg',
         'flex',
-        'items-center'
+        'items-center',
+        'py-1'
       )}
     >
       {text}
       <svg
-        className="inline hover:hidden -mt-1 ml-2"
+        className="inline -mt-1 ml-2"
         width="13px"
         height="17px"
         viewBox="0 0 13 17"

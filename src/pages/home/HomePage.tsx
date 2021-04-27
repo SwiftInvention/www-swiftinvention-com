@@ -27,18 +27,19 @@ export const HomePage: React.FC<HomePageProps> = () => {
             <div className="h-full flex items-center justify-start lg:grid lg:grid-cols-2 lg:gap-8">
               <div className="px-8 pl-10 sm:pl-16 md:pl-30 max-w-xl">
                 <div className="text-primaryCol2 font-sans font-medium text-5xl mb-5">
-                  Prevail Faster
+                  Swift release for your MVP.
                 </div>
                 <div className="text-primaryCol2 font-sans font-normal text-lg">
-                  Swift is the choice for startups who want to succeed fast.
-                  Swift pivots with startups into stronger solutions that opens
-                  pathways to success.
+                  We&#39;re an experienced team of software designers and
+                  engineers that know how to take ideas from concept to reality.
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 max-w-max">
                   <Link to={getByName(routes, 'Case Studies').link}>
                     <ArrowedText
                       text="See Who&#39;s Succeeded"
-                      mainColor="text-primaryColor1"
+                      mainColor="text-primaryCol1"
+                      highlightColor="text-primaryCol3"
+                      highlightBgColor="bg-primaryCol1"
                     />
                   </Link>
                 </div>
@@ -91,10 +92,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
         </div>
       </div>
       <div className="bg-secondaryCol4 max-w-8xl h-25 px-8 pl-10 sm:pl-16 md:pl-100 flex items-center">
-        <div className="font-sans text-secondaryCol1 text-sm font-normal">
-          Swift is a technology company that works with clients across a variety
-          of industries.
-        </div>
+        <div className="font-sans text-secondaryCol1 text-sm font-normal" />
       </div>
       <div className={clsx('relative', styles.serviceBgOverlay)}>
         <div className="absolute inset-0">
@@ -115,14 +113,19 @@ export const HomePage: React.FC<HomePageProps> = () => {
             </div>
             <div className="md:absolute md:left-0 max-w-5xl ">
               <div className="pt-4 px-8 pl-10 sm:pl-16 md:pl-100 font-sans text-secondaryCol1 text-lg">
-                Our dev shop pivots to ensure your startup arrives at the best
-                solution as quick as possible. We offer a number of software
-                application services to find the right pathway for you.
-                <div className="mt-6">
+                We help disruptive startups and businesses create innovative
+                products and services. From strategy and design to iOS, Android,
+                web apps and infrastructure development. We’re experts at
+                crafting tailor-made solutions for your idea. Swift Invention is
+                your technology partner ready to build code for success that’s
+                ready to scale.
+                <div className="mt-6 max-w-max">
                   <Link to={getByName(routes, 'Services').link}>
                     <ArrowedText
                       text="See Services"
                       mainColor="text-primaryCol3"
+                      highlightColor="text-primaryCol1"
+                      highlightBgColor="bg-primaryCol3"
                     />
                   </Link>
                 </div>

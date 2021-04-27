@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import clsx from 'clsx';
 import swiftWhiteLogo from '~/assets/images/swift-white-logo.png';
 import { NavMenu } from '../navmenu/NavMenu';
 import { routes, getByName } from '~/routes/routes';
@@ -9,6 +10,9 @@ export interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ navItems }) => {
+  const location = useLocation();
+  const isActive = (link: string) => location.pathname === link;
+
   return (
     <nav className="bg-secondaryCol5">
       <div className="max-w-8xl mx-auto">
@@ -31,9 +35,14 @@ export const Header: React.FC<HeaderProps> = ({ navItems }) => {
           <div className="hidden lg:flex items-center content-center justify-end lg:flex-1 lg:space-x-2 lg:mr-14">
             {navItems.map((value) => {
               return (
-                <Link to={value.link}>
+                <Link to={value.link} key={value.name}>
                   <div className="group py-2 px-3 hover:bg-primaryCol2 cursor-pointer	">
-                    <div className=" group-hover:text-secondaryCol5 uppercase text-primaryCol2 font-sans font-medium text-sm -mb-1 whitespace-nowrap">
+                    <div
+                      className={clsx(
+                        isActive(value.link) && 'border-b',
+                        'group-hover:text-secondaryCol5 uppercase text-primaryCol2 font-sans font-medium text-sm -mb-1 whitespace-nowrap'
+                      )}
+                    >
                       {value.name}
                     </div>
                   </div>

@@ -8,7 +8,7 @@ export interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ navItems }) => {
   return (
-    <div className="relative h-37 bg-primaryCol1 max-w-8xl border-t border-primaryCol2 flex flex-row justify-start items-center">
+    <div className="relative h-37 bg-primaryCol1 max-w-8xl border-t border-secondaryCol3 flex flex-row justify-start items-center">
       <div className="pl-30 w-full">
         <div className="h-4">
           <img
@@ -19,11 +19,11 @@ export const Footer: React.FC<FooterProps> = ({ navItems }) => {
         </div>
         <div className="text-primaryCol2 text-xs font-sans font-medium pt-6">
           <div className="flex flex-row justify-between">
-            <p>© 2020 Swift Invention, Inc.</p>
+            <p>© 2021 Swift Invention, Inc.</p>
             <div className="hidden md:block primaryCol2space-nowrap space-x-5 md:mr-4 lg:mr-14">
               {navItems.map((value) => {
                 return (
-                  <Link to={value.link}>
+                  <Link to={value.link} key={value.name}>
                     <div className="inline group py-2 px-3 hover:bg-primaryCol2 cursor-pointer">
                       <div className="inline group-hover:text-secondaryCol5 uppercase whitespace-nowrap">
                         {value.name}

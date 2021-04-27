@@ -4,6 +4,7 @@ import { DefaultPage } from '../default/DefaultPage';
 import servicesBg from '~/assets/images/services-bg.png';
 import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
 import { ServiceCard } from '~/components/servicecard/ServiceCard';
+import { Stripe } from '~/components/stripe/Stripe';
 import computerImage from '~/assets/images/computer-white.png';
 import phoneImage from '~/assets/images/phone-white.png';
 import serverImage from '~/assets/images/server-white.png';
@@ -30,15 +31,20 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
                 Services
               </div>
               <div className="text-secondaryCol1 font-sans font-normal text-lg">
-                Our dev shop pivots to ensure your startup arrives at the best
-                solution as quick as possible. We offer a number of software
-                application services to find the right pathway for you.
+                We help disruptive startups and businesses create innovative
+                products and services. From strategy and design to iOS, Android,
+                web apps and infrastructure development. We’re experts at
+                crafting tailor-made solutions for your idea. Swift Invention is
+                your technology partner ready to build code for success that’s
+                ready to scale.
               </div>
-              <div className="mt-6">
+              <div className="mt-6 max-w-max">
                 <Link to={getByName(routes, 'Case Studies').link}>
                   <ArrowedText
                     text="See Who&#39;s Succeeded"
                     mainColor="text-primaryCol3"
+                    highlightColor="text-primaryCol1"
+                    highlightBgColor="bg-primaryCol3"
                   />
                 </Link>
               </div>
@@ -56,20 +62,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
               <ServiceCard text="Web Services" image={computerImage} />
             </ul>
           </div>
-          <div className="bg-primaryCol3 w-full h-36 flex items-center justify-center">
-            <div className="font-sans font-medium text-primaryCol1 text-lg">
-              Interested in the Service Provider Scheduling App and other
-              products we have to offer?
-            </div>
-            <button
-              type="button"
-              className="-mt-1 ml-10 px-6 h-10 inline-flex items-center justify-center border-primaryCol1 hover:border-primaryCol3 border-2 bg-primaryCol3 hover:bg-primaryCol1 text-primaryCol1 hover:text-primaryCol3 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-primaryCol1"
-            >
-              <Link to={getByName(routes, 'Case Studies').link}>
-                <ArrowedText text="See Products" />
-              </Link>
-            </button>
-          </div>
+          <Stripe
+            text="Interested in the Service Provider Scheduling App and other
+          products we have to offer?"
+            label="See Products"
+            link={getByName(routes, 'New Products').link}
+          />
         </div>
       </div>
     </DefaultPage>

@@ -14,6 +14,7 @@ module.exports = {
       secondaryCol3: '#979797', // dusty gray
       secondaryCol4: '#2D2D2D', // gray mineshaft lighter
       secondaryCol5: '#212121', // gray mineshaft darker      
+      secondaryCol6: '#C2C2C2',
     },
     stroke: theme => ({
       orange: theme('colors.orange.coral'),
@@ -25,9 +26,12 @@ module.exports = {
       },
       spacing: {
         '18': '4.5rem',
+        '22': '5.5rem',
         '25': '6.25rem',
         '30': '7.5rem',
+        '34': '8.5rem',
         '37': '9.25rem',
+        '50': '3.75rem',
         '100': '25rem'
       },
       height: {
@@ -52,7 +56,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      display: ['responsive', 'hover', 'group-hover']
+      display: ['responsive', 'hover', 'group-hover'],
+      borderWidth: ['hover']
     }
   },
   plugins: [],

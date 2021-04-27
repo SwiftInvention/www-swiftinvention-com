@@ -14,7 +14,7 @@ export const VisitButton: React.FC<VisitButtonProps> = ({ url }) => {
     <button
       type="button"
       onClick={handleClick}
-      className="self-center inline-flex items-center justify-start border border-2 border-primaryCol3 bg-primaryCol1 text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 h-8 w-30 m-2.5 -ml-8 lg:ml-0 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3"
+      className="self-center inline-flex items-center justify-start border-2 border-primaryCol3 bg-primaryCol1 text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 h-8 w-30 m-2.5 -ml-8 lg:ml-0 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3"
     >
       <div className="font-sans font-medium text-sm">Visit Site</div>
       <svg

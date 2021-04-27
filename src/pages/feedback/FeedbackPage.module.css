@@ -1,0 +1,11 @@
+.inputContainer {
+  @apply w-full px-4 sm:px-10
+}
+
+.inputElem {  
+  @apply w-full h-12 rounded border-secondaryCol6 placeholder-primaryCol1 font-sans font-medium text-sm px-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
+}
+
+.areaElem {  
+  @apply w-full rounded border-secondaryCol6 placeholder-primaryCol1 font-sans font-medium text-sm p-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
+}

@@ -23,8 +23,8 @@ export const routes: Array<RouteProps> = [
   {
     name: 'New Products',
     link: '/products',
-    isInHeader: false,
-    isInFooter: false,
+    isInHeader: true,
+    isInFooter: true,
   },
   {
     name: 'Services',
@@ -47,8 +47,8 @@ export const routes: Array<RouteProps> = [
   {
     name: 'Contact Us',
     link: '/feedback',
-    isInHeader: false,
-    isInFooter: false,
+    isInHeader: true,
+    isInFooter: true,
   },
   {
     name: 'Error',
