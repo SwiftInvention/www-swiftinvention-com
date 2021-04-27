@@ -55,6 +55,8 @@ export const BelbellaCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="Privo"
+      nextCase="Blank Slate Technologies"
       url="https://belbella.com/"
     />
   );

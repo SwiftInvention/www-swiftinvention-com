@@ -55,6 +55,8 @@ export const EversanaCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="Blank Slate Technologies"
+      nextCase="EatNakedKitchen"
       url="https://www.eversana.com/"
     />
   );

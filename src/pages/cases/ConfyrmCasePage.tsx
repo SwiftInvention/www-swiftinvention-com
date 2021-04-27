@@ -58,6 +58,8 @@ export const ConfyrmCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="Azigo"
+      nextCase="Privo"
     />
   );
 };

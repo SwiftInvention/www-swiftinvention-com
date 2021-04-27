@@ -55,6 +55,8 @@ export const AzigoCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="EatNakedKitchen"
+      nextCase="Confyrm"
       url="https://membersshop.com/?ref=www.azigoinc.com"
     />
   );

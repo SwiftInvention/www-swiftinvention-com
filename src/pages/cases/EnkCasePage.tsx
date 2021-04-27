@@ -54,6 +54,8 @@ export const EnkCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="EVERSANA"
+      nextCase="Azigo"
       url="https://www.eatnakedkitchen.com/"
     />
   );

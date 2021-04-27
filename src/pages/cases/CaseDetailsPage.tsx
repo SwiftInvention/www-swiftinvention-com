@@ -2,16 +2,22 @@ import React from 'react';
 import caseDetailsBg from '~/assets/images/case-details-bg-2x.png';
 import { DefaultPage } from '../default/DefaultPage';
 import { VisitButton } from '~/components/visitbutton/VisitButton';
+import { CaseArrow, Direction } from '../../components/casearrows/CaseArrow';
+import { routes, getByName } from '../../routes/routes';
 
 export interface CaseDetailsPageProps {
   leftColumnItems: JSX.Element;
   rightColumnItems: JSX.Element;
+  previousCase: string;
+  nextCase: string;
   url?: string;
 }
 
 export const CaseDetailsPage: React.FC<CaseDetailsPageProps> = ({
   leftColumnItems,
   rightColumnItems,
+  previousCase,
+  nextCase,
   url,
 }) => {
   return (
@@ -32,6 +38,16 @@ export const CaseDetailsPage: React.FC<CaseDetailsPageProps> = ({
                 {rightColumnItems}
                 {url && <VisitButton url={url} />}
               </div>
+            </div>
+            <div className="flex justify-between pb-12">
+              <CaseArrow
+                direction={Direction.previous}
+                link={getByName(routes, previousCase).link}
+              />
+              <CaseArrow
+                direction={Direction.next}
+                link={getByName(routes, nextCase).link}
+              />
             </div>
           </div>
         </div>

@@ -58,6 +58,8 @@ export const PrivoCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="Confyrm"
+      nextCase="BelBella"
       url="https://www.privo.com/"
     />
   );

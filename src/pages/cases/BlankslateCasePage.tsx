@@ -56,6 +56,8 @@ export const BlankslateCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
+      previousCase="BelBella"
+      nextCase="EVERSANA"
       url="https://www.blankslatetech.co/"
     />
   );
