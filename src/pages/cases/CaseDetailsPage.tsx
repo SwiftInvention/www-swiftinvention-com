@@ -39,7 +39,7 @@ export const CaseDetailsPage: React.FC<CaseDetailsPageProps> = ({
                 {url && <VisitButton url={url} />}
               </div>
             </div>
-            <div className="flex justify-between pb-12">
+            <div className="flex justify-between pb-12 lg:mr-22">
               <CaseArrow
                 direction={Direction.previous}
                 link={getByName(routes, previousCase).link}
