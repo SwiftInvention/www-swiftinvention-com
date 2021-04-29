@@ -17,7 +17,7 @@ export interface CaseArrowProps {
 export const CaseArrow: React.FC<CaseArrowProps> = ({ link, direction }) => {
   const isNext = direction === Direction.next;
   return (
-    <div className="text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 px-1 py-2">
+    <div className="text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 px-2 py-2">
       <Link className="flex flex-row" to={link}>
         <div
           className={clsx(
