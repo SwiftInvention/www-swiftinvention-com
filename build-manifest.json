@@ -1,5 +1,9 @@
 {
   "inputs": {
+    "dist/index.css": {
+      "bytes": 26815,
+      "imports": []
+    },
     "_snowpack/env.js": {
       "bytes": 97,
       "imports": []
@@ -1044,10 +1048,6 @@
         }
       ]
     },
-    "dist/index.css": {
-      "bytes": 26815,
-      "imports": []
-    },
     "dist/index.js": {
       "bytes": 863,
       "imports": [
@@ -1079,6 +1079,15 @@
     }
   },
   "outputs": {
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/index.css": {
+          "bytesInOutput": 16238
+        }
+      },
+      "bytes": 16239
+    },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
       "exports": [],
@@ -1346,15 +1355,6 @@
         }
       },
       "bytes": 254448
-    },
-    "../~~bundle~~/dist/index.css": {
-      "imports": [],
-      "inputs": {
-        "dist/index.css": {
-          "bytesInOutput": 16238
-        }
-      },
-      "bytes": 16239
     }
   }
 }
