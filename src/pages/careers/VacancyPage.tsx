@@ -21,5 +21,9 @@ export const VacancyPage: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <div className="font-sans text-secondaryCol1" ref={ref} />;
+  return (
+    <div>
+      <div className="font-sans text-secondaryCol1" ref={ref} />
+    </div>
+  );
 };
