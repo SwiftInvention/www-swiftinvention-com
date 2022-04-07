@@ -1,7 +1,46 @@
 import React from 'react';
 import { CareersCard } from '~/components/careerscard/CareersCard';
 import frontendImage from '~/assets/images/frontend-white.png';
+import devopsImage from '~/assets/images/devops-white.png';
 import backendImage from '~/assets/images/backend-white.png';
+import saImage from '~/assets/images/sa-white.png';
+import qaImage from '~/assets/images/qa-white.png';
+
+const vacancyList: {
+  text: string;
+  image: string;
+  link: string;
+  disabled?: boolean;
+}[] = [
+  {
+    text: 'Software Engineer',
+    image: backendImage,
+    link: '/careers/backend',
+  },
+  {
+    text: 'Front End Engineer',
+    image: frontendImage,
+    link: '/careers/frontend',
+  },
+  {
+    text: 'Software Architect',
+    image: saImage,
+    link: '/careers/architect',
+    // disabled: true,
+  },
+  {
+    text: 'SRE Engineer (DevOps)',
+    image: devopsImage,
+    link: '/careers/devops',
+    // disabled: true,
+  },
+  {
+    text: 'QA  Engineer',
+    image: qaImage,
+    link: '/careers/tester',
+    // disabled: true,
+  },
+];
 
 export const CareersMainPage: React.FC = () => {
   return (
@@ -18,16 +57,15 @@ export const CareersMainPage: React.FC = () => {
         WE ARE LOOKING FOR
       </div>
       <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-7 ">
-        <CareersCard
-          text="Software Engineer"
-          image={backendImage}
-          link="/careers/353522"
-        />
-        <CareersCard
-          text="Front End Engineer"
-          image={frontendImage}
-          link="/careers/353523"
-        />
+        {vacancyList.map((vacancy) => {
+          return !vacancy.disabled ? (
+            <CareersCard
+              text={vacancy.text}
+              image={vacancy.image}
+              link={vacancy.link}
+            />
+          ) : null;
+        })}
       </ul>
     </>
   );

@@ -18,7 +18,7 @@ import { BelbellaCasePage } from './pages/cases/BelbellaCasePage';
 import { BlankslateCasePage } from './pages/cases/BlankslateCasePage';
 import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
-import { CareersPage } from './pages/careers';
+import { CareersPage } from './pages/careers/CareersPage';
 
 interface AppProps {}
 
