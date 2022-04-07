@@ -1,0 +1,1360 @@
+{
+  "inputs": {
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "_snowpack/pkg/web-vitals.js": {
+      "bytes": 3983,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-e66f0a38.js": {
+      "bytes": 8994,
+      "imports": []
+    },
+    "_snowpack/pkg/react.js": {
+      "bytes": 209,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-dom.js": {
+      "bytes": 127556,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/common/history-bad9d782.js": {
+      "bytes": 28548,
+      "imports": []
+    },
+    "_snowpack/pkg/react-router-dom.js": {
+      "bytes": 48271,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/history-bad9d782.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/routes/PublicRoute.js": {
+      "bytes": 274,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/history.js": {
+      "bytes": 71,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/history-bad9d782.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/router.js": {
+      "bytes": 110,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/history.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/notfound/NotFoundPage.js": {
+      "bytes": 167,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/error/ErrorPage.js": {
+      "bytes": 162,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/clsx.js": {
+      "bytes": 750,
+      "imports": []
+    },
+    "dist/assets/images/swift-white-logo.png.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/components/footer/Footer.js": {
+      "bytes": 1578,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/swift-white-logo.png.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/hooks/useToggle.js": {
+      "bytes": 272,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/hooks/usePortal.js": {
+      "bytes": 344,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/navmenu/NavMenuItems.js": {
+      "bytes": 772,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/hooks/usePortal.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/navmenu/NavMenu.js": {
+      "bytes": 1861,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/hooks/useToggle.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/navmenu/NavMenuItems.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/routes/routes.js": {
+      "bytes": 1544,
+      "imports": []
+    },
+    "dist/components/header/Header.js": {
+      "bytes": 2039,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/swift-white-logo.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/navmenu/NavMenu.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/default/DefaultPage.js": {
+      "bytes": 1222,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/footer/Footer.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/header/Header.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/home-header-bg.png.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/home-services-bg.png.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/assets/images/home-grid.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/computer-code.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/components/arrowedtext/ArrowedText.js": {
+      "bytes": 1479,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/home/HomePage.module.css.proxy.js": {
+      "bytes": 668,
+      "imports": []
+    },
+    "dist/pages/home/HomePage.js": {
+      "bytes": 5074,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/home-header-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/home-services-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/home-grid.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/computer-code.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/arrowedtext/ArrowedText.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/home/HomePage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/services-bg.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/components/servicecard/ServiceCard.js": {
+      "bytes": 541,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/computer-white.png.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/phone-white.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/server-white.png.proxy.js": {
+      "bytes": 54,
+      "imports": []
+    },
+    "dist/assets/images/tablet-white.png.proxy.js": {
+      "bytes": 54,
+      "imports": []
+    },
+    "dist/pages/services/ServicesPage.js": {
+      "bytes": 3221,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/services-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/arrowedtext/ArrowedText.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/servicecard/ServiceCard.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/computer-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/phone-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/server-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/tablet-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/cases-bg.png.proxy.js": {
+      "bytes": 50,
+      "imports": []
+    },
+    "dist/components/casestudy/CaseStudyCard.js": {
+      "bytes": 1343,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/cards/azigo-card-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/assets/images/cards/confyrm-card-2x.png.proxy.js": {
+      "bytes": 63,
+      "imports": []
+    },
+    "dist/assets/images/cards/privo-card-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/assets/images/cards/belbella-card-2x.png.proxy.js": {
+      "bytes": 64,
+      "imports": []
+    },
+    "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js": {
+      "bytes": 67,
+      "imports": []
+    },
+    "dist/assets/images/cards/eversana-card-2x.png.proxy.js": {
+      "bytes": 64,
+      "imports": []
+    },
+    "dist/assets/images/cards/enk-card-2x.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/pages/cases/CasesPage.js": {
+      "bytes": 3861,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cases-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/casestudy/CaseStudyCard.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/azigo-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/confyrm-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/privo-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/belbella-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/eversana-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/enk-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/news/NewsPage.js": {
+      "bytes": 159,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-hook-form.js": {
+      "bytes": 57563,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
+      "bytes": 4095,
+      "imports": []
+    },
+    "dist/pages/feedback/FeedbackPage.js": {
+      "bytes": 4583,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-hook-form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/services-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/feedback/FeedbackPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/case-details-bg-2x.png.proxy.js": {
+      "bytes": 60,
+      "imports": []
+    },
+    "dist/components/visitbutton/VisitButton.js": {
+      "bytes": 2511,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/casearrows/Arrows.js": {
+      "bytes": 2901,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/casearrows/CaseArrow.js": {
+      "bytes": 1162,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/clsx.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/casearrows/Arrows.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/cases/CaseDetailsPage.js": {
+      "bytes": 1975,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/case-details-bg-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/visitbutton/VisitButton.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/casearrows/CaseArrow.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/laptops/azigo-2x.png.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/assets/images/logos/azigo-logo-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/pages/cases/CaseDetailsPage.module.css.proxy.js": {
+      "bytes": 2269,
+      "imports": []
+    },
+    "dist/pages/cases/AzigoCasePage.js": {
+      "bytes": 4566,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/azigo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/azigo-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/confyrm-logo-2x.png.proxy.js": {
+      "bytes": 63,
+      "imports": []
+    },
+    "dist/assets/images/laptops/confyrm-2x.png.proxy.js": {
+      "bytes": 60,
+      "imports": []
+    },
+    "dist/pages/cases/ConfyrmCasePage.js": {
+      "bytes": 4003,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/confyrm-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/confyrm-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/privo-logo-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/assets/images/laptops/privo-2x.png.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/pages/cases/PrivoCasePage.js": {
+      "bytes": 6187,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/privo-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/privo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/belbella-logo-2x.png.proxy.js": {
+      "bytes": 64,
+      "imports": []
+    },
+    "dist/assets/images/laptops/belbella-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/pages/cases/BelbellaCasePage.js": {
+      "bytes": 4273,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/belbella-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/belbella-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/blankslate-logo-2x.png.proxy.js": {
+      "bytes": 66,
+      "imports": []
+    },
+    "dist/assets/images/laptops/blankslate-2x.png.proxy.js": {
+      "bytes": 63,
+      "imports": []
+    },
+    "dist/pages/cases/BlankslateCasePage.js": {
+      "bytes": 4322,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/blankslate-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/blankslate-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/eversana-logo-2x.png.proxy.js": {
+      "bytes": 64,
+      "imports": []
+    },
+    "dist/assets/images/laptops/eversana-2x.png.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/pages/cases/EversanaCasePage.js": {
+      "bytes": 3625,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/eversana-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/eversana-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/logos/enk-logo-2x.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/assets/images/laptops/enk-2x.png.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/pages/cases/EnkCasePage.js": {
+      "bytes": 3016,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/enk-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/enk-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/dompurify.js": {
+      "bytes": 57363,
+      "imports": []
+    },
+    "dist/pages/careers/VacancyPage.js": {
+      "bytes": 859,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/dompurify.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/careerscard/CareersCard.js": {
+      "bytes": 703,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/assets/images/frontend-white.png.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/backend-white.png.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/pages/careers/CareersMainPage.js": {
+      "bytes": 1296,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/careerscard/CareersCard.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/frontend-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/backend-white.png.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/careers/index.js": {
+      "bytes": 1368,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/default/DefaultPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/services-bg.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/careers/VacancyPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/careers/CareersMainPage.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/App.js": {
+      "bytes": 3359,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/PublicRoute.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/router.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/notfound/NotFoundPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/error/ErrorPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/home/HomePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/services/ServicesPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CasesPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/news/NewsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/feedback/FeedbackPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/AzigoCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/ConfyrmCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/PrivoCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/BelbellaCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/BlankslateCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/EversanaCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/EnkCasePage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/careers/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/index.css": {
+      "bytes": 26815,
+      "imports": []
+    },
+    "dist/index.js": {
+      "bytes": 863,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/web-vitals.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/App.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/index.css",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 100
+        },
+        "_snowpack/pkg/web-vitals.js": {
+          "bytesInOutput": 3930
+        },
+        "_snowpack/pkg/common/index-e66f0a38.js": {
+          "bytesInOutput": 7162
+        },
+        "_snowpack/pkg/react.js": {
+          "bytesInOutput": 31
+        },
+        "_snowpack/pkg/react-dom.js": {
+          "bytesInOutput": 124096
+        },
+        "_snowpack/pkg/common/history-bad9d782.js": {
+          "bytesInOutput": 9622
+        },
+        "_snowpack/pkg/react-router-dom.js": {
+          "bytesInOutput": 17058
+        },
+        "dist/routes/PublicRoute.js": {
+          "bytesInOutput": 72
+        },
+        "_snowpack/pkg/history.js": {
+          "bytesInOutput": 0
+        },
+        "dist/utils/router.js": {
+          "bytesInOutput": 12
+        },
+        "dist/pages/notfound/NotFoundPage.js": {
+          "bytesInOutput": 54
+        },
+        "dist/pages/error/ErrorPage.js": {
+          "bytesInOutput": 52
+        },
+        "_snowpack/pkg/clsx.js": {
+          "bytesInOutput": 358
+        },
+        "dist/assets/images/swift-white-logo.png.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/components/footer/Footer.js": {
+          "bytesInOutput": 926
+        },
+        "dist/hooks/useToggle.js": {
+          "bytesInOutput": 88
+        },
+        "dist/hooks/usePortal.js": {
+          "bytesInOutput": 186
+        },
+        "dist/components/navmenu/NavMenuItems.js": {
+          "bytesInOutput": 302
+        },
+        "dist/components/navmenu/NavMenu.js": {
+          "bytesInOutput": 1073
+        },
+        "dist/routes/routes.js": {
+          "bytesInOutput": 945
+        },
+        "dist/components/header/Header.js": {
+          "bytesInOutput": 1059
+        },
+        "dist/pages/default/DefaultPage.js": {
+          "bytesInOutput": 513
+        },
+        "dist/assets/images/home-header-bg.png.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/home-services-bg.png.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/assets/images/home-grid.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/computer-code.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/components/arrowedtext/ArrowedText.js": {
+          "bytesInOutput": 913
+        },
+        "dist/pages/home/HomePage.module.css.proxy.js": {
+          "bytesInOutput": 475
+        },
+        "dist/pages/home/HomePage.js": {
+          "bytesInOutput": 3124
+        },
+        "dist/assets/images/services-bg.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/components/servicecard/ServiceCard.js": {
+          "bytesInOutput": 342
+        },
+        "dist/assets/images/computer-white.png.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/phone-white.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/server-white.png.proxy.js": {
+          "bytesInOutput": 46
+        },
+        "dist/assets/images/tablet-white.png.proxy.js": {
+          "bytesInOutput": 46
+        },
+        "dist/pages/services/ServicesPage.js": {
+          "bytesInOutput": 1723
+        },
+        "dist/assets/images/cases-bg.png.proxy.js": {
+          "bytesInOutput": 42
+        },
+        "dist/components/casestudy/CaseStudyCard.js": {
+          "bytesInOutput": 864
+        },
+        "dist/assets/images/cards/azigo-card-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/assets/images/cards/confyrm-card-2x.png.proxy.js": {
+          "bytesInOutput": 55
+        },
+        "dist/assets/images/cards/privo-card-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/assets/images/cards/belbella-card-2x.png.proxy.js": {
+          "bytesInOutput": 56
+        },
+        "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js": {
+          "bytesInOutput": 59
+        },
+        "dist/assets/images/cards/eversana-card-2x.png.proxy.js": {
+          "bytesInOutput": 56
+        },
+        "dist/assets/images/cards/enk-card-2x.png.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/pages/cases/CasesPage.js": {
+          "bytesInOutput": 2006
+        },
+        "dist/pages/news/NewsPage.js": {
+          "bytesInOutput": 50
+        },
+        "_snowpack/pkg/react-hook-form.js": {
+          "bytesInOutput": 18714
+        },
+        "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
+          "bytesInOutput": 3775
+        },
+        "dist/pages/feedback/FeedbackPage.js": {
+          "bytesInOutput": 2745
+        },
+        "dist/assets/images/case-details-bg-2x.png.proxy.js": {
+          "bytesInOutput": 52
+        },
+        "dist/components/visitbutton/VisitButton.js": {
+          "bytesInOutput": 1818
+        },
+        "dist/components/casearrows/Arrows.js": {
+          "bytesInOutput": 2079
+        },
+        "dist/components/casearrows/CaseArrow.js": {
+          "bytesInOutput": 565
+        },
+        "dist/pages/cases/CaseDetailsPage.js": {
+          "bytesInOutput": 981
+        },
+        "dist/assets/images/laptops/azigo-2x.png.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/assets/images/logos/azigo-logo-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/pages/cases/CaseDetailsPage.module.css.proxy.js": {
+          "bytesInOutput": 2007
+        },
+        "dist/pages/cases/AzigoCasePage.js": {
+          "bytesInOutput": 2905
+        },
+        "dist/assets/images/logos/confyrm-logo-2x.png.proxy.js": {
+          "bytesInOutput": 55
+        },
+        "dist/assets/images/laptops/confyrm-2x.png.proxy.js": {
+          "bytesInOutput": 52
+        },
+        "dist/pages/cases/ConfyrmCasePage.js": {
+          "bytesInOutput": 2522
+        },
+        "dist/assets/images/logos/privo-logo-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/assets/images/laptops/privo-2x.png.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/pages/cases/PrivoCasePage.js": {
+          "bytesInOutput": 3952
+        },
+        "dist/assets/images/logos/belbella-logo-2x.png.proxy.js": {
+          "bytesInOutput": 56
+        },
+        "dist/assets/images/laptops/belbella-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/pages/cases/BelbellaCasePage.js": {
+          "bytesInOutput": 2697
+        },
+        "dist/assets/images/logos/blankslate-logo-2x.png.proxy.js": {
+          "bytesInOutput": 58
+        },
+        "dist/assets/images/laptops/blankslate-2x.png.proxy.js": {
+          "bytesInOutput": 55
+        },
+        "dist/pages/cases/BlankslateCasePage.js": {
+          "bytesInOutput": 2672
+        },
+        "dist/assets/images/logos/eversana-logo-2x.png.proxy.js": {
+          "bytesInOutput": 56
+        },
+        "dist/assets/images/laptops/eversana-2x.png.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/pages/cases/EversanaCasePage.js": {
+          "bytesInOutput": 2229
+        },
+        "dist/assets/images/logos/enk-logo-2x.png.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/assets/images/laptops/enk-2x.png.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/pages/cases/EnkCasePage.js": {
+          "bytesInOutput": 1815
+        },
+        "_snowpack/pkg/dompurify.js": {
+          "bytesInOutput": 20148
+        },
+        "dist/pages/careers/VacancyPage.js": {
+          "bytesInOutput": 334
+        },
+        "dist/components/careerscard/CareersCard.js": {
+          "bytesInOutput": 396
+        },
+        "dist/assets/images/frontend-white.png.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/backend-white.png.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/pages/careers/CareersMainPage.js": {
+          "bytesInOutput": 670
+        },
+        "dist/pages/careers/index.js": {
+          "bytesInOutput": 605
+        },
+        "dist/App.js": {
+          "bytesInOutput": 1066
+        },
+        "dist/index.css": {
+          "bytesInOutput": 0
+        },
+        "dist/index.js": {
+          "bytesInOutput": 209
+        }
+      },
+      "bytes": 254448
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/index.css": {
+          "bytesInOutput": 16238
+        }
+      },
+      "bytes": 16239
+    }
+  }
+}
