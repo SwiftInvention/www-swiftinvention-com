@@ -35,11 +35,129 @@ export const PrivoCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            TypeScript(React), JavaScript (Angular2), REST, gRPC, OpenId, SAML,
-            Microservices, Java (Spring), Scala (Akka gRPC, ZIO, Quill),
-            Gatling, ZAP, Nightwatchjs, Amazon AWS (ECS, EC2, RDS, SQS,
-            CloudFront, IAM, ECR, Route53, CloudWatch), Kubernetes (EKS), Istio,
-            Prometheus, Grafana, Terraform
+            <ul className="list-disc pl-4">
+              <li>
+                <a className="underline" href="https://www.typescriptlang.org/">
+                  TypeScript
+                </a>
+                (
+                <a className="underline" href="https://reactjs.org/">
+                  React
+                </a>
+                )
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                >
+                  JavaScript
+                </a>
+                (
+                <a className="underline" href="https://angular.io/">
+                  Angular2
+                </a>
+                )
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                >
+                  REST
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://grpc.io/">
+                  gRPC
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://openid.net/">
+                  OpenId
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language"
+                >
+                  SAML
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Microservices"
+                >
+                  Microservices
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                >
+                  Java
+                </a>
+                (
+                <a className="underline" href="https://spring.io/">
+                  Spring
+                </a>
+                )
+              </li>
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala (Akka gRPC, ZIO, Quill)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://gatling.io/">
+                  Gatling
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.zaproxy.org/">
+                  ZAP
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://nightwatchjs.org/">
+                  Nightwatchjs
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS (ECS, EC2, RDS, SQS, CloudFront, IAM, ECR, Route53,
+                  CloudWatch)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://kubernetes.io/">
+                  Kubernetes (EKS)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://istio.io/">
+                  Istio
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://prometheus.io/">
+                  Prometheus
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://grafana.com/">
+                  Grafana
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.terraform.io/">
+                  Terraform
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

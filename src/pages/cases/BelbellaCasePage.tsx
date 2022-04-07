@@ -35,8 +35,62 @@ export const BelbellaCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            JavaScript(Vue.js), REST, Scala (Akka http, Quill), Nightwatchjs,
-            Amazon AWS (EC2, RDS, CloudWatch), PostgreSQL, Braintree, Plivo
+            <ul className="list-disc pl-4">
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                >
+                  JavaScript
+                </a>
+                (
+                <a className="underline" href="https://vuejs.org/">
+                  Vue.js
+                </a>
+                )
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                >
+                  REST
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala (Akka http, Quill)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://nightwatchjs.org/">
+                  Nightwatchjs
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS (EC2, RDS, CloudWatch)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.postgresql.org/">
+                  PostgreSQL
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://www.braintreepayments.com/"
+                >
+                  Braintree
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.plivo.com/">
+                  Plivo
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

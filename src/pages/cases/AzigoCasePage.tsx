@@ -34,9 +34,86 @@ export const AzigoCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            JavaScript (Google Closure library), REST, Java/Scala (Finagle,
-            Quill), Amazon AWS (EC, RDS), Selenium, Chrome/Safari/FireFox
-            browser extensions, Solar.
+            <ul className="list-disc pl-4">
+              <li>
+                <a
+                  className="underline"
+                  href="https://developers.google.com/closure/library"
+                >
+                  JavaScript (Google Closure library)
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                >
+                  REST
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                >
+                  Java
+                </a>
+                /
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala
+                </a>{' '}
+                (
+                <a
+                  className="underline"
+                  href="https://github.com/twitter/finagle"
+                >
+                  Finagle
+                </a>
+                ,{' '}
+                <a className="underline" href="https://getquill.io/">
+                  Quill
+                </a>
+                )
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS (EC, RDS)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.selenium.dev/">
+                  Selenium
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://chrome.google.com/webstore/category/extensions"
+                >
+                  Chrome
+                </a>
+                /
+                <a
+                  className="underline"
+                  href="https://developer.apple.com/safari/extensions/"
+                >
+                  Safari
+                </a>
+                /
+                <a
+                  className="underline"
+                  href="https://addons.mozilla.org/en-US/firefox/"
+                >
+                  FireFox
+                </a>{' '}
+                browser extensions
+              </li>
+              <li>
+                <a className="underline" href="https://solr.apache.org/">
+                  Solr
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

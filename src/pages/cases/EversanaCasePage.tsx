@@ -35,8 +35,41 @@ export const EversanaCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            TypeScript(React), REST, Scala (Akka http, ZIO, Quill), Amazon AWS
-            (EC2, RDS, CloudWatch), Ansible
+            <ul className="list-disc pl-4">
+              <li>
+                <a className="underline" href="https://www.typescriptlang.org/">
+                  TypeScript
+                </a>
+                (
+                <a className="underline" href="https://reactjs.org/">
+                  React
+                </a>
+                )
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                >
+                  REST
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala (Akka http, ZIO, Quill)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS (EC2, RDS, CloudWatch)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.ansible.com/">
+                  Ansible
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -18,6 +18,7 @@ import { BelbellaCasePage } from './pages/cases/BelbellaCasePage';
 import { BlankslateCasePage } from './pages/cases/BlankslateCasePage';
 import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
+import { CareersPage } from './pages/careers';
 
 interface AppProps {}
 
@@ -31,10 +32,10 @@ function App() {
             path={getByName(routes, 'Home').link}
             component={HomePage}
           />
-          <PublicRoute
+          {/* <PublicRoute
             path={getByName(routes, 'New Products').link}
             component={NewProductsPage}
-          />
+          /> */}
           <PublicRoute
             path={getByName(routes, 'Services').link}
             component={ServicesPage}
@@ -42,6 +43,10 @@ function App() {
           <PublicRoute
             path={getByName(routes, 'Case Studies').link}
             component={CasesPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Careers').link}
+            component={CareersPage}
           />
           <PublicRoute
             path={getByName(routes, 'News').link}

@@ -35,7 +35,26 @@ export const EnkCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            WordPress, Ontraport, Divi
+            <ul className="list-disc pl-4">
+              <li>
+                <a className="underline" href="https://wordpress.com/">
+                  WordPress
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://ontraport.com/">
+                  Ontraport
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://www.elegantthemes.com/gallery/divi//"
+                >
+                  Divi
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 success. See our case studies below to see how we did it.
               </div>
             </div>
-            <ul className="mt-16 sm:mt-24 mb-25 grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-7">
+            <ul className="mt-16 sm:mt-24 pb-25 grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-7">
               <CaseStudyCard
                 image={azigoCardBg}
                 title="Azigo"
