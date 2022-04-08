@@ -36,6 +36,16 @@ export const MyBlueSkiesCasePage: React.FC = () => {
           <div className={styles.detailsRegular}>
             <ul className="list-disc pl-4">
               <li>
+                <a className="underline" href="https://webrtc.org/">
+                  WebRTC
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala (Akka gRPC, ZIO, Quill)
+                </a>
+              </li>
+              <li>
                 <a className="underline" href="https://create-react-app.dev/">
                   CRA
                 </a>
@@ -61,6 +71,7 @@ export const MyBlueSkiesCasePage: React.FC = () => {
       </div>
     </div>
   );
+
   const rightColumnItems: JSX.Element = (
     <div className="">
       <img

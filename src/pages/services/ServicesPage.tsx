@@ -51,7 +51,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
             <div className="font-sans font-medium text-primaryCol2 text-base pt-16 lg:pt-28">
               OUR SERVICES
             </div>
-            <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-7 ">
+            <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-7 gap-y-7 ">
               <ServiceCard
                 text="Mobile Apps (iOS&nbsp;and&nbsp;Android)"
                 image={phoneImage}
