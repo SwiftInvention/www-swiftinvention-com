@@ -24,7 +24,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
           />
         </div>
         <div className="relative">
-          <div className="px-8 pl-10 sm:pl-16 md:pl-30 pt-16 lg:pt-32">
+          <div className="px-10 sm:px-12 md:px-28 pt-16 lg:pt-32">
             <div className="max-w-xl">
               <div className="text-secondaryCol1 font-sans font-medium text-4xl mb-5">
                 Services
@@ -51,7 +51,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
             <div className="font-sans font-medium text-primaryCol2 text-base pt-16 lg:pt-28">
               OUR SERVICES
             </div>
-            <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-7 gap-y-7 ">
+            <ul className="mt-7 pb-25 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">
               <ServiceCard
                 text="Mobile Apps (iOS&nbsp;and&nbsp;Android)"
                 image={phoneImage}

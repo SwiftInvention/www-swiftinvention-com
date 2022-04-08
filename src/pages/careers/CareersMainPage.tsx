@@ -61,10 +61,11 @@ export const CareersMainPage: React.FC = () => {
       <div className="font-sans font-medium text-primaryCol2 text-base pt-16 lg:pt-28">
         WE ARE LOOKING FOR
       </div>
-      <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-7 gap-y-7 ">
+      <ul className="mt-7 pb-25 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">
         {vacancyList.map((vacancy) => {
           return !vacancy.disabled ? (
             <CareersCard
+              key={vacancy.id}
               text={vacancy.text}
               image={vacancy.image}
               link={`/careers/${vacancy.id}`}
