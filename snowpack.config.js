@@ -25,10 +25,10 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    htmlFragments: true,
   },
   buildOptions: {
-    /* ... */
+    htmlFragments: true,
   },
   alias: {
     "~": "./src",
