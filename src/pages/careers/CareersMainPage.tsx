@@ -21,6 +21,7 @@ const vacancyList: {
     text: 'Front End Engineer',
     image: frontendImage,
     link: '/careers/frontend',
+    disabled: true,
   },
   {
     text: 'Software Architect',
@@ -32,13 +33,13 @@ const vacancyList: {
     text: 'SRE Engineer (DevOps)',
     image: devopsImage,
     link: '/careers/devops',
-    // disabled: true,
+    disabled: true,
   },
   {
     text: 'QA  Engineer',
     image: qaImage,
     link: '/careers/tester',
-    // disabled: true,
+    disabled: true,
   },
 ];
 

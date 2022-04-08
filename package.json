@@ -1,7 +1,7 @@
 {
-  "homepage": "https://swiftinvention.github.io/www-swiftinvention-com",
+  "homepage": "https://www.swiftinvention.com",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "snowpack dev",
     "build": "snowpack build",
