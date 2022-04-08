@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 26815,
+      "bytes": 26983,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -17,7 +17,7 @@
       "imports": []
     },
     "_snowpack/pkg/react.js": {
-      "bytes": 209,
+      "bytes": 250,
       "imports": [
         {
           "path": "_snowpack/pkg/common/index-e66f0a38.js",
@@ -194,7 +194,7 @@
       ]
     },
     "dist/routes/routes.js": {
-      "bytes": 1544,
+      "bytes": 1649,
       "imports": []
     },
     "dist/components/header/Header.js": {
@@ -460,8 +460,12 @@
       "bytes": 59,
       "imports": []
     },
+    "dist/assets/images/cards/mbs-card-2x.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
     "dist/pages/cases/CasesPage.js": {
-      "bytes": 3861,
+      "bytes": 4215,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -505,6 +509,10 @@
         },
         {
           "path": "dist/assets/images/cards/enk-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/mbs-card-2x.png.proxy.js",
           "kind": "import-statement"
         },
         {
@@ -645,7 +653,7 @@
       "imports": []
     },
     "dist/pages/cases/AzigoCasePage.js": {
-      "bytes": 4566,
+      "bytes": 4564,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -678,7 +686,7 @@
       "imports": []
     },
     "dist/pages/cases/ConfyrmCasePage.js": {
-      "bytes": 4003,
+      "bytes": 4005,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -711,7 +719,7 @@
       "imports": []
     },
     "dist/pages/cases/PrivoCasePage.js": {
-      "bytes": 6187,
+      "bytes": 6189,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -744,7 +752,7 @@
       "imports": []
     },
     "dist/pages/cases/BelbellaCasePage.js": {
-      "bytes": 4273,
+      "bytes": 4277,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -777,7 +785,7 @@
       "imports": []
     },
     "dist/pages/cases/BlankslateCasePage.js": {
-      "bytes": 4322,
+      "bytes": 4324,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -810,7 +818,7 @@
       "imports": []
     },
     "dist/pages/cases/EversanaCasePage.js": {
-      "bytes": 3625,
+      "bytes": 3627,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -871,27 +879,6 @@
       "bytes": 57363,
       "imports": []
     },
-    "dist/pages/careers/VacancyPage.js": {
-      "bytes": 909,
-      "imports": [
-        {
-          "path": "_snowpack/env.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/react-router-dom.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/dompurify.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
     "dist/components/careerscard/CareersCard.js": {
       "bytes": 703,
       "imports": [
@@ -926,7 +913,7 @@
       "imports": []
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 1974,
+      "bytes": 2043,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -954,6 +941,31 @@
         },
         {
           "path": "dist/assets/images/qa-white.png.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/careers/VacancyPage.js": {
+      "bytes": 1702,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/dompurify.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/careers/CareersMainPage.js",
           "kind": "import-statement"
         }
       ]
@@ -987,8 +999,41 @@
         }
       ]
     },
+    "dist/assets/images/logos/mbs-logo-2x.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/assets/images/laptops/mbs-2x.png.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/pages/cases/MyBlueSkiesCasePage.js": {
+      "bytes": 3156,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/mbs-logo-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/mbs-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/App.js": {
-      "bytes": 3365,
+      "bytes": 3580,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1069,6 +1114,10 @@
         {
           "path": "dist/pages/careers/CareersPage.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/MyBlueSkiesCasePage.js",
+          "kind": "import-statement"
         }
       ]
     },
@@ -1107,10 +1156,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16238
+          "bytesInOutput": 16363
         }
       },
-      "bytes": 16239
+      "bytes": 16364
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1126,7 +1175,7 @@
           "bytesInOutput": 7162
         },
         "_snowpack/pkg/react.js": {
-          "bytesInOutput": 31
+          "bytesInOutput": 45
         },
         "_snowpack/pkg/react-dom.js": {
           "bytesInOutput": 124096
@@ -1174,7 +1223,7 @@
           "bytesInOutput": 1073
         },
         "dist/routes/routes.js": {
-          "bytesInOutput": 945
+          "bytesInOutput": 1014
         },
         "dist/components/header/Header.js": {
           "bytesInOutput": 1059
@@ -1251,8 +1300,11 @@
         "dist/assets/images/cards/enk-card-2x.png.proxy.js": {
           "bytesInOutput": 51
         },
+        "dist/assets/images/cards/mbs-card-2x.png.proxy.js": {
+          "bytesInOutput": 51
+        },
         "dist/pages/cases/CasesPage.js": {
-          "bytesInOutput": 2006
+          "bytesInOutput": 2205
         },
         "dist/pages/news/NewsPage.js": {
           "bytesInOutput": 50
@@ -1291,7 +1343,7 @@
           "bytesInOutput": 2007
         },
         "dist/pages/cases/AzigoCasePage.js": {
-          "bytesInOutput": 2905
+          "bytesInOutput": 2903
         },
         "dist/assets/images/logos/confyrm-logo-2x.png.proxy.js": {
           "bytesInOutput": 55
@@ -1300,7 +1352,7 @@
           "bytesInOutput": 52
         },
         "dist/pages/cases/ConfyrmCasePage.js": {
-          "bytesInOutput": 2522
+          "bytesInOutput": 2524
         },
         "dist/assets/images/logos/privo-logo-2x.png.proxy.js": {
           "bytesInOutput": 53
@@ -1309,7 +1361,7 @@
           "bytesInOutput": 50
         },
         "dist/pages/cases/PrivoCasePage.js": {
-          "bytesInOutput": 3952
+          "bytesInOutput": 3954
         },
         "dist/assets/images/logos/belbella-logo-2x.png.proxy.js": {
           "bytesInOutput": 56
@@ -1318,7 +1370,7 @@
           "bytesInOutput": 53
         },
         "dist/pages/cases/BelbellaCasePage.js": {
-          "bytesInOutput": 2697
+          "bytesInOutput": 2701
         },
         "dist/assets/images/logos/blankslate-logo-2x.png.proxy.js": {
           "bytesInOutput": 58
@@ -1327,7 +1379,7 @@
           "bytesInOutput": 55
         },
         "dist/pages/cases/BlankslateCasePage.js": {
-          "bytesInOutput": 2672
+          "bytesInOutput": 2674
         },
         "dist/assets/images/logos/eversana-logo-2x.png.proxy.js": {
           "bytesInOutput": 56
@@ -1336,7 +1388,7 @@
           "bytesInOutput": 53
         },
         "dist/pages/cases/EversanaCasePage.js": {
-          "bytesInOutput": 2229
+          "bytesInOutput": 2231
         },
         "dist/assets/images/logos/enk-logo-2x.png.proxy.js": {
           "bytesInOutput": 51
@@ -1349,9 +1401,6 @@
         },
         "_snowpack/pkg/dompurify.js": {
           "bytesInOutput": 20148
-        },
-        "dist/pages/careers/VacancyPage.js": {
-          "bytesInOutput": 362
         },
         "dist/components/careerscard/CareersCard.js": {
           "bytesInOutput": 396
@@ -1372,13 +1421,25 @@
           "bytesInOutput": 42
         },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 941
+          "bytesInOutput": 963
+        },
+        "dist/pages/careers/VacancyPage.js": {
+          "bytesInOutput": 901
         },
         "dist/pages/careers/CareersPage.js": {
           "bytesInOutput": 605
         },
+        "dist/assets/images/logos/mbs-logo-2x.png.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/assets/images/laptops/mbs-2x.png.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/pages/cases/MyBlueSkiesCasePage.js": {
+          "bytesInOutput": 1887
+        },
         "dist/App.js": {
-          "bytesInOutput": 1066
+          "bytesInOutput": 1132
         },
         "dist/index.css": {
           "bytesInOutput": 0
@@ -1387,7 +1448,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 254877
+      "bytes": 257833
     }
   }
 }
