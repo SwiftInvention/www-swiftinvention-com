@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 26983,
+      "bytes": 27046,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -363,7 +363,7 @@
       "imports": []
     },
     "dist/pages/services/ServicesPage.js": {
-      "bytes": 3221,
+      "bytes": 3202,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -913,7 +913,7 @@
       "imports": []
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2043,
+      "bytes": 2061,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -971,7 +971,7 @@
       ]
     },
     "dist/pages/careers/CareersPage.js": {
-      "bytes": 1368,
+      "bytes": 1354,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1008,7 +1008,7 @@
       "imports": []
     },
     "dist/pages/cases/MyBlueSkiesCasePage.js": {
-      "bytes": 3156,
+      "bytes": 3523,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1156,10 +1156,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16363
+          "bytesInOutput": 16396
         }
       },
-      "bytes": 16364
+      "bytes": 16397
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1271,7 +1271,7 @@
           "bytesInOutput": 46
         },
         "dist/pages/services/ServicesPage.js": {
-          "bytesInOutput": 1723
+          "bytesInOutput": 1704
         },
         "dist/assets/images/cases-bg.png.proxy.js": {
           "bytesInOutput": 42
@@ -1421,13 +1421,13 @@
           "bytesInOutput": 42
         },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 963
+          "bytesInOutput": 967
         },
         "dist/pages/careers/VacancyPage.js": {
           "bytesInOutput": 901
         },
         "dist/pages/careers/CareersPage.js": {
-          "bytesInOutput": 605
+          "bytesInOutput": 591
         },
         "dist/assets/images/logos/mbs-logo-2x.png.proxy.js": {
           "bytesInOutput": 51
@@ -1436,7 +1436,7 @@
           "bytesInOutput": 48
         },
         "dist/pages/cases/MyBlueSkiesCasePage.js": {
-          "bytesInOutput": 1887
+          "bytesInOutput": 2134
         },
         "dist/App.js": {
           "bytesInOutput": 1132
@@ -1448,7 +1448,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 257833
+      "bytes": 258051
     }
   }
 }
