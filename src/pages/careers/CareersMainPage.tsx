@@ -9,39 +9,43 @@ import qaImage from '~/assets/images/qa-white.png';
 const vacancyList: {
   text: string;
   image: string;
-  link: string;
+  id: string;
   disabled?: boolean;
 }[] = [
   {
     text: 'Software Engineer',
     image: backendImage,
-    link: '/careers/backend',
+    id: 'backend',
   },
   {
     text: 'Front End Engineer',
     image: frontendImage,
-    link: '/careers/frontend',
+    id: 'frontend',
     disabled: true,
   },
   {
     text: 'Software Architect',
     image: saImage,
-    link: '/careers/architect',
+    id: 'architect',
     // disabled: true,
   },
   {
     text: 'SRE Engineer (DevOps)',
     image: devopsImage,
-    link: '/careers/devops',
+    id: 'devops',
     disabled: true,
   },
   {
     text: 'QA  Engineer',
     image: qaImage,
-    link: '/careers/tester',
+    id: 'tester',
     disabled: true,
   },
 ];
+
+export const getVacancyNameById = (id: string): string | undefined => {
+  return vacancyList.find((vacancy) => id === vacancy.id)?.text;
+};
 
 export const CareersMainPage: React.FC = () => {
   return (
@@ -63,7 +67,7 @@ export const CareersMainPage: React.FC = () => {
             <CareersCard
               text={vacancy.text}
               image={vacancy.image}
-              link={vacancy.link}
+              link={`/careers/${vacancy.id}`}
             />
           ) : null;
         })}

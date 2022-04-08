@@ -104,7 +104,7 @@ export const BlankslateCasePage: React.FC = () => {
   const rightColumnItems: JSX.Element = (
     <div className="mb-4 lg:mb-0">
       <img
-        className="max-h-80 w-full object-cover"
+        className="max-h-80 w-full object-contain"
         src={blankSlateLaptop}
         alt="Blank slate page"
       />

@@ -19,6 +19,7 @@ import { BlankslateCasePage } from './pages/cases/BlankslateCasePage';
 import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
 import { CareersPage } from './pages/careers/CareersPage';
+import { MyBlueSkiesCasePage } from './pages/cases/MyBlueSkiesCasePage';
 
 interface AppProps {}
 
@@ -83,6 +84,10 @@ function App() {
           <PublicRoute
             path={getByName(routes, 'EatNakedKitchen').link}
             component={EnkCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'MyBlueSkies').link}
+            component={MyBlueSkiesCasePage}
           />
 
           <PublicRoute

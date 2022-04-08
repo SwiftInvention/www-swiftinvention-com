@@ -104,4 +104,10 @@ export const routes: Array<RouteProps> = [
     isInFooter: false,
     isInHeader: false,
   },
+  {
+    name: 'MyBlueSkies',
+    link: '/myblueskies',
+    isInFooter: false,
+    isInHeader: false,
+  },
 ];

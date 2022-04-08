@@ -10,6 +10,7 @@ import belbellaCardBg from '~/assets/images/cards/belbella-card-2x.png';
 import blankslateCardBg from '~/assets/images/cards/blank-slate-card-2x.png';
 import eversanaCardBg from '~/assets/images/cards/eversana-card-2x.png';
 import enkCardBg from '~/assets/images/cards/enk-card-2x.png';
+import mbsCardBg from '~/assets/images/cards/mbs-card-2x.png';
 import { routes, getByName } from '~/routes/routes';
 
 export interface CasesPageProps {}
@@ -83,6 +84,12 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 title="EatNakedKitchen"
                 link={getByName(routes, 'EatNakedKitchen').link}
                 description="Science-based nutrition, skills and strategies website"
+              />
+              <CaseStudyCard
+                image={mbsCardBg}
+                title="MyBlueSkies"
+                link={getByName(routes, 'MyBlueSkies').link}
+                description="An online platform for teaching and streaming designed for musicians by musicians to connect musicians"
               />
             </ul>
           </div>

@@ -85,7 +85,7 @@ export const ConfyrmCasePage: React.FC = () => {
   const rightColumnItems: JSX.Element = (
     <div className="">
       <img
-        className="max-h-80 w-full object-cover mb-16 lg:mb-0"
+        className="max-h-80 w-full object-contain mb-16 lg:mb-0"
         src={confyrmLaptopImg}
         alt="Confyrm laptop"
       />
