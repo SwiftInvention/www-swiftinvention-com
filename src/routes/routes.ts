@@ -20,12 +20,12 @@ export const routes: Array<RouteProps> = [
     isInHeader: false,
     isInFooter: true,
   },
-  {
-    name: 'New Products',
-    link: '/products',
-    isInHeader: true,
-    isInFooter: true,
-  },
+  // {
+  //   name: 'New Products',
+  //   link: '/products',
+  //   isInHeader: true,
+  //   isInFooter: true,
+  // },
   {
     name: 'Services',
     link: '/services',
@@ -35,6 +35,12 @@ export const routes: Array<RouteProps> = [
   {
     name: 'Case Studies',
     link: '/cases',
+    isInHeader: true,
+    isInFooter: true,
+  },
+  {
+    name: 'Careers',
+    link: '/careers',
     isInHeader: true,
     isInFooter: true,
   },

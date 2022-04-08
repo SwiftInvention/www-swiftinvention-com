@@ -35,9 +35,67 @@ export const BlankslateCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            JavaScript, REST, Scala (Akka http, Quill), Nightwatchjs, Amazon
-            JavaScript(React), ReactNative, REST, Scala (Finagle), Google Cloud,
-            Ansible
+            <ul className="list-disc pl-4">
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                >
+                  JavaScript
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                >
+                  REST
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala (Akka http, Quill, Finagle)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://nightwatchjs.org/">
+                  Nightwatchjs
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS
+                </a>
+              </li>
+              <li>
+                <a
+                  className="underline"
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                >
+                  JavaScript
+                </a>
+                (
+                <a className="underline" href="https://reactjs.org/">
+                  React
+                </a>
+                )
+              </li>
+              <li>
+                <a className="underline" href="https://reactnative.dev/">
+                  React Native
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://cloud.google.com/">
+                  Google Cloud
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.ansible.com/">
+                  Ansible
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

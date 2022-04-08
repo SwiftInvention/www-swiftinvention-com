@@ -37,8 +37,46 @@ export const ConfyrmCasePage: React.FC = () => {
         <div>
           <div className={styles.detailsSubtitle}>Technologies Used</div>
           <div className={styles.detailsRegular}>
-            Scala (Finagle), PostgreSQL, RabbitMQ, Amazon AWS (EC2, RDS, IAM,
-            ECR), Docker, Ansible.
+            <ul className="list-disc pl-4">
+              <li>
+                <a className="underline" href="https://www.scala-lang.org/">
+                  Scala
+                </a>
+                (
+                <a
+                  className="underline"
+                  href="https://github.com/twitter/finagle"
+                >
+                  Finagle
+                </a>
+                )
+              </li>
+              <li>
+                <a className="underline" href="https://www.postgresql.org/">
+                  PostgreSQL
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.rabbitmq.com/">
+                  RabbitMQ
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://aws.amazon.com/">
+                  Amazon AWS (EC2, RDS, IAM, ECR)
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.docker.com/">
+                  Docker
+                </a>
+              </li>
+              <li>
+                <a className="underline" href="https://www.ansible.com/">
+                  Ansible
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

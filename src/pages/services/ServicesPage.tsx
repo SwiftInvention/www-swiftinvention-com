@@ -4,7 +4,6 @@ import { DefaultPage } from '../default/DefaultPage';
 import servicesBg from '~/assets/images/services-bg.png';
 import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
 import { ServiceCard } from '~/components/servicecard/ServiceCard';
-import { Stripe } from '~/components/stripe/Stripe';
 import computerImage from '~/assets/images/computer-white.png';
 import phoneImage from '~/assets/images/phone-white.png';
 import serverImage from '~/assets/images/server-white.png';
@@ -52,7 +51,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
             <div className="font-sans font-medium text-primaryCol2 text-base pt-16 lg:pt-28">
               OUR SERVICES
             </div>
-            <ul className="mt-7 mb-25 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-7 ">
+            <ul className="mt-7 pb-25 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-7 ">
               <ServiceCard
                 text="Mobile Apps (iOS&nbsp;and&nbsp;Android)"
                 image={phoneImage}
@@ -62,12 +61,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
               <ServiceCard text="Web Services" image={computerImage} />
             </ul>
           </div>
-          <Stripe
+          {/* <Stripe
             text="Interested in the Service Provider Scheduling App and other
           products we have to offer?"
             label="See Products"
             link={getByName(routes, 'New Products').link}
-          />
+          /> */}
         </div>
       </div>
     </DefaultPage>

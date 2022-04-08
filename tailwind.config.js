@@ -38,7 +38,8 @@ module.exports = {
         '62': '15.5rem'
       },
       boxShadow: {
-        'card': '0 0 23px 0 rgba(0,0,0,0.5)'
+        'card': '0 0 23px 0 rgba(0,0,0,0.5)',
+        'cardHovered': '0 0 35px 0 rgba(0,0,0,0.7)'
       },
       opacity: {
         '65': '.65'
