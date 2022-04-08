@@ -17,7 +17,7 @@ export const CareersPage: React.FC = () => {
           />
         </div>
         <div className="relative">
-          <div className="px-10 sm:px-12 md:px-28 pt-16 lg:pt-32">
+          <div className="px-10 md:px-24 pt-16 lg:pt-32">
             <Switch>
               <Route exact path="/careers">
                 <CareersMainPage />
