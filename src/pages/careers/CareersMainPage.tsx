@@ -13,6 +13,12 @@ const vacancyList: {
   disabled?: boolean;
 }[] = [
   {
+    text: 'Software Architect',
+    image: saImage,
+    id: 'architect',
+    // disabled: true,
+  },
+  {
     text: 'Software Engineer',
     image: backendImage,
     id: 'backend',
@@ -24,16 +30,16 @@ const vacancyList: {
     disabled: true,
   },
   {
-    text: 'Software Architect',
-    image: saImage,
-    id: 'architect',
-    // disabled: true,
-  },
-  {
     text: 'SRE Engineer (DevOps)',
     image: devopsImage,
     id: 'devops',
     disabled: true,
+  },
+  {
+    text: 'Data Scientist',
+    image: frontendImage,
+    id: 'datascientist',
+    disabled: false,
   },
   {
     text: 'QA  Engineer',
