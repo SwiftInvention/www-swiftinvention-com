@@ -5,6 +5,7 @@ import devopsImage from '~/assets/images/devops-white.png';
 import backendImage from '~/assets/images/backend-white.png';
 import saImage from '~/assets/images/sa-white.png';
 import qaImage from '~/assets/images/qa-white.png';
+import { TechStack } from '~/components/careers/TechStack';
 
 const vacancyList: {
   text: string;
@@ -79,6 +80,7 @@ export const CareersMainPage: React.FC = () => {
           ) : null;
         })}
       </ul>
+      <TechStack />
     </>
   );
 };
