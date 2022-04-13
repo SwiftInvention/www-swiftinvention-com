@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 27229,
+      "bytes": 27219,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -1074,7 +1074,7 @@
       ]
     },
     "dist/components/careers/TechStack.js": {
-      "bytes": 7038,
+      "bytes": 7029,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1239,7 +1239,7 @@
       ]
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2288,
+      "bytes": 2272,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1486,10 +1486,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16524
+          "bytesInOutput": 16520
         }
       },
-      "bytes": 16525
+      "bytes": 16521
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1868,10 +1868,10 @@
           "bytesInOutput": 415
         },
         "dist/components/careers/TechStack.js": {
-          "bytesInOutput": 2654
+          "bytesInOutput": 2645
         },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 1056
+          "bytesInOutput": 1040
         },
         "dist/pages/careers/VacancyPage.js": {
           "bytesInOutput": 901
@@ -1898,7 +1898,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 262954
+      "bytes": 262929
     }
   }
 }
