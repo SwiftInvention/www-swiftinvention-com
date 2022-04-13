@@ -242,7 +242,7 @@ const techStackList: {
 export const TechStack: React.FC = () => {
   return (
     <>
-      <div className="font-sans font-medium text-primaryCol2 text-base pt-8 lg:pt-14">
+      <div className="font-sans font-medium text-primaryCol2 text-base pt-8">
         OUR TECH STACK
       </div>
       <ul className="mt-7 pb-25 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">

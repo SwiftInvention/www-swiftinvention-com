@@ -65,10 +65,10 @@ export const CareersMainPage: React.FC = () => {
           {/* */}
         </div>
       </div>
-      <div className="font-sans font-medium text-primaryCol2 text-base pt-16 lg:pt-28">
+      <div className="font-sans font-medium text-primaryCol2 text-base">
         WE ARE LOOKING FOR
       </div>
-      <ul className="mt-7 pb-25 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">
+      <ul className="mt-7 pb-8 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">
         {vacancyList.map((vacancy) => {
           return !vacancy.disabled ? (
             <CareersCard
