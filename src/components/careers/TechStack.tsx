@@ -168,7 +168,7 @@ const techStackList: {
     link: 'https://www.snowpack.dev/',
   },
   {
-    text: 'Mui',
+    text: 'MUI',
     image: muiImage,
     link: 'https://mui.com/',
   },
@@ -233,7 +233,7 @@ const techStackList: {
     link: 'https://kotlinlang.org/',
   },
   {
-    text: 'Android Jetpack Compose',
+    text: 'Jetpack Compose',
     image: ajcImage,
     link: 'https://developer.android.com/jetpack/compose',
   },
