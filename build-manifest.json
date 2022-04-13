@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 27046,
+      "bytes": 27229,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -912,8 +912,334 @@
       "bytes": 50,
       "imports": []
     },
+    "dist/assets/images/stack/scala.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/java.png.proxy.js": {
+      "bytes": 52,
+      "imports": []
+    },
+    "dist/assets/images/stack/rust.png.proxy.js": {
+      "bytes": 52,
+      "imports": []
+    },
+    "dist/assets/images/stack/ts.png.proxy.js": {
+      "bytes": 50,
+      "imports": []
+    },
+    "dist/assets/images/stack/js.png.proxy.js": {
+      "bytes": 50,
+      "imports": []
+    },
+    "dist/assets/images/stack/zio.png.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/akka.svg.proxy.js": {
+      "bytes": 52,
+      "imports": []
+    },
+    "dist/assets/images/stack/grafana.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/assets/images/stack/gatling.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/assets/images/stack/zap.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/nightwatchjs.svg.proxy.js": {
+      "bytes": 60,
+      "imports": []
+    },
+    "dist/assets/images/stack/aws.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/gcp.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/oci.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/kubernetes.svg.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/assets/images/stack/istio.svg.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/prometheus.svg.proxy.js": {
+      "bytes": 58,
+      "imports": []
+    },
+    "dist/assets/images/stack/terraform.svg.proxy.js": {
+      "bytes": 57,
+      "imports": []
+    },
+    "dist/assets/images/stack/vite.svg.proxy.js": {
+      "bytes": 52,
+      "imports": []
+    },
+    "dist/assets/images/stack/snowpack.svg.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/stack/mui.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/tailwind.svg.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/stack/socketio.svg.proxy.js": {
+      "bytes": 56,
+      "imports": []
+    },
+    "dist/assets/images/stack/i18next.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/assets/images/stack/solidjs.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/assets/images/stack/webcomponents.svg.proxy.js": {
+      "bytes": 61,
+      "imports": []
+    },
+    "dist/assets/images/stack/puppeteer.svg.proxy.js": {
+      "bytes": 57,
+      "imports": []
+    },
+    "dist/assets/images/stack/recoil.svg.proxy.js": {
+      "bytes": 54,
+      "imports": []
+    },
+    "dist/assets/images/stack/reactnative.svg.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/assets/images/stack/swift.svg.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/swiftui.svg.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "dist/assets/images/stack/kotlin.svg.proxy.js": {
+      "bytes": 54,
+      "imports": []
+    },
+    "dist/assets/images/stack/ajc.svg.proxy.js": {
+      "bytes": 51,
+      "imports": []
+    },
+    "dist/assets/images/stack/jotai.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/quill.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/mysql.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/pgsql.png.proxy.js": {
+      "bytes": 53,
+      "imports": []
+    },
+    "dist/assets/images/stack/grpc.png.proxy.js": {
+      "bytes": 52,
+      "imports": []
+    },
+    "dist/components/careerscard/StackCard.js": {
+      "bytes": 645,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/careers/TechStack.js": {
+      "bytes": 7038,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/scala.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/java.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/rust.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/ts.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/js.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/zio.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/akka.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/grafana.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/gatling.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/zap.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/nightwatchjs.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/aws.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/gcp.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/oci.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/kubernetes.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/istio.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/prometheus.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/terraform.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/vite.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/snowpack.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/mui.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/tailwind.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/socketio.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/i18next.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/solidjs.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/webcomponents.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/puppeteer.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/recoil.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/reactnative.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/swift.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/swiftui.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/kotlin.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/ajc.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/jotai.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/quill.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/mysql.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/pgsql.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/stack/grpc.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/careerscard/StackCard.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2169,
+      "bytes": 2288,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -941,6 +1267,10 @@
         },
         {
           "path": "dist/assets/images/qa-white.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/careers/TechStack.js",
           "kind": "import-statement"
         }
       ]
@@ -1156,10 +1486,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16396
+          "bytesInOutput": 16524
         }
       },
-      "bytes": 16397
+      "bytes": 16525
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1420,8 +1750,128 @@
         "dist/assets/images/qa-white.png.proxy.js": {
           "bytesInOutput": 42
         },
+        "dist/assets/images/stack/scala.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/java.png.proxy.js": {
+          "bytesInOutput": 44
+        },
+        "dist/assets/images/stack/rust.png.proxy.js": {
+          "bytesInOutput": 44
+        },
+        "dist/assets/images/stack/ts.png.proxy.js": {
+          "bytesInOutput": 42
+        },
+        "dist/assets/images/stack/js.png.proxy.js": {
+          "bytesInOutput": 42
+        },
+        "dist/assets/images/stack/zio.png.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/akka.svg.proxy.js": {
+          "bytesInOutput": 44
+        },
+        "dist/assets/images/stack/grafana.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/assets/images/stack/gatling.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/assets/images/stack/zap.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/nightwatchjs.svg.proxy.js": {
+          "bytesInOutput": 52
+        },
+        "dist/assets/images/stack/aws.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/gcp.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/oci.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/kubernetes.svg.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/assets/images/stack/istio.svg.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/prometheus.svg.proxy.js": {
+          "bytesInOutput": 50
+        },
+        "dist/assets/images/stack/terraform.svg.proxy.js": {
+          "bytesInOutput": 49
+        },
+        "dist/assets/images/stack/vite.svg.proxy.js": {
+          "bytesInOutput": 44
+        },
+        "dist/assets/images/stack/snowpack.svg.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/stack/mui.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/tailwind.svg.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/stack/socketio.svg.proxy.js": {
+          "bytesInOutput": 48
+        },
+        "dist/assets/images/stack/i18next.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/assets/images/stack/solidjs.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/assets/images/stack/webcomponents.svg.proxy.js": {
+          "bytesInOutput": 53
+        },
+        "dist/assets/images/stack/puppeteer.svg.proxy.js": {
+          "bytesInOutput": 49
+        },
+        "dist/assets/images/stack/recoil.svg.proxy.js": {
+          "bytesInOutput": 46
+        },
+        "dist/assets/images/stack/reactnative.svg.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/assets/images/stack/swift.svg.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/swiftui.svg.proxy.js": {
+          "bytesInOutput": 47
+        },
+        "dist/assets/images/stack/kotlin.svg.proxy.js": {
+          "bytesInOutput": 46
+        },
+        "dist/assets/images/stack/ajc.svg.proxy.js": {
+          "bytesInOutput": 43
+        },
+        "dist/assets/images/stack/jotai.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/quill.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/mysql.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/pgsql.png.proxy.js": {
+          "bytesInOutput": 45
+        },
+        "dist/assets/images/stack/grpc.png.proxy.js": {
+          "bytesInOutput": 44
+        },
+        "dist/components/careerscard/StackCard.js": {
+          "bytesInOutput": 415
+        },
+        "dist/components/careers/TechStack.js": {
+          "bytesInOutput": 2654
+        },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 1031
+          "bytesInOutput": 1056
         },
         "dist/pages/careers/VacancyPage.js": {
           "bytesInOutput": 901
@@ -1448,7 +1898,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 258115
+      "bytes": 262954
     }
   }
 }
