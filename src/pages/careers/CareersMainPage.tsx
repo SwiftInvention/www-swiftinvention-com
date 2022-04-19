@@ -28,7 +28,7 @@ const vacancyList: {
     text: 'Front End Engineer',
     image: frontendImage,
     id: 'frontend',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'SRE Engineer (DevOps)',
@@ -38,7 +38,8 @@ const vacancyList: {
   },
   {
     text: 'Data Scientist',
-    image: frontendImage,
+    // image: frontendImage,
+    image: qaImage,
     id: 'datascientist',
     disabled: false,
   },
