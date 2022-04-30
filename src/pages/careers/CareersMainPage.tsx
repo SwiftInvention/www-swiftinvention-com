@@ -1,5 +1,6 @@
 import React from 'react';
 import { CareersCard } from '~/components/careerscard/CareersCard';
+import mobileImage from '~/assets/images/mobile.png';
 import frontendImage from '~/assets/images/frontend-white.png';
 import devopsImage from '~/assets/images/devops-white.png';
 import backendImage from '~/assets/images/backend-white.png';
@@ -25,10 +26,16 @@ const vacancyList: {
     id: 'backend',
   },
   {
+    text: 'Mobile Developer (iOS/Android)',
+    image: mobileImage,
+    id: 'mobile',
+    disabled: false,
+  },
+  {
     text: 'Front End Engineer',
     image: frontendImage,
     id: 'frontend',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'SRE Engineer (DevOps)',
@@ -41,7 +48,7 @@ const vacancyList: {
     // image: frontendImage,
     image: qaImage,
     id: 'datascientist',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'QA  Engineer',
