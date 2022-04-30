@@ -892,6 +892,10 @@
         }
       ]
     },
+    "dist/assets/images/mobile.png.proxy.js": {
+      "bytes": 48,
+      "imports": []
+    },
     "dist/assets/images/frontend-white.png.proxy.js": {
       "bytes": 56,
       "imports": []
@@ -1239,7 +1243,7 @@
       ]
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2398,
+      "bytes": 2463,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1247,6 +1251,10 @@
         },
         {
           "path": "dist/components/careerscard/CareersCard.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/mobile.png.proxy.js",
           "kind": "import-statement"
         },
         {
@@ -1735,6 +1743,9 @@
         "dist/components/careerscard/CareersCard.js": {
           "bytesInOutput": 396
         },
+        "dist/assets/images/mobile.png.proxy.js": {
+          "bytesInOutput": 40
+        },
         "dist/assets/images/frontend-white.png.proxy.js": {
           "bytesInOutput": 48
         },
@@ -1898,7 +1909,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263027
+      "bytes": 263067
     }
   }
 }
