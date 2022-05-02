@@ -1243,7 +1243,7 @@
       ]
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2463,
+      "bytes": 2558,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1882,7 +1882,7 @@
           "bytesInOutput": 2654
         },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 1129
+          "bytesInOutput": 1190
         },
         "dist/pages/careers/VacancyPage.js": {
           "bytesInOutput": 901
@@ -1909,7 +1909,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263067
+      "bytes": 263128
     }
   }
 }
