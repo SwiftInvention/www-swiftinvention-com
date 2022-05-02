@@ -21,9 +21,14 @@ const vacancyList: {
     // disabled: true,
   },
   {
-    text: 'Software Engineer',
+    text: 'Software Engineer (Scala)',
     image: backendImage,
     id: 'backend',
+  },
+  {
+    text: 'Software Engineer (Rust)',
+    image: backendImage,
+    id: 'rust',
   },
   {
     text: 'Mobile Developer (iOS/Android)',
