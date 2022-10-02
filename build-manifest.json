@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 27229,
+      "bytes": 26347,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -540,7 +540,7 @@
       ]
     },
     "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-      "bytes": 4095,
+      "bytes": 3820,
       "imports": []
     },
     "dist/pages/feedback/FeedbackPage.js": {
@@ -1494,10 +1494,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16524
+          "bytesInOutput": 15835
         }
       },
-      "bytes": 16525
+      "bytes": 15836
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1651,7 +1651,7 @@
           "bytesInOutput": 18714
         },
         "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-          "bytesInOutput": 3775
+          "bytesInOutput": 3510
         },
         "dist/pages/feedback/FeedbackPage.js": {
           "bytesInOutput": 2745
@@ -1909,7 +1909,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263128
+      "bytes": 262863
     }
   }
 }
