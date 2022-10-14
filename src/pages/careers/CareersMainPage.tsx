@@ -18,7 +18,7 @@ const vacancyList: {
     text: 'Software Architect',
     image: saImage,
     id: 'architect',
-    // disabled: true,
+    disabled: true,
   },
   {
     text: 'Software Engineer (Scala)',
