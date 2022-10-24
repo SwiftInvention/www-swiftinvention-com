@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Footer } from '~/components/footer/Footer';
 import { Header } from '~/components/header/Header';
-import { routes } from '~/routes/routes';
+import { getByName, routes } from '~/routes/routes';
 
 export interface DefaultPageProps {}
 
@@ -13,7 +13,9 @@ export const DefaultPage: React.FC<DefaultPageProps> = ({ children }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname !== getByName(routes, 'TechStack').link) {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return (

@@ -45,6 +45,12 @@ export const routes: Array<RouteProps> = [
     isInFooter: true,
   },
   {
+    name: 'TechStack',
+    link: '/tech-stack',
+    isInHeader: false,
+    isInFooter: false,
+  },
+  {
     name: 'News',
     link: '/news',
     isInHeader: false,

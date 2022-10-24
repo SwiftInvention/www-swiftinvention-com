@@ -22,6 +22,9 @@ export const CareersPage: React.FC = () => {
               <Route exact path="/careers">
                 <CareersMainPage />
               </Route>
+              <Route exact path="/tech-stack">
+                <CareersMainPage />
+              </Route>
               <Route path="/careers/:id">
                 <VacancyPage />
               </Route>
