@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { RefObject, useCallback, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import { CareersCard } from '~/components/careerscard/CareersCard';
 import mobileImage from '~/assets/images/mobile.png';
 import frontendImage from '~/assets/images/frontend-white.png';
@@ -7,6 +8,7 @@ import backendImage from '~/assets/images/backend-white.png';
 import saImage from '~/assets/images/sa-white.png';
 import qaImage from '~/assets/images/qa-white.png';
 import { TechStack } from '~/components/careers/TechStack';
+import { getByName, routes } from '~/routes/routes';
 
 const vacancyList: {
   text: string;
@@ -63,11 +65,32 @@ const vacancyList: {
   },
 ];
 
+const useScrollRef = (): [
+  RefObject<HTMLDivElement>,
+  (node: HTMLDivElement) => void
+] => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const setRef = useCallback((node) => {
+    ref.current = node;
+  }, []);
+
+  return [ref, setRef];
+};
+
 export const getVacancyNameById = (id: string): string | undefined => {
   return vacancyList.find((vacancy) => id === vacancy.id)?.text;
 };
 
 export const CareersMainPage: React.FC = () => {
+  const { pathname } = useLocation();
+  const [techStackRef, setTechStackRef] = useScrollRef();
+
+  useEffect(() => {
+    if (pathname === getByName(routes, 'TechStack').link) {
+      techStackRef.current?.scrollIntoView();
+    }
+  }, [pathname, techStackRef]);
+
   return (
     <>
       <div className="max-w-xl">
@@ -93,6 +116,7 @@ export const CareersMainPage: React.FC = () => {
           ) : null;
         })}
       </ul>
+      <div ref={setTechStackRef} />
       <TechStack />
     </>
   );

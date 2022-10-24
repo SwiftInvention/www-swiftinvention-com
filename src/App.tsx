@@ -6,7 +6,6 @@ import { NotFoundPage } from './pages/notfound/NotFoundPage';
 import { ErrorPage } from './pages/error/ErrorPage';
 import { HomePage } from './pages/home/HomePage';
 import { routes, getByName } from '~/routes/routes';
-import { NewProductsPage } from './pages/latest/NewProductsPage';
 import { ServicesPage } from './pages/services/ServicesPage';
 import { CasesPage } from './pages/cases/CasesPage';
 import { NewsPage } from './pages/news/NewsPage';
@@ -20,8 +19,6 @@ import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
 import { CareersPage } from './pages/careers/CareersPage';
 import { MyBlueSkiesCasePage } from './pages/cases/MyBlueSkiesCasePage';
-
-interface AppProps {}
 
 function App() {
   return (
@@ -47,6 +44,10 @@ function App() {
           />
           <PublicRoute
             path={getByName(routes, 'Careers').link}
+            component={CareersPage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'TechStack').link}
             component={CareersPage}
           />
           <PublicRoute
