@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 26347,
+      "bytes": 27229,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -17,7 +17,7 @@
       "imports": []
     },
     "_snowpack/pkg/react.js": {
-      "bytes": 250,
+      "bytes": 300,
       "imports": [
         {
           "path": "_snowpack/pkg/common/index-e66f0a38.js",
@@ -194,7 +194,7 @@
       ]
     },
     "dist/routes/routes.js": {
-      "bytes": 1649,
+      "bytes": 1751,
       "imports": []
     },
     "dist/components/header/Header.js": {
@@ -227,7 +227,7 @@
       ]
     },
     "dist/pages/default/DefaultPage.js": {
-      "bytes": 1222,
+      "bytes": 1301,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -540,7 +540,7 @@
       ]
     },
     "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-      "bytes": 3820,
+      "bytes": 4095,
       "imports": []
     },
     "dist/pages/feedback/FeedbackPage.js": {
@@ -1243,10 +1243,14 @@
       ]
     },
     "dist/pages/careers/CareersMainPage.js": {
-      "bytes": 2579,
+      "bytes": 3236,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
           "kind": "import-statement"
         },
         {
@@ -1280,6 +1284,10 @@
         {
           "path": "dist/components/careers/TechStack.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "dist/routes/routes.js",
+          "kind": "import-statement"
         }
       ]
     },
@@ -1309,7 +1317,7 @@
       ]
     },
     "dist/pages/careers/CareersPage.js": {
-      "bytes": 1354,
+      "bytes": 1506,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1371,7 +1379,7 @@
       ]
     },
     "dist/App.js": {
-      "bytes": 3580,
+      "bytes": 3711,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1494,10 +1502,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 15835
+          "bytesInOutput": 16524
         }
       },
-      "bytes": 15836
+      "bytes": 16525
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1513,7 +1521,7 @@
           "bytesInOutput": 7162
         },
         "_snowpack/pkg/react.js": {
-          "bytesInOutput": 45
+          "bytesInOutput": 62
         },
         "_snowpack/pkg/react-dom.js": {
           "bytesInOutput": 124096
@@ -1561,13 +1569,13 @@
           "bytesInOutput": 1073
         },
         "dist/routes/routes.js": {
-          "bytesInOutput": 1014
+          "bytesInOutput": 1080
         },
         "dist/components/header/Header.js": {
           "bytesInOutput": 1059
         },
         "dist/pages/default/DefaultPage.js": {
-          "bytesInOutput": 513
+          "bytesInOutput": 542
         },
         "dist/assets/images/home-header-bg.png.proxy.js": {
           "bytesInOutput": 48
@@ -1651,7 +1659,7 @@
           "bytesInOutput": 18714
         },
         "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-          "bytesInOutput": 3510
+          "bytesInOutput": 3775
         },
         "dist/pages/feedback/FeedbackPage.js": {
           "bytesInOutput": 2745
@@ -1882,13 +1890,13 @@
           "bytesInOutput": 2654
         },
         "dist/pages/careers/CareersMainPage.js": {
-          "bytesInOutput": 1202
+          "bytesInOutput": 1429
         },
         "dist/pages/careers/VacancyPage.js": {
           "bytesInOutput": 901
         },
         "dist/pages/careers/CareersPage.js": {
-          "bytesInOutput": 591
+          "bytesInOutput": 666
         },
         "dist/assets/images/logos/mbs-logo-2x.png.proxy.js": {
           "bytesInOutput": 51
@@ -1900,7 +1908,7 @@
           "bytesInOutput": 2134
         },
         "dist/App.js": {
-          "bytesInOutput": 1132
+          "bytesInOutput": 1196
         },
         "dist/index.css": {
           "bytesInOutput": 0
@@ -1909,7 +1917,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 262875
+      "bytes": 263618
     }
   }
 }
