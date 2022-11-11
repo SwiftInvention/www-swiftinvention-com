@@ -37,11 +37,6 @@
   color: rgba(0, 0, 0, var(--tw-placeholder-opacity))
 }
 
-.inputElem:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-placeholder-opacity))
-}
-
 .inputElem::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-placeholder-opacity))
@@ -81,11 +76,6 @@
 }
 
 .areaElem::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-placeholder-opacity))
-}
-
-.areaElem:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-placeholder-opacity))
 }
