@@ -23,6 +23,12 @@ const vacancyList: {
     disabled: true,
   },
   {
+    text: 'SRE Engineer (DevOps)',
+    image: devopsImage,
+    id: 'devops',
+    disabled: false,
+  },
+  {
     text: 'Software Engineer (Scala)',
     image: backendImage,
     id: 'backend',
@@ -43,12 +49,6 @@ const vacancyList: {
     image: frontendImage,
     id: 'frontend',
     disabled: false,
-  },
-  {
-    text: 'SRE Engineer (DevOps)',
-    image: devopsImage,
-    id: 'devops',
-    disabled: true,
   },
   {
     text: 'Data Scientist',
