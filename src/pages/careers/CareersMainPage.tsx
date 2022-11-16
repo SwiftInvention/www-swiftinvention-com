@@ -39,6 +39,12 @@ const vacancyList: {
     id: 'rust',
   },
   {
+    text: 'Fullstack Node.js Engineer',
+    image: backendImage,
+    id: 'fullstack-node',
+    disabled: false,
+  },
+  {
     text: 'Mobile Developer (iOS/Android)',
     image: mobileImage,
     id: 'mobile',
