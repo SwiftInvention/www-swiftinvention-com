@@ -23,7 +23,7 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
     const p = phone ? `Phone: ${phone}\n` : '';
     const m = message ? `Message:\n${message}\n` : '';
     const body = encodeURIComponent(n + e + p + m);
-    const mailto = `mailto:ptrevithick@swiftinvention.com?subject=${subject}&body=${body}`;
+    const mailto = `mailto:contact@swiftinvention.com?subject=${subject}&body=${body}`;
     window.open(mailto, '_blank');
   });
 
