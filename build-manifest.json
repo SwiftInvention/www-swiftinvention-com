@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 26347,
+      "bytes": 27229,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -540,11 +540,11 @@
       ]
     },
     "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-      "bytes": 3820,
+      "bytes": 4095,
       "imports": []
     },
     "dist/pages/feedback/FeedbackPage.js": {
-      "bytes": 4583,
+      "bytes": 4579,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1502,10 +1502,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 15835
+          "bytesInOutput": 16524
         }
       },
-      "bytes": 15836
+      "bytes": 16525
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1659,10 +1659,10 @@
           "bytesInOutput": 18714
         },
         "dist/pages/feedback/FeedbackPage.module.css.proxy.js": {
-          "bytesInOutput": 3510
+          "bytesInOutput": 3775
         },
         "dist/pages/feedback/FeedbackPage.js": {
-          "bytesInOutput": 2745
+          "bytesInOutput": 2741
         },
         "dist/assets/images/case-details-bg-2x.png.proxy.js": {
           "bytesInOutput": 52
@@ -1917,7 +1917,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263430
+      "bytes": 263691
     }
   }
 }
