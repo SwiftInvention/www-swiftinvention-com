@@ -432,20 +432,8 @@
         }
       ]
     },
-    "dist/assets/images/cards/azigo-card-2x.png.proxy.js": {
-      "bytes": 61,
-      "imports": []
-    },
-    "dist/assets/images/cards/confyrm-card-2x.png.proxy.js": {
-      "bytes": 63,
-      "imports": []
-    },
     "dist/assets/images/cards/privo-card-2x.png.proxy.js": {
       "bytes": 61,
-      "imports": []
-    },
-    "dist/assets/images/cards/belbella-card-2x.png.proxy.js": {
-      "bytes": 64,
       "imports": []
     },
     "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js": {
@@ -465,7 +453,7 @@
       "imports": []
     },
     "dist/pages/cases/CasesPage.js": {
-      "bytes": 4215,
+      "bytes": 3281,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -484,19 +472,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/assets/images/cards/azigo-card-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/assets/images/cards/confyrm-card-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
           "path": "dist/assets/images/cards/privo-card-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/assets/images/cards/belbella-card-2x.png.proxy.js",
           "kind": "import-statement"
         },
         {
@@ -1625,17 +1601,8 @@
         "dist/components/casestudy/CaseStudyCard.js": {
           "bytesInOutput": 864
         },
-        "dist/assets/images/cards/azigo-card-2x.png.proxy.js": {
-          "bytesInOutput": 53
-        },
-        "dist/assets/images/cards/confyrm-card-2x.png.proxy.js": {
-          "bytesInOutput": 55
-        },
         "dist/assets/images/cards/privo-card-2x.png.proxy.js": {
           "bytesInOutput": 53
-        },
-        "dist/assets/images/cards/belbella-card-2x.png.proxy.js": {
-          "bytesInOutput": 56
         },
         "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js": {
           "bytesInOutput": 59
@@ -1650,7 +1617,7 @@
           "bytesInOutput": 51
         },
         "dist/pages/cases/CasesPage.js": {
-          "bytesInOutput": 2205
+          "bytesInOutput": 1775
         },
         "dist/pages/news/NewsPage.js": {
           "bytesInOutput": 50
@@ -1917,7 +1884,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263691
+      "bytes": 263097
     }
   }
 }
