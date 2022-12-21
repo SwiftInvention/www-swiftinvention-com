@@ -3,10 +3,10 @@ import { DefaultPage } from '../default/DefaultPage';
 import casesBg from '~/assets/images/cases-bg.png';
 import { CaseStudyCard } from '~/components/casestudy/CaseStudyCard';
 
-import azigoCardBg from '~/assets/images/cards/azigo-card-2x.png';
-import confyrmCardBg from '~/assets/images/cards/confyrm-card-2x.png';
+// import azigoCardBg from '~/assets/images/cards/azigo-card-2x.png';
+// import confyrmCardBg from '~/assets/images/cards/confyrm-card-2x.png';
 import privoCardBg from '~/assets/images/cards/privo-card-2x.png';
-import belbellaCardBg from '~/assets/images/cards/belbella-card-2x.png';
+// import belbellaCardBg from '~/assets/images/cards/belbella-card-2x.png';
 import blankslateCardBg from '~/assets/images/cards/blank-slate-card-2x.png';
 import eversanaCardBg from '~/assets/images/cards/eversana-card-2x.png';
 import enkCardBg from '~/assets/images/cards/enk-card-2x.png';
@@ -38,7 +38,9 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
               </div>
             </div>
             <ul className="mt-16 sm:mt-24 pb-25 grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-7">
-              <CaseStudyCard
+              {/**
+               * 
+               <CaseStudyCard
                 image={azigoCardBg}
                 title="Azigo"
                 description="Online retailer loyalty platform"
@@ -51,18 +53,19 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 description="Online service that delivers identity security alerts to reduce fraud and detect threats"
               />
               <CaseStudyCard
-                image={privoCardBg}
-                title="Privo"
-                link={getByName(routes, 'Privo').link}
-                description="Children&#39;s Online Identity &amp; 
-                Consent Management"
-                crop="object-right"
-              />
-              <CaseStudyCard
                 image={belbellaCardBg}
                 title="BelBella"
                 link={getByName(routes, 'BelBella').link}
                 description="On-demand beauty services"
+                crop="object-right"
+              />
+               */}
+              <CaseStudyCard
+                image={privoCardBg}
+                title="PRIVO"
+                link={getByName(routes, 'Privo').link}
+                description="Children&#39;s Online Identity &amp; 
+                Consent Management"
                 crop="object-right"
               />
               <CaseStudyCard

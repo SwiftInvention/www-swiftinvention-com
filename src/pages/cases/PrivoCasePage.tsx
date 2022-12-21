@@ -168,7 +168,7 @@ export const PrivoCasePage: React.FC = () => {
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
         src={privoLaptop}
-        alt="Privo page"
+        alt="PRIVO page"
       />
     </div>
   );
