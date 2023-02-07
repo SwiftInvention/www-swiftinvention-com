@@ -69,6 +69,12 @@ const vacancyList: {
     id: 'tester',
     disabled: true,
   },
+  {
+    text: 'Backend (PHP) Engineer',
+    image: backendImage,
+    id: 'fullstack-php',
+    disabled: false,
+  },
 ];
 
 const useScrollRef = (): [
