@@ -32,23 +32,25 @@ const vacancyList: {
     text: 'Backend (Node.js) Engineer',
     image: backendImage,
     id: 'fullstack-node',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'Front End Engineer',
     image: frontendImage,
     id: 'frontend',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'Software Engineer (Scala)',
     image: backendImage,
     id: 'backend',
+    disabled: true,
   },
   {
     text: 'Software Engineer (Rust)',
     image: backendImage,
     id: 'rust',
+    disabled: true,
   },
   {
     text: 'Mobile Developer (iOS/Android)',
