@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ navItems }) => {
         </div>
         <div className="text-primaryCol2 text-xs font-sans font-medium pt-6">
           <div className="flex flex-row justify-between">
-            <p>© 2022 Swift Invention, Inc.</p>
+            <p>© 2023 Swift Invention, Inc.</p>
             <div className="hidden md:block primaryCol2space-nowrap space-x-5 md:mr-4 lg:mr-14">
               {navItems.map((value) => {
                 return (
