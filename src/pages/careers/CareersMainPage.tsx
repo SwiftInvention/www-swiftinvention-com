@@ -70,7 +70,7 @@ const vacancyList: {
     disabled: true,
   },
   {
-    text: 'Backend (PHP) Engineer',
+    text: 'Fullstack (PHP) Engineer',
     image: backendImage,
     id: 'fullstack-php',
     disabled: false,
