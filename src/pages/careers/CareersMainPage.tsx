@@ -44,7 +44,7 @@ const vacancyList: {
     text: 'Software Engineer (Scala)',
     image: backendImage,
     id: 'backend',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'Software Engineer (Rust)',
@@ -75,7 +75,7 @@ const vacancyList: {
     text: 'Fullstack (PHP) Engineer',
     image: backendImage,
     id: 'fullstack-php',
-    disabled: false,
+    disabled: true,
   },
 ];
 
