@@ -116,4 +116,10 @@ export const routes: Array<RouteProps> = [
     isInFooter: false,
     isInHeader: false,
   },
+  {
+    name: 'Pakira',
+    link: '/pakira',
+    isInFooter: false,
+    isInHeader: false,
+  },
 ];

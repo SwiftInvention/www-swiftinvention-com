@@ -19,6 +19,7 @@ import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
 import { CareersPage } from './pages/careers/CareersPage';
 import { MyBlueSkiesCasePage } from './pages/cases/MyBlueSkiesCasePage';
+import { PakiraCasePage } from './pages/cases/PakiraCasePage';
 
 function App() {
   return (
@@ -89,6 +90,10 @@ function App() {
           <PublicRoute
             path={getByName(routes, 'MyBlueSkies').link}
             component={MyBlueSkiesCasePage}
+          />
+          <PublicRoute
+            path={getByName(routes, 'Pakira').link}
+            component={PakiraCasePage}
           />
 
           <PublicRoute

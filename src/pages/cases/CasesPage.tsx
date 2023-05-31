@@ -11,6 +11,7 @@ import blankslateCardBg from '~/assets/images/cards/blank-slate-card-2x.png';
 import eversanaCardBg from '~/assets/images/cards/eversana-card-2x.png';
 import enkCardBg from '~/assets/images/cards/enk-card-2x.png';
 import mbsCardBg from '~/assets/images/cards/mbs-card-2x.png';
+import pakiraCardBg from '~/assets/images/cards/pakira-card.png';
 import { routes, getByName } from '~/routes/routes';
 
 export interface CasesPageProps {}
@@ -93,6 +94,12 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 title="MyBlueSkies"
                 link={getByName(routes, 'MyBlueSkies').link}
                 description="An online platform for teaching and streaming designed for musicians by musicians to connect musicians"
+              />
+              <CaseStudyCard
+                image={pakiraCardBg}
+                title="Pakira"
+                link={getByName(routes, 'Pakira').link}
+                description="SaaS industry directory, chat, forum, and order tracking for businesses in the wholesale wood industry"
               />
             </ul>
           </div>
