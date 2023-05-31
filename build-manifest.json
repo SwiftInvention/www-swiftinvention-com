@@ -1,7 +1,7 @@
 {
   "inputs": {
     "dist/index.css": {
-      "bytes": 27229,
+      "bytes": 27273,
       "imports": []
     },
     "_snowpack/env.js": {
@@ -194,7 +194,7 @@
       ]
     },
     "dist/routes/routes.js": {
-      "bytes": 1751,
+      "bytes": 1846,
       "imports": []
     },
     "dist/components/header/Header.js": {
@@ -416,7 +416,7 @@
       "imports": []
     },
     "dist/components/casestudy/CaseStudyCard.js": {
-      "bytes": 1343,
+      "bytes": 1352,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -452,8 +452,12 @@
       "bytes": 59,
       "imports": []
     },
+    "dist/assets/images/cards/pakira-card.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
     "dist/pages/cases/CasesPage.js": {
-      "bytes": 3281,
+      "bytes": 3631,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -489,6 +493,10 @@
         },
         {
           "path": "dist/assets/images/cards/mbs-card-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/cards/pakira-card.png.proxy.js",
           "kind": "import-statement"
         },
         {
@@ -1354,8 +1362,41 @@
         }
       ]
     },
+    "dist/assets/images/logos/pakira-logo.svg.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/assets/images/laptops/pakira-2x.png.proxy.js": {
+      "bytes": 59,
+      "imports": []
+    },
+    "dist/pages/cases/PakiraCasePage.js": {
+      "bytes": 3721,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/logos/pakira-logo.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/assets/images/laptops/pakira-2x.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/App.js": {
-      "bytes": 3711,
+      "bytes": 3906,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1440,6 +1481,10 @@
         {
           "path": "dist/pages/cases/MyBlueSkiesCasePage.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/cases/PakiraCasePage.js",
+          "kind": "import-statement"
         }
       ]
     },
@@ -1478,10 +1523,10 @@
       "imports": [],
       "inputs": {
         "dist/index.css": {
-          "bytesInOutput": 16524
+          "bytesInOutput": 16553
         }
       },
-      "bytes": 16525
+      "bytes": 16554
     },
     "../~~bundle~~/dist/index.js": {
       "imports": [],
@@ -1545,7 +1590,7 @@
           "bytesInOutput": 1073
         },
         "dist/routes/routes.js": {
-          "bytesInOutput": 1080
+          "bytesInOutput": 1139
         },
         "dist/components/header/Header.js": {
           "bytesInOutput": 1059
@@ -1599,7 +1644,7 @@
           "bytesInOutput": 42
         },
         "dist/components/casestudy/CaseStudyCard.js": {
-          "bytesInOutput": 864
+          "bytesInOutput": 873
         },
         "dist/assets/images/cards/privo-card-2x.png.proxy.js": {
           "bytesInOutput": 53
@@ -1616,8 +1661,11 @@
         "dist/assets/images/cards/mbs-card-2x.png.proxy.js": {
           "bytesInOutput": 51
         },
+        "dist/assets/images/cards/pakira-card.png.proxy.js": {
+          "bytesInOutput": 51
+        },
         "dist/pages/cases/CasesPage.js": {
-          "bytesInOutput": 1775
+          "bytesInOutput": 1964
         },
         "dist/pages/news/NewsPage.js": {
           "bytesInOutput": 50
@@ -1874,8 +1922,17 @@
         "dist/pages/cases/MyBlueSkiesCasePage.js": {
           "bytesInOutput": 2134
         },
+        "dist/assets/images/logos/pakira-logo.svg.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/assets/images/laptops/pakira-2x.png.proxy.js": {
+          "bytesInOutput": 51
+        },
+        "dist/pages/cases/PakiraCasePage.js": {
+          "bytesInOutput": 2262
+        },
         "dist/App.js": {
-          "bytesInOutput": 1196
+          "bytesInOutput": 1257
         },
         "dist/index.css": {
           "bytesInOutput": 0
@@ -1884,7 +1941,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 263195
+      "bytes": 265928
     }
   }
 }
