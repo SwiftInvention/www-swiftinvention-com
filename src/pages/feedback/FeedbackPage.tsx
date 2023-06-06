@@ -47,7 +47,7 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
             <div className="max-w-md font-sans text-secondaryCol1">
               <div className="text-4xl font-medium mb-5">Contact Us</div>
               <div className="text-lg font-normal leading-6">
-                Have a project? What to learn more about Swift? Want to work
+                Have a project? Want to learn more about Swift? Want to work
                 with us? Fill out our contact form here and we’ll get back to
                 you within 48 hours
               </div>
