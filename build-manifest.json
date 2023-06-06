@@ -835,7 +835,7 @@
       "imports": []
     },
     "dist/pages/cases/EnkCasePage.js": {
-      "bytes": 3016,
+      "bytes": 3015,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1758,7 +1758,7 @@
           "bytesInOutput": 48
         },
         "dist/pages/cases/EnkCasePage.js": {
-          "bytesInOutput": 1815
+          "bytesInOutput": 1814
         },
         "_snowpack/pkg/dompurify.js": {
           "bytesInOutput": 20148
@@ -1941,7 +1941,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 265928
+      "bytes": 265927
     }
   }
 }
