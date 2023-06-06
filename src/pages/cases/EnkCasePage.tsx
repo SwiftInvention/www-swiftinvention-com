@@ -75,7 +75,7 @@ export const EnkCasePage: React.FC = () => {
       rightColumnItems={rightColumnItems}
       previousCase="EVERSANA"
       nextCase="MyBlueSkies"
-      url="https://www.pakira.com/"
+      url="https://eatnakedkitchen.com/"
     />
   );
 };
