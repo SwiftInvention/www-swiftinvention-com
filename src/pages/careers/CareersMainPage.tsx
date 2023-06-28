@@ -50,7 +50,7 @@ const vacancyList: {
     text: 'Software Engineer (Rust)',
     image: backendImage,
     id: 'rust',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'Mobile Developer (iOS/Android)',
