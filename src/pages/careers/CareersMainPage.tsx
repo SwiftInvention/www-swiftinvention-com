@@ -38,7 +38,7 @@ const vacancyList: {
     text: 'Front End Engineer',
     image: frontendImage,
     id: 'frontend',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'Software Engineer (Scala)',
