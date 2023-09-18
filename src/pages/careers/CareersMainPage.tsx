@@ -56,7 +56,7 @@ const vacancyList: {
     text: 'Mobile Developer (iOS/Android)',
     image: mobileImage,
     id: 'mobile',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'Data Scientist',
