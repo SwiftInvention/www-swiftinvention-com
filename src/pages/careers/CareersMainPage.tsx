@@ -59,10 +59,10 @@ const vacancyList: {
     disabled: false,
   },
   {
-    text: 'Data Scientist',
+    text: 'Data Engineer',
     // image: frontendImage,
     image: qaImage,
-    id: 'datascientist',
+    id: 'dataengineer',
     disabled: false,
   },
   {
