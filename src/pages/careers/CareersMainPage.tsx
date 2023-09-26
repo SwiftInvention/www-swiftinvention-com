@@ -63,7 +63,7 @@ const vacancyList: {
     // image: frontendImage,
     image: qaImage,
     id: 'datascientist',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'QA  Engineer',
