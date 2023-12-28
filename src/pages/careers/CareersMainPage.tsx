@@ -29,10 +29,10 @@ const vacancyList: {
     disabled: false,
   },
   {
-    text: 'Backend (Node.js) Engineer',
+    text: 'Fullstack (NodeJS/React) Engineer',
     image: backendImage,
     id: 'fullstack-node',
-    disabled: true,
+    disabled: false,
   },
   {
     text: 'Front End Engineer',
