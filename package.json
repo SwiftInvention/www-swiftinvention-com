@@ -69,5 +69,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }

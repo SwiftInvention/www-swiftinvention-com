@@ -41,7 +41,7 @@ const vacancyList: {
     disabled: false,
   },
   {
-    text: 'Software Engineer (Scala)',
+    text: 'Senior Software Engineer (Scala)',
     image: backendImage,
     id: 'backend',
     disabled: false,
@@ -56,14 +56,14 @@ const vacancyList: {
     text: 'Mobile Developer (iOS/Android)',
     image: mobileImage,
     id: 'mobile',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'Data Engineer',
     // image: frontendImage,
     image: qaImage,
     id: 'dataengineer',
-    disabled: false,
+    disabled: true,
   },
   {
     text: 'QA  Engineer',
