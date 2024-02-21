@@ -440,10 +440,6 @@
       "bytes": 67,
       "imports": []
     },
-    "dist/assets/images/cards/eversana-card-2x.png.proxy.js": {
-      "bytes": 64,
-      "imports": []
-    },
     "dist/assets/images/cards/enk-card-2x.png.proxy.js": {
       "bytes": 59,
       "imports": []
@@ -457,7 +453,7 @@
       "imports": []
     },
     "dist/pages/cases/CasesPage.js": {
-      "bytes": 3631,
+      "bytes": 3279,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -481,10 +477,6 @@
         },
         {
           "path": "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/assets/images/cards/eversana-card-2x.png.proxy.js",
           "kind": "import-statement"
         },
         {
@@ -769,7 +761,7 @@
       "imports": []
     },
     "dist/pages/cases/BlankslateCasePage.js": {
-      "bytes": 4324,
+      "bytes": 4331,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -793,39 +785,6 @@
         }
       ]
     },
-    "dist/assets/images/logos/eversana-logo-2x.png.proxy.js": {
-      "bytes": 64,
-      "imports": []
-    },
-    "dist/assets/images/laptops/eversana-2x.png.proxy.js": {
-      "bytes": 61,
-      "imports": []
-    },
-    "dist/pages/cases/EversanaCasePage.js": {
-      "bytes": 3627,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/pages/cases/CaseDetailsPage.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/assets/images/logos/eversana-logo-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/assets/images/laptops/eversana-2x.png.proxy.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/pages/cases/CaseDetailsPage.module.css.proxy.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
     "dist/assets/images/logos/enk-logo-2x.png.proxy.js": {
       "bytes": 59,
       "imports": []
@@ -835,7 +794,7 @@
       "imports": []
     },
     "dist/pages/cases/EnkCasePage.js": {
-      "bytes": 3020,
+      "bytes": 3036,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1396,7 +1355,7 @@
       ]
     },
     "dist/App.js": {
-      "bytes": 3906,
+      "bytes": 3703,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1464,10 +1423,6 @@
         },
         {
           "path": "dist/pages/cases/BlankslateCasePage.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/pages/cases/EversanaCasePage.js",
           "kind": "import-statement"
         },
         {
@@ -1652,9 +1607,6 @@
         "dist/assets/images/cards/blank-slate-card-2x.png.proxy.js": {
           "bytesInOutput": 59
         },
-        "dist/assets/images/cards/eversana-card-2x.png.proxy.js": {
-          "bytesInOutput": 56
-        },
         "dist/assets/images/cards/enk-card-2x.png.proxy.js": {
           "bytesInOutput": 51
         },
@@ -1665,7 +1617,7 @@
           "bytesInOutput": 51
         },
         "dist/pages/cases/CasesPage.js": {
-          "bytesInOutput": 1964
+          "bytesInOutput": 1788
         },
         "dist/pages/news/NewsPage.js": {
           "bytesInOutput": 50
@@ -1740,16 +1692,7 @@
           "bytesInOutput": 55
         },
         "dist/pages/cases/BlankslateCasePage.js": {
-          "bytesInOutput": 2674
-        },
-        "dist/assets/images/logos/eversana-logo-2x.png.proxy.js": {
-          "bytesInOutput": 56
-        },
-        "dist/assets/images/laptops/eversana-2x.png.proxy.js": {
-          "bytesInOutput": 53
-        },
-        "dist/pages/cases/EversanaCasePage.js": {
-          "bytesInOutput": 2231
+          "bytesInOutput": 2681
         },
         "dist/assets/images/logos/enk-logo-2x.png.proxy.js": {
           "bytesInOutput": 51
@@ -1758,7 +1701,7 @@
           "bytesInOutput": 48
         },
         "dist/pages/cases/EnkCasePage.js": {
-          "bytesInOutput": 1819
+          "bytesInOutput": 1835
         },
         "_snowpack/pkg/dompurify.js": {
           "bytesInOutput": 20148
@@ -1932,7 +1875,7 @@
           "bytesInOutput": 2262
         },
         "dist/App.js": {
-          "bytesInOutput": 1257
+          "bytesInOutput": 1194
         },
         "dist/index.css": {
           "bytesInOutput": 0
@@ -1941,7 +1884,7 @@
           "bytesInOutput": 209
         }
       },
-      "bytes": 265944
+      "bytes": 263332
     }
   }
 }

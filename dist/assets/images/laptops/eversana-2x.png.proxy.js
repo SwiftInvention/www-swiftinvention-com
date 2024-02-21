@@ -1,0 +1,1 @@
+export default "/dist/assets/images/laptops/eversana-2x.png";
