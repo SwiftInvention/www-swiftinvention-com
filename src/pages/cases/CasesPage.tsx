@@ -76,13 +76,13 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 description="Enterprise Microlearning App"
                 crop="object-right"
               />
-              <CaseStudyCard
+              {/* <CaseStudyCard
                 image={eversanaCardBg}
                 title="EVERSANA"
                 link={getByName(routes, 'EVERSANA').link}
                 description="Advisory and information services for the pharmaceutical industry"
                 crop="object-right"
-              />
+              /> */}
               <CaseStudyCard
                 image={enkCardBg}
                 title="EatNakedKitchen"

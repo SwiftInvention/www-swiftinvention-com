@@ -73,7 +73,7 @@ export const EnkCasePage: React.FC = () => {
     <CaseDetailsPage
       leftColumnItems={leftColumnItems}
       rightColumnItems={rightColumnItems}
-      previousCase="EVERSANA"
+      previousCase="Blank Slate Technologies"
       nextCase="MyBlueSkies"
       url="https://eatnakedkitchen.com/"
     />

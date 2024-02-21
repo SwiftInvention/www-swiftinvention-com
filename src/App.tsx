@@ -79,10 +79,10 @@ function App() {
             path={getByName(routes, 'Blank Slate Technologies').link}
             component={BlankslateCasePage}
           />
-          <PublicRoute
+          {/* <PublicRoute
             path={getByName(routes, 'EVERSANA').link}
             component={EversanaCasePage}
-          />
+           /> */}
           <PublicRoute
             path={getByName(routes, 'EatNakedKitchen').link}
             component={EnkCasePage}
