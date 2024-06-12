@@ -1,33 +1,42 @@
-import type { ReportHandler } from 'web-vitals';
-import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
+import type {
+  CLSMetric,
+  FCPMetric,
+  INPMetric,
+  LCPMetric,
+  TTFBMetric,
+} from 'web-vitals';
+import { onCLS, onINP, onLCP, onFCP, onTTFB } from 'web-vitals';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
-// Learn more: https://snowpack.dev/concepts/hot-module-replacement
-if (import.meta.hot) {
-  import.meta.hot.accept();
+const rootEl = document.getElementById('root');
+if (rootEl) {
+  const root = createRoot(rootEl);
+  root.render(<App />);
 }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint.
-const reportWebVitals = (onPerfEntry?: ReportHandler) => {
+const reportWebVitals = (onPerfEntry: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (...data: any[]): void;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (message?: any, ...optionalParams: any[]): void;
+  (metric: CLSMetric): void;
+  (metric: INPMetric): void;
+  (metric: FCPMetric): void;
+  (metric: LCPMetric): void;
+  (metric: TTFBMetric): void;
+}) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    getCLS(onPerfEntry);
-    getFID(onPerfEntry);
-    getFCP(onPerfEntry);
-    getLCP(onPerfEntry);
-    getTTFB(onPerfEntry);
+    onCLS(onPerfEntry);
+    onINP(onPerfEntry);
+    onFCP(onPerfEntry);
+    onLCP(onPerfEntry);
+    onTTFB(onPerfEntry);
   }
 };
 

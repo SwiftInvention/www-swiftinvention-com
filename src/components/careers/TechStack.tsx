@@ -69,8 +69,7 @@ const techStackList: {
   {
     text: 'JavaScript',
     image: jsImage,
-    link:
-      'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/',
+    link: 'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/',
   },
   {
     text: 'ZIO',

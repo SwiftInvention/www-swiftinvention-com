@@ -1,7 +1,5 @@
 import React from 'react';
-import { Router, Switch } from 'react-router-dom';
-import { PublicRoute } from './routes/PublicRoute';
-import { history } from './utils/router';
+import { Routes, HashRouter, Route } from 'react-router-dom';
 import { NotFoundPage } from './pages/notfound/NotFoundPage';
 import { ErrorPage } from './pages/error/ErrorPage';
 import { HomePage } from './pages/home/HomePage';
@@ -15,94 +13,93 @@ import { ConfyrmCasePage } from './pages/cases/ConfyrmCasePage';
 import { PrivoCasePage } from './pages/cases/PrivoCasePage';
 import { BelbellaCasePage } from './pages/cases/BelbellaCasePage';
 import { BlankslateCasePage } from './pages/cases/BlankslateCasePage';
-import { EversanaCasePage } from './pages/cases/EversanaCasePage';
+// import { EversanaCasePage } from './pages/cases/EversanaCasePage';
 import { EnkCasePage } from './pages/cases/EnkCasePage';
 import { CareersPage } from './pages/careers/CareersPage';
 import { MyBlueSkiesCasePage } from './pages/cases/MyBlueSkiesCasePage';
 import { PakiraCasePage } from './pages/cases/PakiraCasePage';
+import { VacancyPage } from './pages/careers/VacancyPage';
 
 function App() {
   return (
     <div className="App">
-      <Router history={history}>
-        <Switch>
-          <PublicRoute
-            exact
-            path={getByName(routes, 'Home').link}
-            component={HomePage}
-          />
-          {/* <PublicRoute
+      {/* <Router history={history}> */}
+      <HashRouter>
+        <Routes>
+          <Route path={getByName(routes, 'Home').link} element={<HomePage />} />
+          {/* <Route
             path={getByName(routes, 'New Products').link}
-            component={NewProductsPage}
+            element={<NewProductsPage />}
           /> */}
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Services').link}
-            component={ServicesPage}
+            element={<ServicesPage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Case Studies').link}
-            component={CasesPage}
+            element={<CasesPage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Careers').link}
-            component={CareersPage}
+            element={<CareersPage />}
           />
-          <PublicRoute
+          <Route
+            path={getByName(routes, 'Careers').link + '/:id'}
+            element={<VacancyPage />}
+          />
+          <Route
             path={getByName(routes, 'TechStack').link}
-            component={CareersPage}
+            element={<CareersPage />}
           />
-          <PublicRoute
-            path={getByName(routes, 'News').link}
-            component={NewsPage}
-          />
-          <PublicRoute
+          <Route path={getByName(routes, 'News').link} element={<NewsPage />} />
+          <Route
             path={getByName(routes, 'Contact Us').link}
-            component={FeedbackPage}
+            element={<FeedbackPage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Azigo').link}
-            component={AzigoCasePage}
+            element={<AzigoCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Confyrm').link}
-            component={ConfyrmCasePage}
+            element={<ConfyrmCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Privo').link}
-            component={PrivoCasePage}
+            element={<PrivoCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'BelBella').link}
-            component={BelbellaCasePage}
+            element={<BelbellaCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Blank Slate Technologies').link}
-            component={BlankslateCasePage}
+            element={<BlankslateCasePage />}
           />
-          {/* <PublicRoute
+          {/* <Route
             path={getByName(routes, 'EVERSANA').link}
-            component={EversanaCasePage}
+            element={<EversanaCasePage />}
            /> */}
-          <PublicRoute
+          <Route
             path={getByName(routes, 'EatNakedKitchen').link}
-            component={EnkCasePage}
+            element={<EnkCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'MyBlueSkies').link}
-            component={MyBlueSkiesCasePage}
+            element={<MyBlueSkiesCasePage />}
           />
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Pakira').link}
-            component={PakiraCasePage}
+            element={<PakiraCasePage />}
           />
 
-          <PublicRoute
+          <Route
             path={getByName(routes, 'Error').link}
-            component={ErrorPage}
+            element={<ErrorPage />}
           />
-          <PublicRoute component={NotFoundPage} />
-        </Switch>
-      </Router>
+          <Route element={<NotFoundPage />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export interface ArrowedTextProps {
   text: string;
@@ -20,18 +20,13 @@ export const ArrowedText: React.FC<ArrowedTextProps> = ({
 }) => {
   return (
     <div
-      className={clsx(
-        mainColor && mainColor,
-        bgColor && bgColor,
+      className={twMerge(
+        'font-sans font-medium text-lg flex items-center py-1',
+        mainColor,
+        bgColor,
         highlightColor && `hover:${highlightColor}`,
         highlightBgColor && `hover:${highlightBgColor}`,
-        horizontalPadding || 'px-2 -ml-2',
-        'font-sans',
-        'font-medium',
-        'text-lg',
-        'flex',
-        'items-center',
-        'py-1'
+        horizontalPadding ?? 'px-2 -ml-2'
       )}
     >
       {text}

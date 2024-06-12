@@ -60,7 +60,6 @@ const vacancyList: {
   },
   {
     text: 'Data Engineer',
-    // image: frontendImage,
     image: qaImage,
     id: 'dataengineer',
     disabled: true,
@@ -81,10 +80,10 @@ const vacancyList: {
 
 const useScrollRef = (): [
   RefObject<HTMLDivElement>,
-  (node: HTMLDivElement) => void
+  (node: HTMLDivElement) => void,
 ] => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const setRef = useCallback((node) => {
+  const setRef = useCallback((node: HTMLDivElement) => {
     ref.current = node;
   }, []);
 
@@ -104,7 +103,6 @@ export const CareersMainPage: React.FC = () => {
       techStackRef.current?.scrollIntoView();
     }
   }, [pathname, techStackRef]);
-
   return (
     <>
       <div className="max-w-xl">
