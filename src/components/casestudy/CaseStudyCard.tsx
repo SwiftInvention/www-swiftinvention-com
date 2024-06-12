@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export interface CaseStudyCardProps {
   image: string;
@@ -22,7 +22,7 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
       <Link to={link}>
         <div className="absolute inset-0 opacity-20 sm:opacity-65 md:opacity-20 lg:opacity-65 group-hover:opacity-100">
           <img
-            className={clsx('h-full', 'object-cover', crop && crop)}
+            className={twMerge('h-full object-cover', crop)}
             src={image}
             alt="case study back"
           />

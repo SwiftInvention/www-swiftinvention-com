@@ -17,7 +17,7 @@ export default {
       secondaryCol6: '#C2C2C2',
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    stroke: (theme) => ({
+    stroke: (theme: (arg0: string) => any) => ({
       orange: theme('colors.orange.coral'),
       black: theme('colors.black'),
     }),

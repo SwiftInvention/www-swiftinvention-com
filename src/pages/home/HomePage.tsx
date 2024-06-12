@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import clsx from 'clsx';
 import { DefaultPage } from '../default/DefaultPage';
 import homeHeaderBg from '~/assets/images/home-header-bg.png';
 import homeServicesBg from '~/assets/images/home-services-bg.png';
@@ -9,14 +8,12 @@ import computerCode from '~/assets/images/computer-code.svg';
 import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
 import { routes, getByName } from '~/routes/routes';
 
-import styles from './HomePage.module.css';
-
 export interface HomePageProps {}
 
 export const HomePage: React.FC<HomePageProps> = () => {
   return (
     <DefaultPage>
-      <div className={clsx('relative', styles.headerBgOverlay)}>
+      <div className="relative min-h-[582px]">
         <div className="absolute inset-0 mx-auto max-w-8xl">
           <img
             className="h-full object-cover object-left"
@@ -73,13 +70,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
             </div> */}
           </div>
           <div className="relative">
-            <div
-              className={clsx(
-                'absolute',
-                'inset-x-0',
-                styles.homeGridContainer
-              )}
-            >
+            <div className="absolute inset-x-0 -bottom-[216px]">
               <div className="mx-auto max-w-max-w-8xl">
                 <img
                   className="h-full object-cover"
@@ -94,7 +85,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
       <div className="bg-secondaryCol4 max-w-8xl h-25 px-8 pl-10 sm:pl-16 md:pl-100 flex items-center">
         <div className="font-sans text-secondaryCol1 text-sm font-normal" />
       </div>
-      <div className={clsx('relative', styles.serviceBgOverlay)}>
+      <div className="relative min-h-[421px]">
         <div className="absolute inset-0">
           <div className="mx-auto max-w-8xl">
             <img

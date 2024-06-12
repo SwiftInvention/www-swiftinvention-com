@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import clsx from 'clsx';
-
+import { twMerge } from 'tailwind-merge';
 import { ArrowLeft, ArrowRight } from './Arrows';
 
 export enum Direction {
@@ -20,11 +19,10 @@ export const CaseArrow: React.FC<CaseArrowProps> = ({ link, direction }) => {
     <div className="text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 px-2 py-2">
       <Link className="flex flex-row" to={link}>
         <div
-          className={clsx(
-            'h-full',
-            'object-cover',
+          className={twMerge(
+            'h-full object-cover',
             isNext && 'order-last pl-3',
-            isNext || 'pr-3'
+            !isNext && 'pr-3'
           )}
         >
           {isNext ? <ArrowRight /> : <ArrowLeft />}

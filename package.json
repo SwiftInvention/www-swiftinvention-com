@@ -11,7 +11,6 @@
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
     "dompurify": "^3.1.5",
     "history": "^5.3.0",
     "lodash": "^4.17.20",
@@ -19,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.5",
     "react-router-dom": "^6.23.1",
+    "tailwind-merge": "^2.3.0",
     "web-vitals": "^4.1.0"
   },
   "devDependencies": {

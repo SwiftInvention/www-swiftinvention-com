@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import React from 'react';
 import useToggle from '~/hooks/useToggle';
 import { NavMenuItems } from './NavMenuItems';
@@ -22,7 +22,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({
       >
         <span className="sr-only">Open main menu</span>
         <svg
-          className={clsx(isMenuOpened ? 'hidden' : 'block', 'h-6', 'w-6')}
+          className={twMerge('h-6 w-6', isMenuOpened ? 'hidden' : 'block')}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -37,11 +37,9 @@ export const NavMenu: React.FC<NavMenuProps> = ({
           />
         </svg>
         <svg
-          className={clsx(
-            isMenuOpened ? 'block' : 'hidden',
-            'h-6',
-            'w-6',
-            'max-h-6'
+          className={twMerge(
+            'h-6 w-6 max-h-6',
+            isMenuOpened ? 'block' : 'hidden'
           )}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
