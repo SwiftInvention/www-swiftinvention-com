@@ -1,1 +1,0 @@
-export default "/dist/assets/images/logos/eversana-logo-2x.png";
