@@ -1,8 +1,6 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import { DefaultPage } from '../default/DefaultPage';
 import servicesBg from '~/assets/images/services-bg.png';
-import { VacancyPage } from './VacancyPage';
 import { CareersMainPage } from './CareersMainPage';
 
 export const CareersPage: React.FC = () => {
@@ -18,17 +16,7 @@ export const CareersPage: React.FC = () => {
         </div>
         <div className="relative">
           <div className="px-10 md:px-24 pt-16 lg:pt-32">
-            <Switch>
-              <Route exact path="/careers">
-                <CareersMainPage />
-              </Route>
-              <Route exact path="/tech-stack">
-                <CareersMainPage />
-              </Route>
-              <Route path="/careers/:id">
-                <VacancyPage />
-              </Route>
-            </Switch>
+            <CareersMainPage />
           </div>
         </div>
       </div>

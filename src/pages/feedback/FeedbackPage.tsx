@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import clsx from 'clsx';
 import { DefaultPage } from '../default/DefaultPage';
 import servicesBg from '~/assets/images/services-bg.png';
 import styles from './FeedbackPage.module.css';
@@ -62,11 +61,10 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
                     <span className="sr-only">Name</span>
                     <input
                       id={nameInput}
-                      name={nameInput}
                       type="text"
                       className={styles.inputElem}
                       placeholder="Name"
-                      ref={register}
+                      {...register(nameInput)}
                     />
                   </label>
                 </div>
@@ -75,13 +73,12 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
                     <span className="sr-only">Email</span>
                     <input
                       id={emailInput}
-                      name={emailInput}
                       type="email"
                       autoComplete="email"
                       required
                       className={styles.inputElem}
                       placeholder="Email Address"
-                      ref={register}
+                      {...register(emailInput)}
                     />
                   </label>
                 </div>
@@ -90,11 +87,10 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
                     <span className="sr-only">Name</span>
                     <input
                       id={phoneInput}
-                      name={phoneInput}
                       type="text"
                       className={styles.inputElem}
                       placeholder="Phone Number"
-                      ref={register}
+                      {...register(phoneInput)}
                     />
                   </label>
                 </div>
@@ -103,11 +99,10 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
                     <span className="sr-only">Name</span>
                     <textarea
                       id={messageInput}
-                      name={messageInput}
                       rows={6}
                       className={styles.areaElem}
                       placeholder="Message"
-                      ref={register}
+                      {...register(messageInput)}
                     />
                   </label>
                 </div>

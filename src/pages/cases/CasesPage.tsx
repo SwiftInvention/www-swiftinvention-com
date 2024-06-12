@@ -8,7 +8,7 @@ import { CaseStudyCard } from '~/components/casestudy/CaseStudyCard';
 import privoCardBg from '~/assets/images/cards/privo-card-2x.png';
 // import belbellaCardBg from '~/assets/images/cards/belbella-card-2x.png';
 import blankslateCardBg from '~/assets/images/cards/blank-slate-card-2x.png';
-import eversanaCardBg from '~/assets/images/cards/eversana-card-2x.png';
+// import eversanaCardBg from '~/assets/images/cards/eversana-card-2x.png';
 import enkCardBg from '~/assets/images/cards/enk-card-2x.png';
 import mbsCardBg from '~/assets/images/cards/mbs-card-2x.png';
 import pakiraCardBg from '~/assets/images/cards/pakira-card.png';

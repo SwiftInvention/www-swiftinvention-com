@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import React from 'react';
-import { useRouteMatch } from 'react-router-dom';
 import useToggle from '~/hooks/useToggle';
 import { NavMenuItems } from './NavMenuItems';
 
@@ -14,8 +13,6 @@ export const NavMenu: React.FC<NavMenuProps> = ({
   mobileMenuRootId,
 }) => {
   const [isMenuOpened, toggleMenu]: [boolean, () => void] = useToggle();
-  const routeMatch = useRouteMatch();
-
   return (
     <div>
       <button

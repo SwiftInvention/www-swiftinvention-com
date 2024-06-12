@@ -4,7 +4,9 @@ import { Footer } from '~/components/footer/Footer';
 import { Header } from '~/components/header/Header';
 import { getByName, routes } from '~/routes/routes';
 
-export interface DefaultPageProps {}
+export interface DefaultPageProps {
+  children: JSX.Element | JSX.Element[];
+}
 
 const headerItems = routes.filter((r) => r.isInHeader);
 const footerItems = routes.filter((r) => r.isInFooter);
