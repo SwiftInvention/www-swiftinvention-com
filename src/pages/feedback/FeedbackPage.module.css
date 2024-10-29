@@ -1,11 +1,11 @@
 .inputContainer {
-  @apply w-full px-4 sm:px-10
+  @apply w-full
 }
 
-.inputElem {  
-  @apply w-full h-12 rounded border-secondaryCol6 placeholder-primaryCol1 font-sans font-medium text-sm px-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
+.inputElem {
+  @apply w-full h-12 rounded-md border-secondaryCol6 placeholder-secondaryCol3 font-medium text-base px-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
 }
 
-.areaElem {  
-  @apply w-full rounded border-secondaryCol6 placeholder-primaryCol1 font-sans font-medium text-sm p-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
+.areaElem {
+  @apply w-full rounded-md border-secondaryCol6 placeholder-secondaryCol3 font-medium text-base p-5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3
 }

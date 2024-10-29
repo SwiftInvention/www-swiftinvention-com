@@ -3,6 +3,7 @@ export interface RouteProps {
   link: string;
   isInHeader: boolean;
   isInFooter: boolean;
+  isInHeaderButton?: boolean;
 }
 
 export const getByName = (
@@ -18,7 +19,7 @@ export const routes: Array<RouteProps> = [
     name: 'Home',
     link: '/',
     isInHeader: false,
-    isInFooter: true,
+    isInFooter: false,
   },
   // {
   //   name: 'New Products',
@@ -29,6 +30,12 @@ export const routes: Array<RouteProps> = [
   {
     name: 'Services',
     link: '/services',
+    isInHeader: true,
+    isInFooter: true,
+  },
+  {
+    name: 'About Us',
+    link: '/about',
     isInHeader: true,
     isInFooter: true,
   },
@@ -45,6 +52,12 @@ export const routes: Array<RouteProps> = [
     isInFooter: true,
   },
   {
+    name: 'Contact Us',
+    link: '/feedback',
+    isInHeader: false,
+    isInFooter: true,
+  },
+  {
     name: 'TechStack',
     link: '/tech-stack',
     isInHeader: false,
@@ -57,10 +70,10 @@ export const routes: Array<RouteProps> = [
     isInFooter: false,
   },
   {
-    name: 'Contact Us',
+    name: 'Work with Us',
     link: '/feedback',
-    isInHeader: true,
-    isInFooter: true,
+    isInHeader: false,
+    isInFooter: false,
   },
   {
     name: 'Error',
