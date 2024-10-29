@@ -19,6 +19,7 @@ import { CareersPage } from './pages/careers/CareersPage';
 import { MyBlueSkiesCasePage } from './pages/cases/MyBlueSkiesCasePage';
 import { PakiraCasePage } from './pages/cases/PakiraCasePage';
 import { VacancyPage } from './pages/careers/VacancyPage';
+import { AboutUsPage } from './pages/about/AboutUsPage';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
           <Route
             path={getByName(routes, 'Services').link}
             element={<ServicesPage />}
+          />
+          <Route
+            path={getByName(routes, 'About Us').link}
+            element={<AboutUsPage />}
           />
           <Route
             path={getByName(routes, 'Case Studies').link}
@@ -53,7 +58,7 @@ function App() {
           />
           <Route path={getByName(routes, 'News').link} element={<NewsPage />} />
           <Route
-            path={getByName(routes, 'Contact Us').link}
+            path={getByName(routes, 'Work with Us').link}
             element={<FeedbackPage />}
           />
           <Route

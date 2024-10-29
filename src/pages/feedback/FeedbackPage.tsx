@@ -1,7 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { DefaultPage } from '../default/DefaultPage';
-import servicesBg from '~/assets/images/services-bg.png';
 import styles from './FeedbackPage.module.css';
 
 export interface FeedbackPageProps {}
@@ -33,27 +32,19 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
 
   return (
     <DefaultPage>
-      <div className="relative min-h-screen h-full">
-        <div className="hidden sm:block sm:absolute sm:inset-0 mx-auto max-w-8xl">
-          <img
-            className="h-full w-full object-cover object-left-top"
-            src={servicesBg}
-            alt="page background"
-          />
-        </div>
-        <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 px-4 sm:px-8 sm:pl-16 md:pl-30 pt-16 lg:pt-32">
-            <div className="max-w-md font-sans text-secondaryCol1">
-              <div className="text-4xl font-medium mb-5">Contact Us</div>
-              <div className="text-lg font-normal leading-6">
-                Have a project? Want to learn more about Swift? Want to work
-                with us? Fill out our contact form here and we’ll get back to
-                you within 48 hours
+      <div className="bg-pageBg bg-cover bg-no-repeat bg-center font-inter">
+        <div className="py-16 px-5 lg:py-32 flex justify-center items-center ">
+          <div className="lg:w-660 flex flex-col justify-center items-center bg-secondaryCol4 rounded-xl shadow-card p-16 bg-gradient-to-br from-primaryCol3WithOpacity to-transparent">
+            <div className="text-secondaryCol1">
+              <div className="text-5xl font-bold mb-5">Let's talk</div>
+              <div className="text-xl leading-7 mb-8 text-secondaryCol1/85">
+                Get in touch about your project or to learn more about Swift by
+                by filling out our contact form for a response within 48 hours.
               </div>
             </div>
             <form
+              className="w-full flex flex-col justify-center items-center"
               onSubmit={onSubmit}
-              className="max-w-xl flex flex-col justify-center items-center bg-secondaryCol4 rounded-xl shadow-card  py-50"
             >
               <div className="space-y-5 w-full">
                 <div className={styles.inputContainer}>
@@ -109,9 +100,9 @@ export const FeedbackPage: React.FC<FeedbackPageProps> = () => {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center justify-center border-2 border-primaryCol3 text-primaryCol3 hover:text-primaryCol1 hover:bg-primaryCol3 h-8 w-22 mt-10 font-sans font-medium text-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3"
+                className="w-full bg-primaryCol3 rounded-md hover:text-primaryCol1 hover:bg-primaryCol3 py-3.5 my-5 font-medium text-base uppercase focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryCol3"
               >
-                Submit
+                Send message
               </button>
             </form>
           </div>

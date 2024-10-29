@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import swiftWhiteLogo from '~/assets/images/swift-white-logo.png';
+import { Link, useLocation } from 'react-router-dom';
+import swiftWhiteLogo from '~/assets/images/swift-white-logo.svg';
+import { twMerge } from 'tailwind-merge';
 
 export interface FooterProps {
   navItems: Array<{ name: string; link: string }>;
 }
 
 export const Footer: React.FC<FooterProps> = ({ navItems }) => {
+  const location = useLocation();
+  const isActive = (link: string) => location.pathname === link;
+
   return (
     <div className="relative h-37 bg-primaryCol1 max-w-8xl border-t border-secondaryCol3 flex flex-row justify-start items-center">
       <div className="pl-30 w-full">
@@ -24,8 +28,18 @@ export const Footer: React.FC<FooterProps> = ({ navItems }) => {
               {navItems.map((value) => {
                 return (
                   <Link to={value.link} key={value.name}>
-                    <div className="inline group py-2 px-3 hover:bg-primaryCol2 cursor-pointer">
-                      <div className="inline group-hover:text-secondaryCol5 uppercase whitespace-nowrap">
+                    <div
+                      className={twMerge(
+                        'inline group py-2 px-3 opacity-60 hover:opacity-100 cursor-pointer	rounded-md hover:transition-all duration-200',
+                        isActive(value.link) && 'opacity-100'
+                      )}
+                    >
+                      <div
+                        className={twMerge(
+                          'inline group-hover:opacity-100 uppercase text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+                          isActive(value.link) && 'opacity-100'
+                        )}
+                      >
                         {value.name}
                       </div>
                     </div>
