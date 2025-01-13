@@ -1,0 +1,15 @@
+.detailsDescription {
+  @apply font-sans font-medium text-lg text-secondaryCol1
+}
+
+.detailsSubtitle {
+  @apply font-sans font-medium text-secondaryCol1 text-sm
+}
+
+.detailsRegular {
+  @apply font-sans font-normal text-secondaryCol1 text-sm
+}
+
+.detailsDivider {
+  @apply border-t border-primaryCol3 max-w-md my-5
+}

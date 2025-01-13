@@ -1,0 +1,29 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "files": ["tailwind.config.ts"],
+  "include": [
+    ".astro/types.d.ts",
+    "**/*",
+    "src",
+    "types"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./src/react/*"],
+      "~/assets/*": ["./src/assets/*"],
+      "~/public/*": ["./public/*"],
+    },
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

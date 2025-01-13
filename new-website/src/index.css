@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Akzidenz-Grotesk;
+    src: url(/fonts/Berthold-akzidenz-grotesk-be-regular.woff) format("woff");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Akzidenz-Grotesk;
+    src: url(/fonts/Berthold-akzidenz-grotesk-be-medium.woff) format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Bold.woff2) format("woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-medium.woff2) format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Inter.woff2) format("woff");
+    font-weight: 400;
+  }
+  body {
+    background-color: #212121;
+  }
+}
