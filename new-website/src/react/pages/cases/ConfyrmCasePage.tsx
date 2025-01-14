@@ -7,7 +7,7 @@ import styles from './CaseDetailsPage.module.css';
 export const ConfyrmCasePage: React.FC = () => {
   const leftColumnItems: JSX.Element = (
     <div>
-      <img className="h-12 mb-3" src={confyrmLogo} alt="Confyrm logo" />
+      <img className="h-12 mb-3" src={confyrmLogo.src} alt="Confyrm logo" />
       <div className={styles.detailsDescription}>
         Online service that delivers identity security alerts to reduce fraud
         and detect threats.
@@ -86,7 +86,7 @@ export const ConfyrmCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-16 lg:mb-0"
-        src={confyrmLaptopImg}
+        src={confyrmLaptopImg.src}
         alt="Confyrm laptop"
       />
     </div>

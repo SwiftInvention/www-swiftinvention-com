@@ -17,7 +17,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
         <div className="absolute inset-0 mx-auto max-w-8xl">
           <img
             className="h-full object-cover object-left"
-            src={homeHeaderBg}
+            src={homeHeaderBg.src}
             alt="home page header background"
           />
           <div className="absolute inset-0 z-50">
@@ -42,7 +42,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
                 </div>
               </div>
               <div className="hidden lg:block lg:pl-2">
-                <img src={computerCode} alt="Computer Code" />
+                <img src={computerCode.src} alt="Computer Code" />
               </div>
             </div>
             {/* <div className="w-full h-full items-center flex flex-row flex-wrap justify-start">
@@ -74,7 +74,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
               <div className="mx-auto max-w-max-w-8xl">
                 <img
                   className="h-full object-cover"
-                  src={homeGrid}
+                  src={homeGrid.src}
                   alt="home grid background"
                 />
               </div>
@@ -90,7 +90,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
           <div className="mx-auto max-w-8xl">
             <img
               className="h-full object-cover object-left"
-              src={homeServicesBg}
+              src={homeServicesBg.src}
               alt="home services background"
             />
           </div>

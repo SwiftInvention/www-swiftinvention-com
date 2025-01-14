@@ -9,7 +9,7 @@ export const BelbellaCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-32 object-contain mb-3"
-        src={belbellaLogo}
+        src={belbellaLogo.src}
         alt="BelBella logo"
       />
       <div className={styles.detailsDescription}>On-demand beauty services</div>
@@ -100,7 +100,7 @@ export const BelbellaCasePage: React.FC = () => {
     <div className="mb-4 lg:mb-0">
       <img
         className="max-h-80 w-full object-contain"
-        src={belbellaLaptop}
+        src={belbellaLaptop.src}
         alt="BelBella page"
       />
     </div>

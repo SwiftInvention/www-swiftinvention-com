@@ -1,12 +1,10 @@
 ---
 import App from '../react/App.tsx';
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import '../index.css';
 
 ---
 
 <Layout>
-	<Welcome />
 	<App client:only="react" />
 </Layout>

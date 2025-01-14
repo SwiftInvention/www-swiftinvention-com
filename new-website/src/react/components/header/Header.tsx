@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ navItems }) => {
             <Link to={getByName(routes, 'Home').link}>
               <img
                 className="cursor-pointer"
-                src={swiftInvention}
+                src={swiftInvention.src}
                 alt="Swift Invention Logo"
               />
             </Link>

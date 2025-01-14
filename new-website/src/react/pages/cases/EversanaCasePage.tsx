@@ -9,7 +9,7 @@ export const EversanaCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-20 object-cover mb-3"
-        src={eversanaLogo}
+        src={eversanaLogo.src}
         alt="EVERSANA logo"
       />
       <div className={styles.detailsDescription}>
@@ -79,7 +79,7 @@ export const EversanaCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
-        src={eversanaLaptop}
+        src={eversanaLaptop.src}
         alt="EVERSANA page"
       />
     </div>

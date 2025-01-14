@@ -9,7 +9,7 @@ export const MyBlueSkiesCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-20 object-cover mb-3"
-        src={mbsLogo}
+        src={mbsLogo.src}
         alt="MyBlueSkies logo"
       />
       <div className={styles.detailsDescription}>
@@ -76,7 +76,7 @@ export const MyBlueSkiesCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
-        src={mbsLaptop}
+        src={mbsLaptop.src}
         alt="MyBlueSkies page"
       />
     </div>

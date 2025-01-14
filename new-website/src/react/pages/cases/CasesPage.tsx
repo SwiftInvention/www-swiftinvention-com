@@ -23,7 +23,7 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
         <div className="hidden md:block md:absolute md:inset-0 mx-auto max-w-8xl">
           <img
             className="h-full w-full object-cover object-center"
-            src={casesBg}
+            src={casesBg.src}
             alt="cases page background"
           />
         </div>
@@ -62,7 +62,7 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
               />
                */}
               <CaseStudyCard
-                image={privoCardBg}
+                image={privoCardBg.src}
                 title="PRIVO"
                 link={getByName(routes, 'Privo').link}
                 description="Children&#39;s Online Identity &amp; 
@@ -70,7 +70,7 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 crop="object-right"
               />
               <CaseStudyCard
-                image={blankslateCardBg}
+                image={blankslateCardBg.src}
                 title="Blank Slate Technologies"
                 link={getByName(routes, 'Blank Slate Technologies').link}
                 description="Enterprise Microlearning App"
@@ -84,19 +84,19 @@ export const CasesPage: React.FC<CasesPageProps> = () => {
                 crop="object-right"
               /> */}
               <CaseStudyCard
-                image={enkCardBg}
+                image={enkCardBg.src}
                 title="EatNakedKitchen"
                 link={getByName(routes, 'EatNakedKitchen').link}
                 description="Science-based nutrition, skills and strategies website"
               />
               <CaseStudyCard
-                image={mbsCardBg}
+                image={mbsCardBg.src}
                 title="MyBlueSkies"
                 link={getByName(routes, 'MyBlueSkies').link}
                 description="An online platform for teaching and streaming designed for musicians by musicians to connect musicians"
               />
               <CaseStudyCard
-                image={pakiraCardBg}
+                image={pakiraCardBg.src}
                 title="Pakira"
                 link={getByName(routes, 'Pakira').link}
                 description="SaaS industry directory, chat, forum, and order tracking for businesses in the wholesale wood industry"

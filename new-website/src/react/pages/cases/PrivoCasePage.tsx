@@ -9,7 +9,7 @@ export const PrivoCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-16 object-cover mb-3"
-        src={privoLogo}
+        src={privoLogo.src}
         alt="Privo logo"
       />
       <div className={styles.detailsDescription}>
@@ -167,7 +167,7 @@ export const PrivoCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
-        src={privoLaptop}
+        src={privoLaptop.src}
         alt="PRIVO page"
       />
     </div>

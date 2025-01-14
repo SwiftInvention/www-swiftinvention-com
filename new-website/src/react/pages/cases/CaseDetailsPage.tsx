@@ -26,7 +26,7 @@ export const CaseDetailsPage: React.FC<CaseDetailsPageProps> = ({
         <div className="absolute inset-0 mx-auto max-w-8xl h-full">
           <img
             className="h-full w-full object-cover"
-            src={caseDetailsBg}
+            src={caseDetailsBg.src}
             alt="case details page background"
           />
         </div>

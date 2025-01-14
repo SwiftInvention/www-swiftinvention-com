@@ -23,8 +23,8 @@ const teamMembers = [
     position: 'CEO',
     description:
       'Head of business development. Legal-tech entrepreneur, CEO of E-Legal. Lawyer and Ph.D candidate. Cupertino, California.',
-    photo: Samaya,
-    photo2x: Samaya2x,
+    photo: Samaya.src,
+    photo2x: Samaya2x.src,
     email: 'shabibova@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/samayahabibova/',
   },
@@ -33,8 +33,8 @@ const teamMembers = [
     position: 'CTO',
     description:
       'Head of engineering. Solution architect, technical lead for enterprise & consumer applications. Portugal.',
-    photo: Sergey,
-    photo2x: Sergey2x,
+    photo: Sergey.src,
+    photo2x: Sergey2x.src,
     email: 'skucherenko@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/sergey-kucherenko-514a37100/',
   },
@@ -43,8 +43,8 @@ const teamMembers = [
     position: 'Client Partner',
     description:
       'Head of client engagement. Project manager, product manager, and business analyst. Romania.',
-    photo: Maria,
-    photo2x: Maria2x,
+    photo: Maria.src,
+    photo2x: Maria2x.src,
     email: 'mvasuytenko@swiftinvention.com',
     linkedIn: '',
   },
@@ -53,8 +53,8 @@ const teamMembers = [
     position: 'Chief Architect',
     description:
       'Software Architect with 20 years in scalable systems, cloud architecture, identity, and privacy. Portugal.',
-    photo: Alex,
-    photo2x: Alex2x,
+    photo: Alex.src,
+    photo2x: Alex2x.src,
     email: 'ayuhimenko@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/alexander-yuhimenko-75b41846/',
   },
@@ -63,8 +63,8 @@ const teamMembers = [
     position: 'Founder',
     description:
       'Founder of Swift Invention. Serial tech entrepreneur, privacy advocate. MIT-trained engineer. Boston, Massachusetts.',
-    photo: Paul,
-    photo2x: Paul2x,
+    photo: Paul.src,
+    photo2x: Paul2x.src,
     email: 'ptrevithick@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/paultrevithick/',
   },
@@ -75,19 +75,19 @@ const workProcessMap = [
     title: 'We deliver. Swiftly!',
     description:
       'All software and design is directly and exclusively developed by our 30 person team in Eastern Europe. We know how to create production-ready solutions.',
-    bgImage: bg1,
+    bgImage: bg1.src,
   },
   {
     title: 'We cooperate',
     description:
       'We are quick to respond, actively engage in requirement discussions, and provide regular updates, ensuring utmost transparency in our work.',
-    bgImage: bg2,
+    bgImage: bg2.src,
   },
   {
     title: 'We meet your needs',
     description:
       'With a solid technical background, we effortlessly translate the intricate technology of your project into visually captivating and easily understandable graphics.',
-    bgImage: bg3,
+    bgImage: bg3.src,
   },
 ];
 
@@ -106,7 +106,7 @@ export const AboutUsPage = () => {
           <br />
           <img
             className="inline my-5 pr-10"
-            src={swiftInvention}
+            src={swiftInvention.src}
             alt="Swift Invention Logo"
           />
         </h1>
@@ -150,10 +150,10 @@ export const AboutUsPage = () => {
                   </div>
                   <div className="mt-4 flex text-lg font-inter">
                     <a href={member.linkedIn} className="mr-4">
-                      <img src={linkedInIcon} alt={member.name} />
+                      <img src={linkedInIcon.src} alt={member.name} />
                     </a>
                     <a href={`mailto:${member.email}`}>
-                      <img src={emailIcon} alt={member.email} />
+                      <img src={emailIcon.src} alt={member.email} />
                     </a>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ export const EnkCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-4 mb-8 object-cover"
-        src={enkLogo}
+        src={enkLogo.src}
         alt="EatNakedKitchen logo"
       />
       <div className={styles.detailsDescription}>
@@ -64,7 +64,7 @@ export const EnkCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
-        src={enkLaptop}
+        src={enkLaptop.src}
         alt="EatNakedKitchen page"
       />
     </div>

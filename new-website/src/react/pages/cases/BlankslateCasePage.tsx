@@ -9,7 +9,7 @@ export const BlankslateCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-16 mb-3 object-cover"
-        src={blankSlateLogo}
+        src={blankSlateLogo.src}
         alt="Blank slate logo"
       />
       <div className={styles.detailsDescription}>
@@ -105,7 +105,7 @@ export const BlankslateCasePage: React.FC = () => {
     <div className="mb-4 lg:mb-0">
       <img
         className="max-h-80 w-full object-contain"
-        src={blankSlateLaptop}
+        src={blankSlateLaptop.src}
         alt="Blank slate page"
       />
     </div>

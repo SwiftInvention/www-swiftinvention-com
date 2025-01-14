@@ -19,7 +19,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
         <div className="hidden sm:block sm:absolute sm:inset-0 mx-auto max-w-8xl">
           <img
             className="h-full w-full object-cover object-left-top"
-            src={servicesBg}
+            src={servicesBg.src}
             alt="services page background"
           />
         </div>
@@ -54,11 +54,11 @@ export const ServicesPage: React.FC<ServicesPageProps> = () => {
             <ul className="mt-7 pb-25 flex flex-col justify-start sm:flex-row sm:flex-wrap gap-7">
               <ServiceCard
                 text="Mobile Apps (iOS&nbsp;and&nbsp;Android)"
-                image={phoneImage}
+                image={phoneImage.src}
               />
-              <ServiceCard text="Web Apps" image={tabletImage} />
-              <ServiceCard text="Website Development" image={serverImage} />
-              <ServiceCard text="Web Services" image={computerImage} />
+              <ServiceCard text="Web Apps" image={tabletImage.src} />
+              <ServiceCard text="Website Development" image={serverImage.src} />
+              <ServiceCard text="Web Services" image={computerImage.src} />
             </ul>
           </div>
           {/* <Stripe

@@ -9,7 +9,7 @@ export const AzigoCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-16 mb-3 object-cover"
-        src={azigoLogo}
+        src={azigoLogo.src}
         alt="Azigo logo"
       />
       <div className={styles.detailsDescription}>
@@ -123,7 +123,7 @@ export const AzigoCasePage: React.FC = () => {
     <div className="mb-4 lg:mb-0">
       <img
         className="max-h-80 w-full object-contain"
-        src={azigoLaptopImg}
+        src={azigoLaptopImg.src}
         alt="Azigo page"
       />
     </div>

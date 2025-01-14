@@ -10,7 +10,7 @@ export const CareersPage: React.FC = () => {
         <div className="hidden sm:block sm:absolute sm:inset-0 mx-auto max-w-8xl">
           <img
             className="h-full w-full object-cover object-left-top"
-            src={servicesBg}
+            src={servicesBg.src}
             alt="services page background"
           />
         </div>

@@ -15,7 +15,7 @@ export const NewProductsPage: React.FC<NewProductsPageProps> = () => {
         <div className="hidden sm:block sm:absolute sm:inset-0 mx-auto max-w-8xl">
           <img
             className="h-full w-full object-cover object-left-top"
-            src={servicesBg}
+            src={servicesBg.src}
             alt="background"
           />
         </div>
@@ -28,7 +28,7 @@ export const NewProductsPage: React.FC<NewProductsPageProps> = () => {
               <div className="">
                 <img
                   className="max-h-72 w-full pl-8 sm:pl-16 mb-8"
-                  src={phoneAlarm}
+                  src={phoneAlarm.src}
                   alt="phone alarm"
                 />
               </div>

@@ -9,7 +9,7 @@ export const PakiraCasePage: React.FC = () => {
     <div>
       <img
         className="max-h-20 object-cover mb-3"
-        src={pakiraLogo}
+        src={pakiraLogo.src}
         alt="Pakira logo"
       />
       <div className={styles.detailsDescription}>
@@ -83,7 +83,7 @@ export const PakiraCasePage: React.FC = () => {
     <div className="">
       <img
         className="max-h-80 w-full object-contain mb-4 lg:mb-0"
-        src={pakiraLaptop}
+        src={pakiraLaptop.src}
         alt="MyBlueSkies page"
       />
     </div>

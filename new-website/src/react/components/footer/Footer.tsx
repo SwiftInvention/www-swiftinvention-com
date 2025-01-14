@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ navItems }) => {
         <div className="h-4">
           <img
             className="cursor-pointer"
-            src={swiftWhiteLogo}
+            src={swiftWhiteLogo.src}
             alt="Swift Invention Logo"
           />
         </div>
