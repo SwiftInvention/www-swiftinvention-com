@@ -1,0 +1,10 @@
+---
+import App from '../react/App.tsx';
+import Layout from '../layouts/Layout.astro';
+import '../index.css';
+
+---
+
+<Layout>
+	<App client:only="react" />
+</Layout>

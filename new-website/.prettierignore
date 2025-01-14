@@ -1,0 +1,7 @@
+.next
+.vscode
+.idea
+dist
+node_modules
+.prettierignore
+*.yaml

@@ -1,0 +1,77 @@
+---
+import swiftInvention from '~/assets/images/swift-white-logo.svg';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header>
+	<nav class="bg-transparent">
+		<div class="max-w-8xl mx-auto">
+		  <div class="flex items-center justify-between h-18">
+			<div class="flex-shrink-0 pl-5 md:pl-18">
+			  <a href={'/'}>
+				<img
+				  class="cursor-pointer"
+				  src={swiftInvention.src}
+				  alt="Swift Invention Logo"
+				/>
+			  </a>
+			</div>
+			<!-- <div class="lg:hidden">
+			  <NavMenu
+				navItems={navItems}
+				mobileMenuRootId="mobile-menu-portal"
+			  />
+			</div> -->
+			<div class="hidden lg:flex items-center content-center justify-end lg:flex-1 lg:space-x-2 lg:mr-14">
+				<a href={'/services'} >
+					<div
+						class:list={[
+							'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
+							currentPath === '/services' ? 'opacity-100' : 'opacity-60' 
+						]}
+					>
+						<div
+							class:list={[
+								'group-hover:opacity-100 uppercase text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+								currentPath === '/services' && 'opacity-100'
+							]}
+						>
+							Services
+						</div>
+					</div>
+				</a>
+				<a href={'/caseStudies'} >
+					<div
+						class:list={[
+							'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
+							currentPath === '/caseStudies' ? 'opacity-100' : 'opacity-60' 
+						]}
+					>
+						<div
+						class:list={[
+							'group-hover:opacity-100 uppercase text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+							currentPath === '/caseStudies' && 'opacity-100'
+							]}
+						>
+							Case Studies
+						</div>
+					</div>
+				</a>
+			  <div>
+				<button
+				  type="button"
+				  class="flex bg-primaryCol2 text-secondaryCol5 hover:text-primaryCol1 uppercase text-sm font-bold h-10 lg:ml-5 pt-1 px-5 rounded-md items-center border-none"
+				>
+				  Work with Us
+				</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div id="mobile-menu-portal" />
+	  </nav>
+</header>
+
+<style>
+</style>
