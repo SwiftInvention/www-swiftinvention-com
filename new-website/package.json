@@ -7,6 +7,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "tsc": "tsc",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -62,10 +63,10 @@
     "rimraf": "^5.0.7",
     "rollup-plugin-visualizer": "^5.12.0",
     "tailwindcss": "^3.4.4",
-    "typescript": "^4.0.0",
     "unplugin-inject-preload": "^2.0.3",
     "vite": "^5.2.0",
     "vite-plugin-checker": "^0.6.4",
+    "typescript": "^5.7.3",
     "vite-plugin-svgr": "^4.2.0"
   },
   "husky": {
