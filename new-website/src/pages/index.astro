@@ -1,10 +1,10 @@
 ---
-import App from '../react/App.tsx';
 import Layout from '../layouts/Layout.astro';
+import FirstBlock from '../components/home/FirstBlock.astro';
 import '../index.css';
 
 ---
 
 <Layout>
-	<App client:only="react" />
+	<FirstBlock />
 </Layout>

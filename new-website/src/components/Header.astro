@@ -1,5 +1,6 @@
 ---
 import swiftInvention from '~/assets/images/swift-white-logo.svg';
+import Button from './Button.astro';
 
 const currentPath = Astro.url.pathname;
 ---
@@ -58,14 +59,9 @@ const currentPath = Astro.url.pathname;
 						</div>
 					</div>
 				</a>
-			  <div>
-				<button
-				  type="button"
-				  class="flex bg-primaryCol2 text-secondaryCol5 hover:text-primaryCol1 uppercase text-sm font-bold h-10 lg:ml-5 pt-1 px-5 rounded-md items-center border-none"
-				>
-				  Work with Us
-				</button>
-			  </div>
+				<div class="lg:ml-5">
+					<Button classes="w-[154px]">Work with us</Button>
+				</div>
 			</div>
 		  </div>
 		</div>

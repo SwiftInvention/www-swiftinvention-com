@@ -25,10 +25,14 @@
   }
   @font-face {
     font-family: Inter;
-    src: url(/fonts/Inter-Inter.woff2) format("woff");
+    src: url(/fonts/Inter-Regular.woff2) format("woff");
     font-weight: 400;
   }
+  html {
+    font-size: 16px;
+  }
   body {
-    background-color: #212121;
+    font-family: Inter, Akzidenz-Grotesk, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: theme(colors.surface.DEFAULT);
   }
 }

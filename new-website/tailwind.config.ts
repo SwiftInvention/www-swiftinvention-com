@@ -16,6 +16,13 @@ export default {
       secondaryCol5: '#212121', // gray mineshaft darker
       secondaryCol6: '#C2C2C2',
       primaryCol3WithOpacity: 'rgba(255, 123, 83, 0.05)',
+      surface: {
+        DEFAULT: '#020617',
+      },
+      white: '#fff',
+      gray: {
+        solid: '#334155'
+      },
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     stroke: (theme: (arg0: string) => any) => ({
@@ -23,6 +30,9 @@ export default {
       black: theme('colors.black'),
     }),
     extend: {
+      screens: {
+        xs: "480px",
+      },
       backgroundImage: {
         pageBg: "url('../src/assets/images/services-bg.png')",
       },
@@ -61,7 +71,11 @@ export default {
         65: '.65',
       },
       fontSize: {
+        xl: ['1.0625rem', '1.5rem'],
+        "xl-tablet": ['1.25rem', '1.9375rem'],
         '2.5xl': ['1.75rem', '2rem'],
+        '7xl': ['3rem', '3.5rem', 600],
+        '7xl-tablet': ['4.5rem', '5rem', 600]
       },
       fontFamily: {
         sans: ['Akzidenz-Grotesk', ...defaultTheme.fontFamily.sans],
