@@ -32,7 +32,7 @@ const Expertises = [
 ]
 ---
 
-<div class="py-24 md:py-32 px-4 md:px-6 bg-white">
+<div class="py-24 md:py-32 px-4 md:px-20 bg-white">
 	<div class="">
 		<h2 class="text-6xl md:text-6xl-tablet text-title">For success that’s ready to scale</h2>
 		<div class="text-lg md:text-lg-tablet mt-4 mb-12 text-body">We are an experienced team of software designers and engineers that know how to take ideas from concept to reality.</div>
@@ -41,13 +41,12 @@ const Expertises = [
 		{
 			Expertises.map(expertise => (
 				<div class="md:w-[47.5%]">
-					<div class="h-[364px] overflow-hidden">
+					<div class="relative -left-12 xs:-left-16 md:-left-12 lg:-left-16">
 						<img src={expertise.image.src} width={expertise.image.width} height={expertise.image.height}
-							class="object-cover"
 							alt={expertise.imageAlt}
 						/>
 					</div>
-					<div class="-mt-20 pl-4">
+					<div class="-mt-20 relative">
 						<h6 class="mb-4 text-title text-3xl md:text-3xl-tablet">{expertise.title}</h6>
 						<span class="text-body text-lg md:text-lg-desktop">{expertise.subtitle}</span>
 					</div>
