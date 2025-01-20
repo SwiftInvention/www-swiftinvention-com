@@ -1,0 +1,23 @@
+---
+import spotlightBgImage from '~/assets/images/new/spotlight-bg.png';
+import privoLaptopImage from '~/assets/images/new/laptops/privo-2x.png';
+import privoLogoImage from '~/assets/images/new/logos/privo-white.png';
+import Client from '../clients/Client.astro';
+
+---
+
+<div class='py-24 md:py-32 px-4 md:px-20 relative'>
+	<img src={spotlightBgImage.src} class="absolute top-0 w-full left-0 z-0"/>
+	<div class="relative z-10 mb-16 md:mb-20">
+		<h2 class="text-6xl md:text-6xl-desktop text-white">For clients turned partners</h2>
+		<div class="text-lg md:text-lg-desktop mt-4 mb-12 text-white">Dive into our inspiring case studies that beautifully illustrate our creative solutions and the wonderful partnerships we've built with clients from diverse fields.</div>
+	</div>
+	<Client desktopImg={privoLaptopImage} logoImg={privoLogoImage}
+		description="Children’s online identity & consent management"
+		name="Privo"
+		classes='bg-[#005A88]'
+	/>
+</div>
+
+<style>
+</style>

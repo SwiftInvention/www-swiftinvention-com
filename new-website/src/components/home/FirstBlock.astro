@@ -1,5 +1,5 @@
 ---
-import homeFirstBlockTabletImage from '~/assets/images/new/home-first-block-tablet.png';
+import homeFirstBlockDesktopImage from '~/assets/images/new/home-first-block-desktop.png';
 import homeFirstBlockImage from '~/assets/images/new/home-first-block.png';
 import Button from '../Button.astro';
 
@@ -7,12 +7,12 @@ import Button from '../Button.astro';
 
 <div class="mt-[96px] md:mt-[216px] md:mb-[232px] pb-4 px-4 md:px-20 relative">
 	<div class="md:w-[55%] z-10 mb-4 md:mb-0 relative">
-		<h2 class="text-7xl md:text-7xl-tablet text-white">We build software, the Swift way</h2>
-		<div class="text-xl md:text-xl-tablet mt-4 mb-12 text-white">We are an experienced team of software designers and engineers that know how to take ideas from concept to reality.</div>
-		<Button classes="w-full md:w-[200px] py-3 text-xl md:text-xl-tablet">Work with us</Button>
+		<h2 class="text-7xl md:text-7xl-desktop text-white">We build software, the Swift way</h2>
+		<div class="text-xl md:text-xl-desktop mt-4 mb-12 text-white">We are an experienced team of software designers and engineers that know how to take ideas from concept to reality.</div>
+		<Button classes="w-full md:w-[200px] py-3 text-xl md:text-xl-desktop">Work with us</Button>
 	</div>
 	<picture>
-		<source media="(min-width:768px)" srcset={homeFirstBlockTabletImage.src}>
+		<source media="(min-width:768px)" srcset={homeFirstBlockDesktopImage.src}>
 		<img src={homeFirstBlockImage.src} width={homeFirstBlockImage.width} height={homeFirstBlockImage.height}
 			class="md:absolute md:right-[130px] md:top-[72px] z-0 relative md:max-w-[50%] xs:mt-[-132px]"
 			alt="Technologies and graphics image"
