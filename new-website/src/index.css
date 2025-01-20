@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Akzidenz-Grotesk;
+    src: url(/fonts/Berthold-akzidenz-grotesk-be-regular.woff) format("woff");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: Akzidenz-Grotesk;
+    src: url(/fonts/Berthold-akzidenz-grotesk-be-medium.woff) format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Bold.woff2) format("woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-medium.woff2) format("woff");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Regular.woff2) format("woff");
+    font-weight: 400;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: Inter, Akzidenz-Grotesk, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: theme(colors.surface.DEFAULT);
+  }
+}
