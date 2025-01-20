@@ -1,11 +1,18 @@
 ---
 import ArrowRight from '~/assets/images/new/arrow-right.svg';
 
-const { name, description, logoImg, caseLink, desktopImg, mobileImg, classes } = Astro.props;
+const { name, description, logoImg, caseLink, desktopImg, mobileImg, mobileImg2x, classes } = Astro.props;
 ---
 
 <div class:list={['md:pt-20 md:pb-16 py-8 px-6 md:px-16 relative h-[600px] overflow-hidden rounded-xl', classes]}>
-	<img src={desktopImg.src} class="absolute bottom-[-30px] left-[40%] max-h-[584px]"/>
+	<img src={desktopImg.src} class="absolute z-10 bottom-[-30px] left-[40%] max-h-[584px]"/>
+	{mobileImg && (
+		<img
+			src={mobileImg.default.src}
+			srcset={mobileImg.x2 ? `${mobileImg.default.src} 1x, ${mobileImg.x2.src} 2x` : undefined}
+			class="absolute z-20 bottom-[-30px] right-0 max-h-[632px]"
+		/>
+	)}
 	<div class="relative w-[40%] flex flex-col gap-6">
 		<img src={logoImg.src} width={logoImg.width} height={logoImg.height} />
 		<div class="text-3xl md:text-3xl-desktop text-white">{description}</div>

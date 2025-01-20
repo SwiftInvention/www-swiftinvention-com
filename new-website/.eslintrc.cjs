@@ -1,11 +1,13 @@
 module.exports = {
+  root: true,
   extends: [
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:astro/recommended'
   ],
-  plugins: ['react', '@typescript-eslint', 'jest', 'react-hooks', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'react-hooks', 'prettier', 'astro'],
   env: {
     browser: true,
     es2020: true,
