@@ -3,15 +3,14 @@ const { onClick, classes } = Astro.props;
 ---
 
 <button
-	type="button"
-	class:list={[
-		"flex bg-primaryCol2 justify-center text-gray-solid hover:text-primaryCol1 text-sm font-semibold py-2.5 px-2.5 rounded-md items-center border-none",
-		classes
-	]}
-	onclick={onClick}
+  type="button"
+  class:list={[
+    'flex bg-primaryCol2 justify-center text-gray-solid hover:text-primaryCol1 text-sm font-semibold py-2.5 px-2.5 rounded-md items-center border-none',
+    classes,
+  ]}
+  onclick={onClick}
 >
-	<slot />
+  <slot />
 </button>
 
-<style>
-</style>
+<style></style>

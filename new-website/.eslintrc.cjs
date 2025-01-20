@@ -42,4 +42,17 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.astro'], // Target Astro files specifically
+      parser: 'astro-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro'],
+      },
+      rules: {
+        'react/jsx-filename-extension': 0
+      },
+    },
+  ],
 };

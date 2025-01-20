@@ -5,56 +5,71 @@ import webappMockupImage from '~/assets/images/new/webapp-mockup.png';
 import websiteMockupImage from '~/assets/images/new/website-mockup.png';
 
 const Expertises = [
-	{
-		title: 'Mobile apps',
-		subtitle: 'We develop intuitive mobile apps for iOS and Android, ensuring top performance, security, and scalability. We bring your vision to life with seamless, user-friendly solutions.',
-		image: iphoneMockupImage,
-		imageAlt: 'iphone mockup',
-	},
-	{
-		title: 'Web apps',
-		subtitle: 'Fast, secure, and scalable web applications tailored to your business needs. From complex platforms to simple tools, our web solutions deliver seamless performance across all browsers and devices.',
-		image: webappMockupImage,
-		imageAlt: 'webapp mockup',
-	},
-	{
-		title: 'Website development',
-		subtitle: 'We create custom, responsive websites that combine great design with functionality. Our websites are optimized for performance, ensuring an engaging user experience across all devices.',
-		image: websiteMockupImage,
-		imageAlt: 'iphone mockup',
-	},
-	{
-		title: 'Infrastructure development',
-		subtitle: 'We design and implement reliable, scalable IT infrastructures that support your business growth, ensuring high availability, security, and performance.',
-		image: infraMockupImage,
-		imageAlt: 'Infrastructure mockup',
-	}
-]
+  {
+    title: 'Mobile apps',
+    subtitle:
+      'We develop intuitive mobile apps for iOS and Android, ensuring top performance, security, and scalability. We bring your vision to life with seamless, user-friendly solutions.',
+    image: iphoneMockupImage,
+    imageAlt: 'iphone mockup',
+  },
+  {
+    title: 'Web apps',
+    subtitle:
+      'Fast, secure, and scalable web applications tailored to your business needs. From complex platforms to simple tools, our web solutions deliver seamless performance across all browsers and devices.',
+    image: webappMockupImage,
+    imageAlt: 'webapp mockup',
+  },
+  {
+    title: 'Website development',
+    subtitle:
+      'We create custom, responsive websites that combine great design with functionality. Our websites are optimized for performance, ensuring an engaging user experience across all devices.',
+    image: websiteMockupImage,
+    imageAlt: 'iphone mockup',
+  },
+  {
+    title: 'Infrastructure development',
+    subtitle:
+      'We design and implement reliable, scalable IT infrastructures that support your business growth, ensuring high availability, security, and performance.',
+    image: infraMockupImage,
+    imageAlt: 'Infrastructure mockup',
+  },
+];
 ---
 
 <div class="py-24 md:py-32 px-4 md:px-20 bg-white">
-	<div class="">
-		<h2 class="text-6xl md:text-6xl-desktop text-title">For success that’s ready to scale</h2>
-		<div class="text-lg md:text-lg-desktop mt-4 mb-12 text-body">We are an experienced team of software designers and engineers that know how to take ideas from concept to reality.</div>
-	</div>
-	<div class="flex flex-col md:flex-row flex-wrap md:gap-x-[5%]">
-		{
-			Expertises.map(expertise => (
-				<div class="md:w-[47.5%]">
-					<div class="relative -left-12 xs:-left-16 md:-left-12 lg:-left-16">
-						<img src={expertise.image.src} width={expertise.image.width} height={expertise.image.height}
-							alt={expertise.imageAlt}
-						/>
-					</div>
-					<div class="-mt-20 relative">
-						<h6 class="mb-4 text-title text-3xl md:text-3xl-desktop">{expertise.title}</h6>
-						<span class="text-body text-lg md:text-lg-desktop">{expertise.subtitle}</span>
-					</div>
-				</div>
-			))
-		}
-	</div>
+  <div class="">
+    <h2 class="text-6xl md:text-6xl-desktop text-title">
+      For success that’s ready to scale
+    </h2>
+    <div class="text-lg md:text-lg-desktop mt-4 mb-12 text-body">
+      We are an experienced team of software designers and engineers that know
+      how to take ideas from concept to reality.
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row flex-wrap md:gap-x-[5%]">
+    {
+      Expertises.map((expertise) => (
+        <div class="md:w-[47.5%]">
+          <div class="relative -left-12 xs:-left-16 md:-left-12 lg:-left-16">
+            <img
+              src={expertise.image.src}
+              width={expertise.image.width}
+              height={expertise.image.height}
+              alt={expertise.imageAlt}
+            />
+          </div>
+          <div class="-mt-20 relative">
+            <h6 class="mb-4 text-title text-3xl md:text-3xl-desktop">
+              {expertise.title}
+            </h6>
+            <span class="text-body text-lg md:text-lg-desktop">
+              {expertise.subtitle}
+            </span>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </div>
 
-<style>
-</style>
+<style></style>

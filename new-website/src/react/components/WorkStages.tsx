@@ -39,30 +39,34 @@ const workProcessMap = [
 
 export const WorkStages = () => {
   return (
-      <div className="px-10 md:px-14 py-16 lg:py-32 text-secondaryCol1 font-inter">
-        <div>
-          <div className="my-16 md:my-28 lg:my-32">
-            <h2 className="font-bold text-4xl mb-5">
-              We deliver software. Swiftly.
-            </h2>
-            <p className="pb-16 text-xl text-secondaryCol1/85">
-              We follow a proven product innovation process, guided by decades of experience developing products. We assemble world-class, yet highly affordable, offshore design & engineering teams. We scale as you do and operate and optimize your platforms whether they run at the edge or in the cloud.
-            </p>
-            <div className="mb-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {workProcessMap.map(({ title, description, bgImage }) => (
-                <div
-                  key={title}
-                  style={{ backgroundImage: `url(${bgImage})` }}
-                  className={`pt-34 bg-no-repeat bg-left-top-2`}
-                >
-                  <h3 className="font-bold text-2xl">{title}</h3>
-                  <p className="text-lg text-secondaryCol1/85">{description}</p>
-                </div>
-              ))}
-            </div>
+    <div className="px-10 md:px-14 py-16 lg:py-32 text-secondaryCol1 font-inter">
+      <div>
+        <div className="my-16 md:my-28 lg:my-32">
+          <h2 className="font-bold text-4xl mb-5">
+            We deliver software. Swiftly.
+          </h2>
+          <p className="pb-16 text-xl text-secondaryCol1/85">
+            We follow a proven product innovation process, guided by decades of
+            experience developing products. We assemble world-class, yet highly
+            affordable, offshore design & engineering teams. We scale as you do
+            and operate and optimize your platforms whether they run at the edge
+            or in the cloud.
+          </p>
+          <div className="mb-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {workProcessMap.map(({ title, description, bgImage }) => (
+              <div
+                key={title}
+                style={{ backgroundImage: `url(${bgImage})` }}
+                className={`pt-34 bg-no-repeat bg-left-top-2`}
+              >
+                <h3 className="font-bold text-2xl">{title}</h3>
+                <p className="text-lg text-secondaryCol1/85">{description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
