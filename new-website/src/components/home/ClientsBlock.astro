@@ -13,14 +13,15 @@ import Client from '../clients/Client.astro';
 
 const Clients = [
   {
-    desktopImg: privoLaptopImage,
+    desktopImg: { default: privoLaptopImage },
     logoImg: privoLogoImage,
     description: 'Children’s online identity & consent management',
     name: 'Privo',
-    classes: 'bg-[#005A88]',
+    classes:
+      'bg-[#005A88] md:[&_.desktop-img]:bottom-[-30px] md:[&_.desktop-img]:w-[70%] ',
   },
   {
-    desktopImg: vierallyLaptopImage,
+    desktopImg: { default: vierallyLaptopImage },
     logoImg: vierallyLogoImage,
     mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
     description: 'AI tool to predict virality and maximize marketing ROI',
@@ -28,7 +29,7 @@ const Clients = [
     classes: 'bg-[#1E3A8A]',
   },
   {
-    desktopImg: plumcheckLaptopImage,
+    desktopImg: { default: plumcheckLaptopImage },
     logoImg: plumcheckLogoImage,
     mobileImg: { default: plumcheckMobileImage },
     description:
@@ -39,7 +40,7 @@ const Clients = [
 ];
 ---
 
-<div class="py-24 md:py-32 px-4 md:px-20 relative">
+<div class="py-24 md:py-32 px-4 md:px-8 xl:px-20 relative">
   <img src={spotlightBgImage.src} class="absolute top-0 w-full left-0 z-0" />
   <div class="relative z-10 mb-16 md:mb-20">
     <h2 class="text-6xl md:text-6xl-desktop text-white">
@@ -52,7 +53,7 @@ const Clients = [
     </div>
   </div>
   <div class="flex flex-col gap-5 md:gap-20">
-    {Clients.map((client) => <Client {...client} />)}
+    {Clients.map((clientData) => <Client {...clientData} />)}
   </div>
 </div>
 
