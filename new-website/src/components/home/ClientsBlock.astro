@@ -1,22 +1,29 @@
 ---
-import spotlightBgImage from '~/assets/images/new/spotlight-bg.png';
-import privoLaptopImage from '~/assets/images/new/devices/privo-2x.png';
-import privoLogoImage from '~/assets/images/new/logos/privo-white.png';
-import vierallyLaptopImage from '~/assets/images/new/devices/vierally-desktop.png';
-import vierallyMobileImage from '~/assets/images/new/devices/vierally-mobile.png';
-import vierallyMobile2xImage from '~/assets/images/new/devices/vierally-mobile-2x.png';
-import vierallyLogoImage from '~/assets/images/new/logos/vierally-logo.png';
 import plumcheckLaptopImage from '~/assets/images/new/devices/plumcheck-desktop.png';
 import plumcheckMobileImage from '~/assets/images/new/devices/plumcheck-mobile.png';
+import privoLaptopImage from '~/assets/images/new/devices/privo-2x.png';
+import vierallyLaptopImage from '~/assets/images/new/devices/vierally-desktop.png';
+import vierallyMobile2xImage from '~/assets/images/new/devices/vierally-mobile-2x.png';
+import vierallyMobileImage from '~/assets/images/new/devices/vierally-mobile.png';
 import plumcheckLogoImage from '~/assets/images/new/logos/plumcheck-logo.png';
+import privoLogoImage from '~/assets/images/new/logos/privo-white.png';
+import vierallyLogoImage from '~/assets/images/new/logos/vierally-logo.png';
+import spotlightBgImage from '~/assets/images/new/spotlight-bg.png';
+import {
+  PlumcheckStack,
+  PrivoStack,
+  VieRallyStack,
+} from '../../constants/clientsStack.astro';
 import Client from '../clients/Client.astro';
+import type { Props as ClientProps } from '../clients/Client.astro';
 
-const Clients = [
+const Clients: ClientProps[] = [
   {
     desktopImg: { default: privoLaptopImage },
     logoImg: privoLogoImage,
     description: 'Children’s online identity & consent management',
     name: 'Privo',
+    technologiesImages: PrivoStack,
     classes:
       'bg-[#005A88] md:[&_.desktop-img]:bottom-[-30px] md:[&_.desktop-img]:w-[70%] ',
   },
@@ -26,6 +33,7 @@ const Clients = [
     mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
     description: 'AI tool to predict virality and maximize marketing ROI',
     name: 'VieRally',
+    technologiesImages: VieRallyStack,
     classes: 'bg-[#1E3A8A]',
   },
   {
@@ -35,6 +43,7 @@ const Clients = [
     description:
       'Allow dating and social media app users to share verified ID and health information',
     name: 'PlumCheck',
+    technologiesImages: PlumcheckStack,
     classes: 'bg-[#40169C]',
   },
 ];

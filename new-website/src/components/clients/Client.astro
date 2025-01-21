@@ -1,8 +1,41 @@
 ---
 import ArrowRight from '~/assets/images/new/arrow-right.svg';
+import { Image } from 'astro:assets';
 
-const { name, description, logoImg, caseLink, desktopImg, mobileImg, classes } =
-  Astro.props;
+export interface Props {
+  name: string;
+  description?: string;
+  logoImg: ImageMetadata;
+  caseLink?: string;
+  desktopImg: { default: ImageMetadata };
+  mobileImg?: { default: ImageMetadata; x2?: ImageMetadata };
+  technologiesImages: (
+    | {
+        object: ImageMetadata;
+        SvgComponent?: undefined;
+      }
+    | {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        SvgComponent: (_props: Record<string, any>) => any;
+        object?: undefined;
+      }
+  )[];
+  classes?: string;
+}
+const {
+  name,
+  description,
+  logoImg,
+  caseLink,
+  desktopImg,
+  mobileImg,
+  technologiesImages,
+  classes,
+} = Astro.props;
+
+const getStackImageAltFromSrc = (src: string) =>
+  src.slice(src.indexOf('stack/') + 'stack/'.length, src.indexOf('.')) +
+  ' logo';
 ---
 
 <div
@@ -11,7 +44,9 @@ const { name, description, logoImg, caseLink, desktopImg, mobileImg, classes } =
     classes,
   ]}
 >
-  <div class="relative md:w-[40%] flex flex-col gap-6 md:pt-20 md:pb-16 py-8">
+  <div
+    class="relative z-10 md:w-[40%] flex flex-col gap-6 md:pt-20 md:pb-16 py-8"
+  >
     <img src={logoImg.src} width={logoImg.width} height={logoImg.height} />
     <div class="text-3xl md:text-3xl-desktop text-white">{description}</div>
     <a
@@ -21,6 +56,27 @@ const { name, description, logoImg, caseLink, desktopImg, mobileImg, classes } =
         class="inline-block ml-2.5 w-5 h-5 md:w-7 md:h-7"
       /></a
     >
+    {
+      technologiesImages && (
+        <div class="flex gap-2 flex-wrap">
+          {technologiesImages?.map((technologyImage) => (
+            <div class="p-2.5 w-12 h-12 box-border flex items-center justify-center bg-white/5 border border-white/15 rounded-xl">
+              {technologyImage.object ? (
+                <Image
+                  width={52}
+                  height={52}
+                  src={technologyImage.object}
+                  class="w-[26px] h-[26px] object-contain"
+                  alt={getStackImageAltFromSrc(technologyImage.object.src)}
+                />
+              ) : (
+                <technologyImage.SvgComponent class="w-[26px] h-[26px]" />
+              )}
+            </div>
+          ))}
+        </div>
+      )
+    }
   </div>
   <div
     class="relative -mx-12 sm:-ml-18 sm:-mr-12 md:mx-0 md:absolute md:inset-0"
