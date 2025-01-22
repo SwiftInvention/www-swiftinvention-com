@@ -36,3 +36,21 @@
     background-color: theme(colors.surface.DEFAULT);
   }
 }
+
+@layer components {
+  .case-studies-logos {
+    border-radius: var(--rounded-none, 0px) var(--rounded-none, 0px) var(--rounded-3xl, 24px) var(--rounded-3xl, 24px);
+    border-right: 1px solid #020617;
+    border-bottom: 1px solid #020617;
+    border-left: 1px solid #020617;
+    background: linear-gradient(180deg, #020617 20.65%, #0F172A 100%);
+
+    /* shadow-5-strong */
+    box-shadow: 0px 2px 25px -5px var(--alpha-always-dark-15, rgba(15, 23, 42, 0.15)), 0px 25px 21px -5px var(--alpha-always-dark-10, rgba(15, 23, 42, 0.10));
+  }
+
+  .case-studies-link {
+    border-radius: var(--rounded-3xl, 24px) var(--rounded-3xl, 24px) var(--rounded-none, 0px) var(--rounded-none, 0px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+  }
+}
