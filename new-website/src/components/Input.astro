@@ -1,0 +1,53 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'input'> { classes?: string; isTextarea?: boolean }
+
+const { classes, placeholder, type, isTextarea = false, ...inputProps } = Astro.props;
+const generalClasses = "transition-all relative bg-transparent z-10 w-full py-2.5 px-4 pt-[26px] text-base rounded-lg focus:outline-0"
+---
+
+<div
+  class:list={[
+    'relative bg-white rounded-lg border border-gray-accent focus-within:outline focus-within:outline-[3px]',
+    classes,
+  ]}
+>
+  {placeholder && <span
+    data-input-custom-placeholder
+    class="transition-all absolute left-[17px] text-base leading-1 top-[25px] text-subtle"
+  >{placeholder}</span>}
+  {isTextarea ? <textarea
+    data-input-custom
+    class:list={[generalClasses, "h-30"]}
+    {...inputProps}
+  /> : <input
+      data-input-custom
+      type={type ?? "text"}
+      class:list={[generalClasses, "h-18"]}
+    {...inputProps}
+  />}
+</div>
+
+<script>
+  const inputs = document.querySelectorAll('[data-input-custom]') as NodeListOf<HTMLInputElement>
+  
+  inputs.forEach(input => input.addEventListener('focus', () => {
+    const placeholderEl = input.previousElementSibling
+    if (!input.value && placeholderEl && [...placeholderEl.attributes].find(attr => attr.name === 'data-input-custom-placeholder')) {
+      placeholderEl.classList.add('text-xs', '-translate-y-[15px]')
+      input.classList.add('pt-[26px]')
+    }
+  }))
+
+  inputs.forEach(input => input.addEventListener('blur', () => {
+    const placeholderEl = input.previousElementSibling
+
+    if (!input.value && placeholderEl && [...placeholderEl.attributes].find(attr => attr.name === 'data-input-custom-placeholder')) {
+      placeholderEl.classList.remove('text-xs', '-translate-y-[15px]')
+      input.classList.remove('pt-[26px]')
+    }
+  }))
+
+</script>
+<style></style>
