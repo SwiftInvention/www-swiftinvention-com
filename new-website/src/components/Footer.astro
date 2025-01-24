@@ -1,0 +1,39 @@
+---
+import birdsUpImage from '~/assets/images/new/birds-up.png';
+import Input from './Input.astro';
+import Button from './Button.astro';
+---
+
+<footer class="mx-4 md:mx-20 py-8 md:pt-16">
+  <div
+    class="max-md:contact-us-form md:contact-us-form-desktop py-6 md:py-16 px-6 md:pl-0 md:pr-16 md:mb-16 flex gap-6 flex-col md:flex-row"
+  >
+    <div
+      class="md:px-0 flex md:justify-between items-center md:items-start flex-col md:flex-col-reverse md:basis-[47.5%]"
+    >
+      <img src={birdsUpImage.src} class="w-[70%] md:w-[90%] relative z-10" />
+      <div class="relative -mt-11 md:mt-0">
+        <div class="mb-2 text-6xl md:text-6xl-desktop text-white">
+          Let’s talk
+        </div>
+        <span class="text-lg md:text-lg-desktop text-white"
+          >Feel free to shoot us a message about your project and will reach
+          back to your shortly.</span
+        >
+      </div>
+    </div>
+    <form class="md:basis-[47.5%] flex flex-col gap-6">
+      <Input name="name" required placeholder="Name" />
+      <Input name="email" required placeholder="Email address" type="email" />
+      <Input name="phone" placeholder="Phone number" type="tel" />
+      <Input name="message" isTextarea required placeholder="Message" />
+      <Button
+        type="submit"
+        variant="orange"
+        classes="py-3 px-6 text-xl md:text-xl-desktop">Send message</Button
+      >
+    </form>
+  </div>
+</footer>
+
+<style></style>

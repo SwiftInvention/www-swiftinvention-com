@@ -1,14 +1,26 @@
 ---
-const { onClick, classes } = Astro.props;
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'button'> {
+  classes?: string;
+  type: 'button' | 'submit';
+  variant?: 'white' | 'orange';
+}
+
+const { classes, type, variant = 'white', ...buttonProps } = Astro.props;
 ---
 
 <button
-  type="button"
   class:list={[
-    'flex bg-primaryCol2 justify-center text-gray-solid hover:text-primaryCol1 text-sm font-semibold py-2.5 px-2.5 rounded-md items-center border-none',
+    'flex justify-center text-sm font-semibold py-2.5 px-2.5 rounded-md items-center',
+    variant === 'orange' &&
+      'bg-warning text-white hover:text-white hover:bg-warning/90 border border-warning-500',
+    variant === 'white' &&
+      'border-none text-gray-solid hover:text-primaryCol1 bg-primaryCol2',
     classes,
   ]}
-  onclick={onClick}
+  type={type ?? 'button'}
+  {...buttonProps}
 >
   <slot />
 </button>
