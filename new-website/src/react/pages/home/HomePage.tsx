@@ -5,8 +5,8 @@ import homeHeaderBg from '~/assets/images/home-header-bg.png';
 import homeServicesBg from '~/assets/images/home-services-bg.png';
 import homeGrid from '~/assets/images/home-grid.svg';
 import computerCode from '~/assets/images/computer-code.svg';
-import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
-import { routes, getByName } from '~/routes/routes';
+import { ArrowedText } from '~/react/components/arrowedtext/ArrowedText';
+import { routes, getByName } from '~/react/routes/routes';
 
 export interface HomePageProps {}
 

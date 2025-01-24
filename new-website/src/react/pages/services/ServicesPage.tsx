@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { DefaultPage } from '../default/DefaultPage';
 import servicesBg from '~/assets/images/services-bg.png';
-import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
-import { ServiceCard } from '~/components/servicecard/ServiceCard';
+import { ArrowedText } from '~/react/components/arrowedtext/ArrowedText';
+import { ServiceCard } from '~/react/components/servicecard/ServiceCard';
 import computerImage from '~/assets/images/computer-white.png';
 import phoneImage from '~/assets/images/phone-white.png';
 import serverImage from '~/assets/images/server-white.png';
 import tabletImage from '~/assets/images/tablet-white.png';
-import { routes, getByName } from '~/routes/routes';
+import { routes, getByName } from '~/react/routes/routes';
 
 export interface ServicesPageProps {}
 

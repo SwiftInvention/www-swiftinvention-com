@@ -3,7 +3,7 @@ import { Routes, HashRouter, Route } from 'react-router-dom';
 import { NotFoundPage } from './pages/notfound/NotFoundPage';
 import { ErrorPage } from './pages/error/ErrorPage';
 import { HomePage } from './pages/home/HomePage';
-import { routes, getByName } from '~/routes/routes';
+import { routes, getByName } from '~/react/routes/routes';
 import { ServicesPage } from './pages/services/ServicesPage';
 import { CasesPage } from './pages/cases/CasesPage';
 import { NewsPage } from './pages/news/NewsPage';

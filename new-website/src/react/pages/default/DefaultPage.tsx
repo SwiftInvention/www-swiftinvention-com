@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Footer } from '~/components/footer/Footer';
-import { Header } from '~/components/header/Header';
-import { getByName, routes } from '~/routes/routes';
+import { Footer } from '~/react/components/footer/Footer';
+import { Header } from '~/react/components/header/Header';
+import { getByName, routes } from '~/react/routes/routes';
 
 export interface DefaultPageProps {
   children: JSX.Element | JSX.Element[];

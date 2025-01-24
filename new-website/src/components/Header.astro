@@ -1,15 +1,17 @@
 ---
 import swiftInvention from '~/assets/images/swift-white-logo.svg';
 import Button from './Button.astro';
+import { Routes } from '~/constants/routes.astro';
+import HamburgerIcon from '~/assets/images/new/hamburger.svg';
 
 const currentPath = Astro.url.pathname;
 ---
 
 <header>
   <nav class="bg-transparent">
-    <div class="max-w-8xl mx-auto">
+    <div class="max-w-8xl mx-auto px-4 lg:px-5">
       <div class="flex items-center justify-between h-18">
-        <div class="flex-shrink-0 pl-5 md:pl-18">
+        <div class="flex-shrink-0 md:pl-18">
           <a href={'/'}>
             <img
               class="cursor-pointer"
@@ -27,37 +29,79 @@ const currentPath = Astro.url.pathname;
         <div
           class="hidden lg:flex items-center content-center justify-end lg:flex-1 lg:space-x-2 lg:mr-14"
         >
-          <a href={'/services'}>
+          <a href={Routes.services.path}>
             <div
               class:list={[
                 'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
-                currentPath === '/services' ? 'opacity-100' : 'opacity-60',
+                currentPath === Routes.services.path
+                  ? 'opacity-100'
+                  : 'opacity-60',
               ]}
             >
               <div
                 class:list={[
-                  'group-hover:opacity-100 uppercase text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
-                  currentPath === '/services' && 'opacity-100',
+                  'group-hover:opacity-100 text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+                  currentPath === Routes.services.path && 'opacity-100',
                 ]}
               >
-                Services
+                {Routes.services.name}
               </div>
             </div>
           </a>
-          <a href={'/caseStudies'}>
+          <a href={Routes.caseStudies.path}>
             <div
               class:list={[
                 'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
-                currentPath === '/caseStudies' ? 'opacity-100' : 'opacity-60',
+                currentPath === Routes.caseStudies.path
+                  ? 'opacity-100'
+                  : 'opacity-60',
               ]}
             >
               <div
                 class:list={[
-                  'group-hover:opacity-100 uppercase text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
-                  currentPath === '/caseStudies' && 'opacity-100',
+                  'group-hover:opacity-100 text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+                  currentPath === Routes.caseStudies.path && 'opacity-100',
                 ]}
               >
-                Case Studies
+                {Routes.caseStudies.name}
+              </div>
+            </div>
+          </a>
+          <a href={Routes.careers.path}>
+            <div
+              class:list={[
+                'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
+                currentPath === Routes.careers.path
+                  ? 'opacity-100'
+                  : 'opacity-60',
+              ]}
+            >
+              <div
+                class:list={[
+                  'group-hover:opacity-100 text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+                  currentPath === Routes.careers.path && 'opacity-100',
+                ]}
+              >
+                {Routes.careers.name}
+              </div>
+            </div>
+          </a>
+          <a href={Routes.aboutUs.path}>
+            <div
+              class:list={[
+                'group py-2 px-3 hover:opacity-100 cursor-pointer rounded-md hover:transition-all duration-200',
+                currentPath === Routes.aboutUs.path
+                  ? 'opacity-100'
+                  : 'opacity-60',
+              ]}
+            >
+              <div
+                class:list={[
+                  'group-hover:opacity-100 text-primaryCol2 font-inter font-bold text-sm -mb-1 whitespace-nowrap hover:transition-all duration-200',
+                  currentPath === Routes.aboutUs.path && 'opacity-100',
+                ]}
+              >
+                {Routes.aboutUs.name}
               </div>
             </div>
           </a>
@@ -65,6 +109,9 @@ const currentPath = Astro.url.pathname;
             <Button classes="w-[154px]">Work with us</Button>
           </div>
         </div>
+        <button class="w-11 h-11 flex justify-center items-center lg:hidden">
+          <HamburgerIcon />
+        </button>
       </div>
     </div>
     <div id="mobile-menu-portal"></div>

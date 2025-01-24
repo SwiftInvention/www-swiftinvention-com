@@ -3,7 +3,7 @@ import type { HTMLAttributes } from 'astro/types';
 
 interface Props extends HTMLAttributes<'button'> {
   classes?: string;
-  type: 'button' | 'submit';
+  type?: 'button' | 'submit';
   variant?: 'white' | 'orange';
 }
 

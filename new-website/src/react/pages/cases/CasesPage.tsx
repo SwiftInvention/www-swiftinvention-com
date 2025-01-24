@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultPage } from '../default/DefaultPage';
 import casesBg from '~/assets/images/cases-bg.png';
-import { CaseStudyCard } from '~/components/casestudy/CaseStudyCard';
+import { CaseStudyCard } from '~/react/components/casestudy/CaseStudyCard';
 
 // import azigoCardBg from '~/assets/images/cards/azigo-card-2x.png';
 // import confyrmCardBg from '~/assets/images/cards/confyrm-card-2x.png';
@@ -12,7 +12,7 @@ import blankslateCardBg from '~/assets/images/cards/blank-slate-card-2x.png';
 import enkCardBg from '~/assets/images/cards/enk-card-2x.png';
 import mbsCardBg from '~/assets/images/cards/mbs-card-2x.png';
 import pakiraCardBg from '~/assets/images/cards/pakira-card.png';
-import { routes, getByName } from '~/routes/routes';
+import { routes, getByName } from '~/react/routes/routes';
 
 export interface CasesPageProps {}
 

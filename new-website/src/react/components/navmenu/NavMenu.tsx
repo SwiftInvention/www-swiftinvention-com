@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import React from 'react';
-import useToggle from '~/hooks/useToggle';
+import useToggle from '~/react/hooks/useToggle';
 import { NavMenuItems } from './NavMenuItems';
 
 export interface NavMenuProps {

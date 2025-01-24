@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { NavMenu } from '../navmenu/NavMenu';
-import { routes, getByName } from '~/routes/routes';
+import { routes, getByName } from '~/react/routes/routes';
 import { twMerge } from 'tailwind-merge';
 import swiftInvention from '~/assets/images/swift-white-logo.svg';
 

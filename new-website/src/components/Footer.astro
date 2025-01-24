@@ -1,7 +1,11 @@
 ---
 import birdsUpImage from '~/assets/images/new/birds-up.png';
-import Input from './Input.astro';
+import SwiftInventionIcon from '~/assets/images/swift-white-logo.svg';
+
+import { Routes } from '~/constants/routes.astro';
 import Button from './Button.astro';
+import Input from './Input.astro';
+import SocialNetworks from './SocialNetworks.astro';
 ---
 
 <footer class="mx-4 md:mx-20 py-8 md:pt-16">
@@ -16,13 +20,13 @@ import Button from './Button.astro';
         <div class="mb-2 text-6xl md:text-6xl-desktop text-white">
           Let’s talk
         </div>
-        <span class="text-lg md:text-lg-desktop text-white"
+        <span class="text-lg md:text-lg-desktop text-white opacity-80"
           >Feel free to shoot us a message about your project and will reach
           back to your shortly.</span
         >
       </div>
     </div>
-    <form class="md:basis-[47.5%] flex flex-col gap-6">
+    <form id="contact-us-form" class="md:basis-[47.5%] flex flex-col gap-6">
       <Input name="name" required placeholder="Name" />
       <Input name="email" required placeholder="Email address" type="email" />
       <Input name="phone" placeholder="Phone number" type="tel" />
@@ -33,6 +37,44 @@ import Button from './Button.astro';
         classes="py-3 px-6 text-xl md:text-xl-desktop">Send message</Button
       >
     </form>
+  </div>
+  <div class="md:mt-16 flex flex-col">
+    <div class="md:flex md:justify-between mb-6 md:mb-16">
+      <SwiftInventionIcon class="h-4 w-[200px]" />
+      <div class="hidden md:block">
+        <SocialNetworks />
+      </div>
+    </div>
+    <div class="flex gap-x-8 gap-y-6 flex-wrap mb-6 md:mb-8">
+      <a
+        class="text-gray-accentText font-medium text-sm"
+        href={Routes.services.path}>{Routes.services.name}</a
+      >
+      <a
+        class="text-gray-accentText font-medium text-sm"
+        href={Routes.aboutUs.path}>{Routes.aboutUs.name}</a
+      >
+      <a
+        class="text-gray-accentText font-medium text-sm"
+        href={Routes.caseStudies.path}>{Routes.caseStudies.name}</a
+      >
+      <a
+        class="text-gray-accentText font-medium text-sm"
+        href={Routes.careers.path}>{Routes.careers.name}</a
+      >
+      <a
+        class="text-gray-accentText font-medium text-sm"
+        href={'#contact-us-form'}>Contact us</a
+      >
+    </div>
+    <div class="md:hidden mb-16">
+      <SocialNetworks />
+    </div>
+    <div class="text-sm text-white mb-1">© 2024 Swift Invention, Inc.</div>
+    <div class="text-sm text-white opacity-60">
+      All trademarks, logos, and brand names are the property of their
+      respective owners.
+    </div>
   </div>
 </footer>
 

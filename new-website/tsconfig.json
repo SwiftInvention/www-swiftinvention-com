@@ -19,8 +19,9 @@
     "jsxImportSource": "react",
     "baseUrl": "./",
     "paths": {
-      "~/*": ["./src/react/*"],
+      "~/react/*": ["./src/react/*"],
       "~/assets/*": ["./src/assets/*"],
+      "~/constants/*": ["./src/constants/*"],
       "~/public/*": ["./public/*"],
     },
     "noEmit": true,

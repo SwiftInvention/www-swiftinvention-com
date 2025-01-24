@@ -1,7 +1,7 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
-import { usePortal } from '~/hooks/usePortal';
+import { usePortal } from '~/react/hooks/usePortal';
 
 export interface NavMenuItemsProps {
   navItems: Array<{ name: string; link: string }>;

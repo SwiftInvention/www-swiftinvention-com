@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { DefaultPage } from '../default/DefaultPage';
-import { Stripe } from '~/components/stripe/Stripe';
+import { Stripe } from '~/react/components/stripe/Stripe';
 import servicesBg from '~/assets/images/services-bg.png';
 import phoneAlarm from '~/assets/images/phone-alarm.svg';
-import { routes, getByName } from '~/routes/routes';
+import { routes, getByName } from '~/react/routes/routes';
 
 export interface NewProductsPageProps {}
 

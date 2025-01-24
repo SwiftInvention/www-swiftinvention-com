@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { DefaultPage } from '~/pages/default/DefaultPage';
+import { DefaultPage } from '~/react/pages/default/DefaultPage';
 import Samaya from '~/assets/images/teamMembers/Samaya.png';
 import Samaya2x from '~/assets/images/teamMembers/Samaya-2x.png';
 import Sergey from '~/assets/images/teamMembers/Sergey.png';

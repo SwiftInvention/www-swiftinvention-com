@@ -1,7 +1,7 @@
 import React from 'react';
 import caseDetailsBg from '~/assets/images/case-details-bg-2x.png';
 import { DefaultPage } from '../default/DefaultPage';
-import { VisitButton } from '~/components/visitbutton/VisitButton';
+import { VisitButton } from '~/react/components/visitbutton/VisitButton';
 import { CaseArrow, Direction } from '../../components/casearrows/CaseArrow';
 import { routes, getByName } from '../../routes/routes';
 

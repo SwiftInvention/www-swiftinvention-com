@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowedText } from '~/components/arrowedtext/ArrowedText';
+import { ArrowedText } from '~/react/components/arrowedtext/ArrowedText';
 
 export interface StripeProps {
   text: string;

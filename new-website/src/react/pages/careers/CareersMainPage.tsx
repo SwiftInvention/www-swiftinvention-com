@@ -1,15 +1,15 @@
 import React, { useCallback, useEffect, useRef } from 'react';
 import type { RefObject } from 'react';
 import { useLocation } from 'react-router-dom';
-import { CareersCard } from '~/components/careerscard/CareersCard';
+import { CareersCard } from '~/react/components/careerscard/CareersCard';
 import mobileImage from '~/assets/images/mobile.png';
 import frontendImage from '~/assets/images/frontend-white.png';
 import devopsImage from '~/assets/images/devops-white.png';
 import backendImage from '~/assets/images/backend-white.png';
 import saImage from '~/assets/images/sa-white.png';
 import qaImage from '~/assets/images/qa-white.png';
-import { TechStack } from '~/components/careers/TechStack';
-import { getByName, routes } from '~/routes/routes';
+import { TechStack } from '~/react/components/careers/TechStack';
+import { getByName, routes } from '~/react/routes/routes';
 
 const vacancyList: {
   text: string;

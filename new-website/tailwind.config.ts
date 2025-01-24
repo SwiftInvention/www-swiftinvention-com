@@ -36,6 +36,7 @@ export default {
       gray: {
         solid: '#334155',
         accent: '#CBD5E1',
+        accentText: '#E2E8F0',
       },
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
