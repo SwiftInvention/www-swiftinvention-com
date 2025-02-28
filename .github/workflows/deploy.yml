@@ -21,7 +21,8 @@ jobs:
         uses: withastro/action@v3
         with:
           path: .
-          node-version: 20
+          node-version: 20 
+          package-manager: pnpm@9.x
   deploy:
     needs: build
     runs-on: ubuntu-latest
