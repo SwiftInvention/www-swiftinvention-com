@@ -1,0 +1,29 @@
+---
+import { TechStack } from '~/react/components/careers/TechStack';
+---
+
+<div id="tech-stack-block__wrapper">
+  <div id="tech-stack-block">
+    <TechStack />
+  </div>
+</div>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import twConfig from '../../../tailwind.config';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  let mm = gsap.matchMedia();
+  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.from('#tech-stack-block', {
+      scrollTrigger: '#tech-stack-block__wrapper',
+      duration: 1,
+      rotateX: 30,
+      scale: 0.9,
+      opacity: 0,
+    });
+  });
+</script>
+<style></style>

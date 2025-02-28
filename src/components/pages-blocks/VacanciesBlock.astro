@@ -1,0 +1,73 @@
+---
+import ArrowRight from '~/assets/images/arrow-right.svg';
+import HouseIcon from '~/assets/images/house-heart.svg';
+import AlarmIcon from '~/assets/images/alarm.svg';
+import { getCollection } from 'astro:content';
+import Button from '../Button.astro';
+
+const vacancies = await getCollection('vacancies');
+const openedVacancies = vacancies.filter((v) => !v.data.disabled);
+---
+
+<div class="container relative pt-16 md:pb-32 md:pt-20">
+  {
+    openedVacancies.length > 0 ? (
+      <div class="flex flex-col gap-0.5 overflow-hidden rounded-xl lg:grid lg:grid-cols-2 lg:gap-1">
+        {openedVacancies.map(({ data: vacancy }) => (
+          <div class="flex flex-col gap-6 bg-white/5 p-4 md:flex-row lg:p-6">
+            <div class="h-12 w-12 md:h-16 md:w-16">
+              <img
+                width={64}
+                height={64}
+                src={vacancy.image}
+                alt={vacancy.id}
+              />
+            </div>
+            <div class="">
+              <div class="text-2xl text-white lg:text-2xl-desktop">
+                {vacancy.title}
+              </div>
+              <div class="text-lg text-white">{vacancy.description}</div>
+              <div class="mb-8 mt-4 flex gap-1.5">
+                <div class="flex items-center rounded bg-gray-solid px-1.5 py-0.5 text-sm font-semibold text-white">
+                  <AlarmIcon class="mr-1.5" />
+                  {vacancy.employment}
+                </div>
+                <div class="flex items-center rounded bg-gray-solid px-1.5 py-0.5 text-sm font-semibold text-white">
+                  <HouseIcon class="mr-1.5" />
+                  {vacancy.location}
+                </div>
+              </div>
+              <a
+                href={'/vacancies/' + vacancy.id}
+                class="font-medium text-white"
+              >
+                View job description{' '}
+                <ArrowRight class="ml-2.5 inline-block h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="rounded-xl bg-white/5 p-6">
+        <div class="text-2xl text-white md:text-2xl-desktop">
+          No open positions at the moment
+        </div>
+        <div class="text-lg text-white md:w-[60%]">
+          We may not have any roles available right now, but we're always
+          looking for great talent. Send us your CV, and we'll reach out if a
+          position opens up that matches your skills.
+        </div>
+        <a
+          href={`mailto:job@swiftinvention.com?subject=<Your name> - resume&body=Dear Hiring Manager,`}
+          target="_blank"
+        >
+          <Button classes="w-full md:max-w-[159px] mt-6">Send your CV</Button>
+        </a>
+      </div>
+    )
+  }
+</div>
+
+<style></style>

@@ -1,0 +1,71 @@
+---
+import WorkStages from '~/react/components/WorkStages';
+
+const workProcessMap = [
+  {
+    name: 'Advise',
+    body: 'We help with product management, product strategy and even funding. In the end it’s about finding the right product market fit.',
+  },
+  {
+    name: 'Design',
+    body: 'We encourage our customers to perform user experience research. After that we work with you on experience and UI design.',
+  },
+  {
+    name: 'Build',
+    body: 'We assemble world-class offshore engineering teams with experience with many of the latest technologies and cloud platforms.',
+  },
+  {
+    name: 'Run',
+    body: 'After creating the CI/CD automation many clients ask us to deploy and maintain their solutions on their behalf.',
+  },
+  {
+    name: 'Optimize',
+    body: 'We scale and optimize your solutions while ensuring security best practices to achieve the highest availability and highest performance.',
+  },
+];
+---
+
+<div id="home-work-stages" class="opacity-0">
+  <WorkStages
+    stages={workProcessMap}
+    title="We deliver software. Swiftly."
+    description={`We follow a proven product innovation process, guided by decades of
+        experience developing products. We assemble world-class, yet highly
+        affordable, offshore design & engineering teams. We scale as you do
+        and operate and optimize your platforms whether they run at the edge
+        or in the cloud.`}
+  />
+</div>
+
+<style></style>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import twConfig from '../../../tailwind.config';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  let mm = gsap.matchMedia();
+  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.to('#home-work-stages', {
+      scrollTrigger: '#home-work-stages',
+      opacity: 1,
+      translateY: 0,
+      duration: 1,
+      startAt: {
+        translateY: 160,
+      },
+    });
+  });
+  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.to('#home-work-stages', {
+      scrollTrigger: '#home-work-stages',
+      opacity: 1,
+      translateY: 0,
+      duration: 1,
+      startAt: {
+        translateY: 80,
+      },
+    });
+  });
+</script>

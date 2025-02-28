@@ -1,0 +1,128 @@
+---
+import privoLogoImage from '~/assets/images/logos/privo-white.png';
+import vierallyLogoImage from '~/assets/images/logos/vierally-white.png';
+import plumcheckLogoImage from '~/assets/images/logos/plumcheck-logo.png';
+import eversanaLogoImage from '~/assets/images/logos/eversana-white.png';
+import blankslateLogoImage from '~/assets/images/logos/blankslate-white.png';
+import mbsLogoImage from '~/assets/images/logos/myblueskies-white.png';
+import pakiraLogoImage from '~/assets/images/logos/pakira-logo.png';
+import meeLogoImage from '~/assets/images/logos/mee-white.png';
+import ArrowRight from '~/assets/images/arrow-right.svg';
+import { NavRoutes } from '~/constants/routes.astro';
+import { Image } from 'astro:assets';
+---
+
+<div class="container pb-6 md:pb-8">
+  <div
+    id="case-studies-logos"
+    class="case-studies-logos mb-0.5 mt-0 flex flex-wrap justify-center gap-x-8 gap-y-6 px-4 pb-8 pt-16 md:mt-20 md:gap-x-20 md:gap-y-8 md:pt-20"
+  >
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={privoLogoImage.width}
+        height={privoLogoImage.height}
+        src={privoLogoImage}
+        alt="Privo logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={vierallyLogoImage.width}
+        height={vierallyLogoImage.height}
+        src={vierallyLogoImage}
+        alt="Vierally logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={plumcheckLogoImage.width}
+        height={plumcheckLogoImage.height}
+        src={plumcheckLogoImage}
+        alt="plumcheck logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={eversanaLogoImage.width}
+        height={eversanaLogoImage.height}
+        src={eversanaLogoImage}
+        alt="eversana logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={meeLogoImage.width}
+        height={meeLogoImage.height}
+        src={meeLogoImage}
+        alt="mee logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={mbsLogoImage.width}
+        height={mbsLogoImage.height}
+        src={mbsLogoImage}
+        alt="mbs logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={blankslateLogoImage.width}
+        height={blankslateLogoImage.height}
+        src={blankslateLogoImage}
+        alt="blankslate logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={pakiraLogoImage.width}
+        height={pakiraLogoImage.height}
+        src={pakiraLogoImage}
+        alt="pakira logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+  </div>
+  <div class="case-studies-link flex justify-center py-4 md:py-8">
+    <a
+      class="cursor-pointer p-3 text-xl text-white hover:opacity-80 md:text-xl-desktop"
+      href={NavRoutes.caseStudies.path}
+    >
+      View all case studies <ArrowRight
+        class="ml-2.5 inline-block h-5 w-5 md:h-7 md:w-7"
+      /></a
+    >
+  </div>
+</div>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from('#case-studies-logos>*', {
+    scrollTrigger: '#case-studies-logos',
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    stagger: 0.2,
+    translateY: 20,
+    ease: 'power2.out',
+  });
+</script>
+<style></style>

@@ -1,0 +1,86 @@
+---
+import Button from '~/components/Button.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+interface Props {
+  pageTitle: string;
+  title: string;
+  subtitle: string;
+  classes?: string;
+  image?: ImageMetadata;
+}
+const { pageTitle, title, subtitle, image, classes } = Astro.props;
+
+const vacancies = await getCollection('vacancies');
+const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
+---
+
+<div
+  class:list={[
+    'container relative mt-8 flex flex-col items-start justify-between pb-4 md:mt-24 md:flex-row',
+    classes,
+  ]}
+>
+  <div
+    id="page-head-block__text"
+    class="animate-page-head relative z-10 mb-4 max-w-[910px] md:mb-0"
+  >
+    <div class="">
+      <div class="transparent-text inline-block text-7xl md:text-9xl-desktop">
+        {pageTitle}
+      </div>
+    </div>
+    <div
+      class="mb-4 text-4xl text-white md:mt-1.5 md:text-7xl-desktop"
+      set:html={title}
+    />
+    <div class="text-xl !font-normal text-white opacity-80 md:text-xl-desktop">
+      {subtitle}
+    </div>
+  </div>
+  {
+    hasOpenedVacancies && (
+      <a
+        href={`mailto:job@swiftinvention.com?subject=<Your name> - resume&body=Dear Hiring Manager,`}
+        target="_blank"
+      >
+        <Button classes="h-[58px] w-full md:hidden text-xl md:text-xl-desktop rounded-2lg">
+          Work with us
+        </Button>
+      </a>
+    )
+  }
+  {
+    image && (
+      <Image
+        class="hidden w-[30%] lg:block"
+        format="webp"
+        width={image.width}
+        height={image.height}
+        src={image}
+        alt="top page background"
+        fetchpriority="high"
+        loading="eager"
+      />
+    )
+  }
+</div>
+<!-- <script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to('#page-head-block__text', {
+    scrollTrigger: '#page-head-block__text',
+    opacity: 1,
+    translateY: 0,
+    duration: 1,
+    delay: 0.25,
+    startAt: {
+      translateY: -60,
+    },
+  });
+</script> -->
+<style></style>

@@ -1,0 +1,62 @@
+---
+import spotlightBgImage from '~/assets/images/spotlight-bg.png';
+import Client from '../clients/Client.astro';
+import { ClientsShort } from '~/constants/clientsStack.astro';
+import { Image } from 'astro:assets';
+---
+
+<div id="clients-block" class="relative pt-24 md:pt-32">
+  <Image
+    format="webp"
+    width={spotlightBgImage.width}
+    height={spotlightBgImage.height}
+    src={spotlightBgImage}
+    class="absolute left-0 top-0 z-0 w-full"
+    alt="Spotlight background"
+  />
+  <div class="container">
+    <div id="clients-block__head" class="relative z-10 mb-16 md:mb-20">
+      <div class="overflow-y-hidden">
+        <h2
+          id="clients-block__title"
+          class="text-6xl text-white md:text-6xl-desktop"
+        >
+          For clients turned partners
+        </h2>
+      </div>
+      <div class="mb-12 mt-4 overflow-y-hidden">
+        <div
+          id="clients-block__subtitle"
+          class="max-w-[783px] text-lg text-white opacity-80 md:text-lg-desktop"
+        >
+          Dive into our inspiring case studies that beautifully illustrate our
+          creative solutions and the wonderful partnerships we've built with
+          clients from diverse fields.
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-5 md:gap-20">
+      {ClientsShort.map((clientData) => <Client {...clientData} />)}
+    </div>
+  </div>
+</div>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from('#clients-block__title', {
+    scrollTrigger: '#clients-block__title',
+    translateY: '100%',
+    duration: 0.75,
+  });
+
+  gsap.from('#clients-block__subtitle', {
+    scrollTrigger: '#clients-block__subtitle',
+    translateY: '100%',
+    duration: 0.75,
+  });
+</script>
+<style></style>

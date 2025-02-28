@@ -1,0 +1,34 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import ArrowRight from '~/assets/images/arrow-right.svg';
+
+interface Props extends HTMLAttributes<'a'> {
+  classes?: string;
+  arrowClasses?: string;
+  href: string;
+  variant?: 'outlined' | 'ghost';
+}
+
+const {
+  classes,
+  arrowClasses,
+  href,
+  variant = 'ghost',
+  ...linkProps
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    'inline-block rounded-2lg px-6 py-3 text-center text-xl text-white hover:opacity-80 md:text-xl-desktop',
+    variant === 'outlined' && 'border border-white/60 hover:border-white',
+    classes,
+  ]}
+  {...linkProps}
+>
+  <slot />
+  <ArrowRight class:list={['ml-3 inline-block h-7 w-7 md:h-8', arrowClasses]} />
+</a>
+
+<style></style>

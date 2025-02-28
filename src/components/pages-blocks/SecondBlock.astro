@@ -1,0 +1,117 @@
+---
+import iphoneMockupImage from '~/assets/images/iphone-mockup.png';
+import webappMockupImage from '~/assets/images/webapp-mockup.png';
+import infraMockupImage from '~/assets/images/infra-mockup.png';
+import websiteMockupImage from '~/assets/images/website-mockup.png';
+
+import { Image } from 'astro:assets';
+
+const Expertises = [
+  {
+    title: 'Mobile apps',
+    subtitle:
+      'We develop intuitive mobile apps for iOS and Android, ensuring top performance, security, and scalability. We bring your vision to life with seamless, user-friendly solutions.',
+    image: iphoneMockupImage,
+    imageAlt: 'iphone mockup',
+  },
+  {
+    title: 'Web apps',
+    subtitle:
+      'Fast, secure, and scalable web applications tailored to your business needs. From complex platforms to simple tools, our web solutions deliver seamless performance across all browsers and devices.',
+    image: webappMockupImage,
+    imageAlt: 'webapp mockup',
+  },
+  {
+    title: 'Website development',
+    subtitle:
+      'We create custom, responsive websites that combine great design with functionality. Our websites are optimized for performance, ensuring an engaging user experience across all devices.',
+    image: websiteMockupImage,
+    imageAlt: 'iphone mockup',
+  },
+  {
+    title: 'Infrastructure development',
+    subtitle:
+      'We design and implement reliable, scalable IT infrastructures that support your business growth, ensuring high availability, security, and performance.',
+    image: infraMockupImage,
+    imageAlt: 'Infrastructure mockup',
+  },
+];
+---
+
+<div id="expertises-block" class="bg-white py-24 opacity-0 md:py-32">
+  <div class="container">
+    <div class="">
+      <h2 class="text-6xl text-title md:text-6xl-desktop">
+        For success that’s ready to scale
+      </h2>
+      <div
+        class="mb-12 mt-4 max-w-[964px] text-lg text-body opacity-80 md:text-lg-desktop"
+      >
+        We assist startups and businesses in developing innovative products and
+        services. We offer expertise in strategy, design, iOS, Android, web
+        apps, and infrastructure development.
+      </div>
+    </div>
+    <div class="flex flex-col flex-wrap md:flex-row md:gap-x-[5%]">
+      {
+        Expertises.map((expertise) => (
+          <div class="md:w-[47.5%]">
+            <div class="relative -left-12 xs:-left-16 md:-left-12 lg:-left-16">
+              <Image
+                format="webp"
+                src={expertise.image}
+                width={expertise.image.width}
+                height={expertise.image.height}
+                alt={expertise.imageAlt}
+              />
+            </div>
+            <div class="relative -mt-20">
+              <h3 class="mb-4 text-3xl text-title md:text-3xl-desktop">
+                {expertise.title}
+              </h3>
+              <span class="text-lg text-body opacity-80 md:text-lg-desktop">
+                {expertise.subtitle}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style></style>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import twConfig from '../../../tailwind.config';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  let mm = gsap.matchMedia();
+  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.to('#expertises-block', {
+      scrollTrigger: '#expertises-block',
+      opacity: 1,
+      translateY: 0,
+      duration: 1,
+      startAt: {
+        translateY: 160,
+      },
+    });
+  });
+  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.to('#expertises-block', {
+      scrollTrigger: '#expertises-block',
+      opacity: 1,
+      translateY: 0,
+      duration: 1,
+      startAt: {
+        translateY: 80,
+      },
+    });
+  });
+
+  // later, if we need to revert all the animations/ScrollTriggers...
+  // mm.revert();
+</script>

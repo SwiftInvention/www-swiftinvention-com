@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import swiftInventionIcon from '~/assets/images/swift-white-logo.svg';
+
+import { NavRoutes } from '~/constants/routes.astro';
+import SocialNetworks from './SocialNetworks.astro';
+import ContactUsForm from './ContactUsForm.astro';
+
+const currentPath = Astro.url.pathname;
+const withForm = currentPath !== NavRoutes.careers.path;
+---
+
+<footer id="footer" class="container py-8 md:pt-16">
+  {withForm && <ContactUsForm />}
+  <div class="mt-16 flex flex-col">
+    <div
+      class="mb-6 md:mb-8 md:flex md:items-center md:justify-between md:border-b md:border-white/10 md:pb-8"
+    >
+      <Image
+        src={swiftInventionIcon}
+        width={swiftInventionIcon.width}
+        height={swiftInventionIcon.height}
+        alt="Swift Invention logo"
+        class="h-4 w-[200px]"
+      />
+      <div class="hidden md:block">
+        <SocialNetworks />
+      </div>
+    </div>
+    <div class="mb-6 flex flex-wrap gap-x-8 gap-y-6 md:mb-8">
+      <a
+        class="text-sm font-medium text-gray-accentText"
+        href={NavRoutes.services.path}>{NavRoutes.services.name}</a
+      >
+      <a
+        class="text-sm font-medium text-gray-accentText"
+        href={NavRoutes.aboutUs.path}>{NavRoutes.aboutUs.name}</a
+      >
+      <a
+        class="text-sm font-medium text-gray-accentText"
+        href={NavRoutes.caseStudies.path}>{NavRoutes.caseStudies.name}</a
+      >
+      <a
+        class="text-sm font-medium text-gray-accentText"
+        href={NavRoutes.careers.path}>{NavRoutes.careers.name}</a
+      >
+      <a class="text-sm font-medium text-gray-accentText" href="#footer"
+        >Contact us</a
+      >
+    </div>
+    <div class="mb-8 border-b border-white/10 pb-8 md:hidden">
+      <SocialNetworks />
+    </div>
+    <div class="mb-1 text-sm text-white">© 2024 Swift Invention, Inc.</div>
+    <div class="text-sm text-white opacity-60">
+      All trademarks, logos, and brand names are the property of their
+      respective owners.
+    </div>
+  </div>
+</footer>
+<style></style>

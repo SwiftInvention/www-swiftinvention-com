@@ -1,0 +1,218 @@
+---
+import { Image } from 'astro:assets';
+import swiftInventionIcon from '~/assets/images/swift-white-logo.svg';
+import Button from './Button.astro';
+import { NavRoutes } from '~/constants/routes.astro';
+import HamburgerIcon from '~/assets/images/hamburger.svg';
+import CloseIcon from '~/assets/images/x-lg.svg';
+import MobileNavMenu from './MobileNavMenu.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed left-0 top-0 z-[100] w-screen bg-transparent">
+  <nav>
+    <div class="container">
+      <div class="flex h-24 items-center justify-between">
+        <div class="flex-shrink-0">
+          <a href={'/'} aria-label="Go to Swift home page">
+            <Image
+              src={swiftInventionIcon}
+              width={swiftInventionIcon.width}
+              height={swiftInventionIcon.height}
+              alt="Swift Invention logo"
+              class="h-5 w-[252px] md:h-6 md:w-[296px]"
+            />
+          </a>
+        </div>
+        <div
+          class="hidden content-center items-center justify-end lg:flex lg:flex-1 lg:gap-x-2.5"
+        >
+          <a href={NavRoutes.services.path}>
+            <div
+              class:list={[
+                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                currentPath === NavRoutes.home.path ||
+                currentPath.includes(NavRoutes.services.path)
+                  ? 'opacity-100'
+                  : 'opacity-60',
+                currentPath === NavRoutes.home.path && 'hover:opacity-80',
+                currentPath !== NavRoutes.home.path && 'hover:opacity-100',
+              ]}
+            >
+              {NavRoutes.services.name}
+            </div>
+          </a>
+          <a href={NavRoutes.caseStudies.path}>
+            <div
+              class:list={[
+                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                currentPath === NavRoutes.home.path ||
+                currentPath.includes(NavRoutes.caseStudies.path)
+                  ? 'opacity-100'
+                  : 'opacity-60',
+                currentPath === NavRoutes.home.path && 'hover:opacity-80',
+                currentPath !== NavRoutes.home.path && 'hover:opacity-100',
+              ]}
+            >
+              {NavRoutes.caseStudies.name}
+            </div>
+          </a>
+          <a href={NavRoutes.careers.path}>
+            <div
+              class:list={[
+                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                currentPath === NavRoutes.home.path ||
+                currentPath.includes(NavRoutes.careers.path)
+                  ? 'opacity-100'
+                  : 'opacity-60',
+                currentPath === NavRoutes.home.path && 'hover:opacity-80',
+                currentPath !== NavRoutes.home.path && 'hover:opacity-100',
+              ]}
+            >
+              {NavRoutes.careers.name}
+            </div>
+          </a>
+          <a href={NavRoutes.aboutUs.path}>
+            <div
+              class:list={[
+                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                currentPath === NavRoutes.home.path ||
+                currentPath.includes(NavRoutes.aboutUs.path)
+                  ? 'opacity-100'
+                  : 'opacity-60',
+                currentPath === NavRoutes.home.path && 'hover:opacity-80',
+                currentPath !== NavRoutes.home.path && 'hover:opacity-100',
+              ]}
+            >
+              {NavRoutes.aboutUs.name}
+            </div>
+          </a>
+          <a class="lg:ml-3.5" href="#footer">
+            <Button classes="w-[154px]">Work with us</Button>
+          </a>
+        </div>
+        <button
+          class="flex h-11 w-11 items-center justify-center lg:hidden"
+          id="mobile-menu-hamburger"
+          aria-label="Open mobile menu"
+        >
+          <HamburgerIcon />
+        </button>
+        <button
+          class="hidden h-11 w-11 items-center justify-center lg:hidden"
+          id="mobile-menu-close-btn"
+          aria-label="Close mobile menu"
+        >
+          <CloseIcon />
+        </button>
+      </div>
+    </div>
+    <MobileNavMenu id="mobile-menu-portal" />
+  </nav>
+</header>
+
+<style></style>
+<script>
+  import { gsap } from 'gsap';
+  import { Flip } from 'gsap/Flip';
+
+  gsap.registerPlugin(Flip);
+
+  const disableScrollEvents = (e: Event) => {
+    e.preventDefault();
+  };
+  const lockScroll = () => {
+    document.body.style.overflow = 'hidden';
+
+    document.addEventListener('touchmove', disableScrollEvents, {
+      passive: false,
+    });
+  };
+
+  const unlockScroll = () => {
+    document.body.style.overflow = '';
+
+    document?.removeEventListener('touchmove', disableScrollEvents);
+  };
+
+  const hamburgerEl = document.getElementById(
+    'mobile-menu-hamburger'
+  ) as HTMLButtonElement | null;
+  const closeBtnEl = document.getElementById(
+    'mobile-menu-close-btn'
+  ) as HTMLButtonElement | null;
+  const mobileNavEl = document.getElementById('mobile-menu-portal');
+
+  hamburgerEl?.addEventListener('click', () => {
+    if (mobileNavEl) {
+      hamburgerEl?.classList.replace('flex', 'hidden');
+      closeBtnEl?.classList.replace('hidden', 'flex');
+      mobileNavEl?.classList.replace('hidden', 'flex');
+      lockScroll();
+      document
+        .getElementsByTagName('header')[0]
+        ?.classList.replace('bg-transparent', 'bg-surface');
+
+      const state = Flip.getState(mobileNavEl, {
+        props: 'transform,border-radius',
+      });
+
+      mobileNavEl.classList.remove(
+        'scale-[0.1]',
+        'rounded-[50%]',
+        'translate-x-[60%]',
+        '-translate-y-[60%]'
+      );
+      mobileNavEl.classList.add(
+        'scale-100',
+        'rounded-none',
+        'translate-x-0',
+        'translate-y-24'
+      );
+
+      Flip.from(state, {
+        duration: 0.4,
+        ease: 'circ.out',
+      });
+    }
+  });
+  closeBtnEl?.addEventListener('click', () => {
+    if (mobileNavEl) {
+      mobileNavEl.classList.add(
+        'scale-[0.1]',
+        'rounded-[50%]',
+        'translate-x-[60%]',
+        '-translate-y-[60%]'
+      );
+      mobileNavEl.classList.remove(
+        'scale-100',
+        'rounded-none',
+        'translate-x-0',
+        'translate-y-24'
+      );
+      hamburgerEl?.classList.replace('hidden', 'flex');
+      closeBtnEl?.classList.replace('flex', 'hidden');
+      mobileNavEl?.classList.replace('flex', 'hidden');
+      unlockScroll();
+      if (window.scrollY < 30) {
+        document
+          .getElementsByTagName('header')[0]
+          ?.classList.replace('bg-surface', 'bg-transparent');
+      }
+    }
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      document
+        .getElementsByTagName('header')[0]
+        ?.classList.replace('bg-transparent', 'bg-surface');
+    } else {
+      document
+        .getElementsByTagName('header')[0]
+        ?.classList.replace('bg-surface', 'bg-transparent');
+    }
+  });
+</script>

@@ -1,0 +1,146 @@
+---
+import Button from './Button.astro';
+import Input from './Input.astro';
+import birdsUpImage from '~/assets/images/birds-up.png';
+import CheckMarkIcon from '~/assets/images/check-mark.svg';
+import ExclamationTriangleIcon from '~/assets/images/exclamation-triangle-fill.svg';
+import { Image } from 'astro:assets';
+---
+
+<div
+  class:list={[
+    'flex flex-col gap-6 py-6 md:mb-16 md:flex-row md:justify-between md:py-16',
+    'max-md:contact__form md:contact__form-desktop px-6 md:pl-0 md:pr-16',
+  ]}
+>
+  <div
+    class="flex flex-col items-center md:basis-[45%] md:flex-col-reverse md:items-start md:justify-between md:px-0"
+  >
+    <Image
+      format="webp"
+      width={birdsUpImage.width}
+      height={birdsUpImage.height}
+      src={birdsUpImage}
+      class="relative z-10 w-[70%] md:w-[90%]"
+      alt="Contact Us background"
+    />
+    <div class="relative -mt-11 md:mt-0">
+      <div class="mb-2 text-6xl text-white md:text-6xl-desktop">Let’s talk</div>
+      <span class="text-lg text-white opacity-80 md:text-lg-desktop"
+        >Feel free to shoot us a message about your project and will reach back
+        to your shortly.</span
+      >
+    </div>
+  </div>
+  <div class="md:basis-[45%]">
+    <form id="contact__form" class="flex flex-col gap-6">
+      <Input
+        id="contact__form_input_name"
+        name="name"
+        required
+        placeholder="Name"
+        type="text"
+        classes="contact__form_input"
+      />
+      <Input
+        id="contact__form_input_email"
+        name="email"
+        required
+        placeholder="Email address"
+        type="email"
+        classes="contact__form_input"
+      />
+      <Input
+        id="ter_phone"
+        name="phone"
+        placeholder="Phone number"
+        type="tel"
+        pattern="^[0-9]+$"
+        title="Enter a valid phone number using digits only"
+        classes="contact__form_input"
+      />
+      <Input
+        id="contact__form_input_message"
+        name="message"
+        isTextarea
+        required
+        placeholder="Message"
+        classes="contact__form_input"
+      />
+      <Button
+        id="contact__submit_btn"
+        variant="orange"
+        classes="h-[58px] px-6 text-xl md:text-xl-desktop rounded-2lg"
+        >Send message</Button
+      >
+    </form>
+    <div>
+      <div
+        id="contact__alert_success"
+        class="mt-4 hidden items-center gap-4 rounded bg-green-100 p-4 text-green-700"
+      >
+        <CheckMarkIcon class="h-6 w-6 fill-green-700" />
+        <div class="">
+          Thank you for getting in touch! Your email has swiftly arrived in our
+          inbox. We do our best to respond as soon as possible, you can expect a
+          reply in at most 48 hours.
+        </div>
+      </div>
+      <div
+        id="contact__alert_error"
+        class="mt-4 hidden items-center gap-4 rounded bg-red-100 p-4 text-red-700"
+      >
+        <ExclamationTriangleIcon class="h-6 w-6 fill-red-700" />
+        <div class="">Something went wrong. Please try again later.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  import { CONTACT_US_URL } from '../constants/contact-us';
+
+  const btn = document.getElementById('contact__submit_btn');
+  const alertSuccess = document.getElementById('contact__alert_success');
+  const alertError = document.getElementById('contact__alert_error');
+  const form = document.getElementById(
+    'contact__form'
+  ) as HTMLFormElement | null;
+  if (form && btn) {
+    // Trigger native validation manually when not using submit type
+
+    btn.addEventListener('click', () => {
+      if (!form.checkValidity()) {
+        form.reportValidity();
+      } else {
+        const data = new FormData(form);
+        const onError = () => {
+          alertError?.classList.replace('hidden', 'flex');
+        };
+
+        fetch(CONTACT_US_URL, {
+          body: data,
+          method: 'POST',
+        })
+          .then((res) => {
+            if (res.status === 200) {
+              alertSuccess?.classList.replace('hidden', 'flex');
+            } else {
+              onError();
+            }
+          })
+          .catch(() => {
+            onError();
+          });
+      }
+    });
+
+    const formInputs = document.querySelectorAll('.contact__form_input');
+    formInputs.forEach((input) => {
+      input.addEventListener('input', () => {
+        alertSuccess?.classList.replace('flex', 'hidden');
+        alertError?.classList.replace('flex', 'hidden');
+      });
+    });
+  }
+</script>
+<style></style>

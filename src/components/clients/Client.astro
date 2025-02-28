@@ -1,0 +1,162 @@
+---
+import { Image } from 'astro:assets';
+import ArrowRight from '~/assets/images/arrow-right.svg';
+import ResponsiveImage, {
+  type ResponsiveImagesConfig,
+} from '../ResponsiveImage.astro';
+
+export interface Props {
+  name: string;
+  description?: string;
+  logoImg: ImageMetadata;
+  id?: string;
+  desktopImg: { default: ImageMetadata; x2?: ImageMetadata };
+  mobileImg?: { default: ImageMetadata; x2?: ImageMetadata };
+  technologies?: (
+    | {
+        title: string;
+        object: ImageMetadata;
+        SvgComponent?: undefined;
+      }
+    | {
+        title: string;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        SvgComponent: (_props: Record<string, any>) => any;
+        object?: undefined;
+      }
+  )[];
+  classes?: string;
+}
+const {
+  name,
+  description,
+  logoImg,
+  id,
+  desktopImg,
+  mobileImg,
+  technologies,
+  classes,
+} = Astro.props;
+
+const desktopImagesConfig = [
+  desktopImg.x2 && {
+    image: desktopImg.x2,
+    sourceProps: {
+      type: 'image/webp',
+      media: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)',
+    },
+  },
+  desktopImg.x2 && {
+    image: desktopImg.x2,
+    sourceProps: {
+      media: '(min-device-pixel-ratio: 2)',
+      type: 'image/webp',
+    },
+  },
+  {
+    image: desktopImg.default,
+    sourceProps: {
+      media: '(max-device-pixel-ratio: 1)',
+      type: 'image/webp',
+    },
+  },
+].filter(Boolean) as ResponsiveImagesConfig;
+const mobileImagesConfig = (
+  mobileImg
+    ? [
+        mobileImg.x2 && {
+          image: mobileImg.x2,
+          sourceProps: {
+            type: 'image/webp',
+            media:
+              '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)',
+          },
+        },
+        mobileImg.x2 && {
+          image: mobileImg.x2,
+          sourceProps: {
+            media: '(min-device-pixel-ratio: 2)',
+            type: 'image/webp',
+          },
+        },
+        {
+          image: mobileImg.default,
+          sourceProps: {
+            media: '(max-device-pixel-ratio: 1)',
+            type: 'image/webp',
+          },
+        },
+      ].filter(Boolean)
+    : []
+) as ResponsiveImagesConfig;
+---
+
+<a
+  href={`/case-studies/${id}`}
+  class:list={[
+    'relative block overflow-hidden rounded-xl px-6 md:px-16',
+    'hover:case-study-hover',
+    classes,
+  ]}
+>
+  <div
+    class="relative z-10 flex flex-col gap-6 py-8 md:min-h-[600px] md:w-[40%] md:pb-16 md:pt-20"
+  >
+    <Image
+      format="webp"
+      src={logoImg}
+      width={logoImg.width}
+      height={logoImg.height}
+      alt={`${name} logo`}
+    />
+    <div class="text-3xl text-white md:text-3xl-desktop">{description}</div>
+    <div class="text-xl text-white hover:opacity-80 md:text-xl-desktop">
+      {name} case study <ArrowRight
+        class="ml-2.5 inline-block h-5 w-5 md:h-7 md:w-7"
+      />
+    </div>
+    {
+      technologies && (
+        <div class="flex grow flex-wrap content-end items-end gap-x-2 gap-y-2">
+          {technologies?.map((technologyImage) => (
+            <div class="box-border flex h-12 w-12 items-center justify-center rounded-xl border border-white/15 bg-white/5 p-2.5">
+              {technologyImage.object ? (
+                <Image
+                  width={52}
+                  height={52}
+                  src={technologyImage.object}
+                  class="h-[26px] w-[26px] object-contain"
+                  alt={technologyImage.title + ' logo'}
+                />
+              ) : (
+                <technologyImage.SvgComponent class="h-[26px] w-[26px]" />
+              )}
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+  <div
+    class="relative -mx-12 sm:-ml-18 sm:-mr-12 md:absolute md:inset-0 md:mx-0"
+  >
+    <ResponsiveImage
+      imagesConfig={desktopImagesConfig}
+      format="webp"
+      classes="desktop-img z-10 w-full md:absolute md:bottom-0 md:left-[40%] md:w-[60%]"
+      alt={`${name} image for desktop`}
+    />
+    {
+      mobileImg && (
+        <ResponsiveImage
+          imagesConfig={mobileImagesConfig}
+          format="webp"
+          classes="absolute bottom-0 right-0 z-20 h-[110%] md:h-[65%] lg:h-[80%] xl:h-full"
+          alt={`${name} image for mobile`}
+        />
+      )
+    }
+  </div>
+</a>
+
+<style></style>

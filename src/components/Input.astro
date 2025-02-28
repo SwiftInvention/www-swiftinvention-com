@@ -1,0 +1,97 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'input'> {
+  classes?: string;
+  id?: string;
+  isTextarea?: boolean;
+}
+
+const {
+  classes,
+  placeholder,
+  type,
+  isTextarea = false,
+  id,
+  ...inputProps
+} = Astro.props;
+const generalClasses =
+  'transition-all relative bg-transparent z-10 w-full py-2.5 px-4 pt-[24px] text-base rounded-lg focus:outline-0';
+---
+
+<div
+  class:list={[
+    'relative rounded-lg border border-gray-accent bg-white focus-within:outline focus-within:outline-[3px]',
+    classes,
+  ]}
+>
+  {
+    placeholder && (
+      <label
+        for={id}
+        data-input-custom-placeholder
+        class="absolute left-[17px] top-[20px] text-base leading-none text-subtle transition-all"
+      >
+        {placeholder}
+      </label>
+    )
+  }
+  {
+    isTextarea ? (
+      <textarea
+        id={id}
+        data-input-custom
+        class:list={[generalClasses, 'h-30']}
+        {...inputProps}
+      />
+    ) : (
+      <input
+        id={id}
+        data-input-custom
+        type={type ?? 'text'}
+        class:list={[generalClasses, 'h-14']}
+        {...inputProps}
+      />
+    )
+  }
+</div>
+
+<script>
+  const inputs = document.querySelectorAll(
+    '[data-input-custom]'
+  ) as NodeListOf<HTMLInputElement>;
+
+  inputs.forEach((input) =>
+    input.addEventListener('focus', () => {
+      const placeholderEl = input.previousElementSibling;
+      if (
+        !input.value &&
+        placeholderEl &&
+        [...placeholderEl.attributes].find(
+          (attr) => attr.name === 'data-input-custom-placeholder'
+        )
+      ) {
+        placeholderEl.classList.add('text-xs', '-translate-y-[10px]');
+        input.classList.add('pt-[24px]');
+      }
+    })
+  );
+
+  inputs.forEach((input) =>
+    input.addEventListener('blur', () => {
+      const placeholderEl = input.previousElementSibling;
+
+      if (
+        !input.value &&
+        placeholderEl &&
+        [...placeholderEl.attributes].find(
+          (attr) => attr.name === 'data-input-custom-placeholder'
+        )
+      ) {
+        placeholderEl.classList.remove('text-xs', '-translate-y-[10px]');
+        input.classList.remove('pt-[24px]');
+      }
+    })
+  );
+</script>
+<style></style>

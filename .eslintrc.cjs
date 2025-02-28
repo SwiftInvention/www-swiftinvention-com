@@ -1,11 +1,13 @@
 module.exports = {
+  root: true,
   extends: [
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:astro/recommended'
   ],
-  plugins: ['react', '@typescript-eslint', 'jest', 'react-hooks', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'react-hooks', 'prettier', 'astro'],
   env: {
     browser: true,
     es2020: true,
@@ -23,9 +25,12 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    tsconfigRootDir: '.',
     project: './tsconfig.json',
   },
-  settings: { react: { version: '18.2' } },
+  settings: {
+    react: { version: '18.2' }
+  },
   rules: {
     'linebreak-style': 'off',
     'react/prop-types': 'off',
@@ -40,4 +45,17 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.astro'], // Target Astro files specifically
+      parser: 'astro-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro'],
+      },
+      rules: {
+        'react/jsx-filename-extension': 0
+      },
+    },
+  ],
 };

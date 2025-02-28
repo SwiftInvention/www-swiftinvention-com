@@ -1,0 +1,68 @@
+---
+import homeFirstBlockDesktopImage from '~/assets/images/home-first-block-desktop.png';
+import homeFirstBlockImage from '~/assets/images/home-first-block.png';
+import Button from '../Button.astro';
+import ResponsiveImage from '../ResponsiveImage.astro';
+---
+
+<div
+  id="welcome-block"
+  class="container relative mt-[96px] pb-4 md:mb-[232px] md:mt-[calc(216px+96px)]"
+>
+  <div
+    id="welcome-block__text"
+    class="relative z-10 mb-4 opacity-0 md:mb-0 md:w-[60%]"
+  >
+    <h1 class="text-7xl text-white md:text-7xl-desktop">
+      We build software, the Swift way
+    </h1>
+    <div
+      class="mb-12 mt-4 text-xl !font-normal text-white opacity-80 md:text-xl-desktop"
+    >
+      We are an experienced team of software designers and engineers that know
+      how to take ideas from concept to reality.
+    </div>
+    <a class="md:inline-block" href="#footer">
+      <Button
+        classes="h-[58px] md:w-[200px] w-full text-xl md:text-xl-desktop rounded-2lg"
+        >Work with us</Button
+      >
+    </a>
+  </div>
+  <ResponsiveImage
+    imagesConfig={[
+      {
+        image: homeFirstBlockDesktopImage,
+        sourceProps: { type: 'image/webp', media: '(min-width:768px)' },
+      },
+      {
+        image: homeFirstBlockImage,
+        sourceProps: { type: 'image/webp', media: '(max-width:767px)' },
+      },
+    ]}
+    loading="eager"
+    format="webp"
+    classes="relative z-0 md:absolute mx-auto md:right-[80px] md:top-[-144px] md:max-w-[45%]"
+    alt="Technologies and graphics image"
+    fetchPriority="high"
+  />
+</div>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to('#welcome-block__text', {
+    scrollTrigger: '#welcome-block__text',
+    opacity: 1,
+    translateY: 0,
+    duration: 1,
+    delay: 0.25,
+    startAt: {
+      translateY: -60,
+    },
+  });
+</script>
+
+<style></style>

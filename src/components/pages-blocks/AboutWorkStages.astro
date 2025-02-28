@@ -1,0 +1,59 @@
+---
+import WorkStages from '~/react/components/WorkStages';
+
+const workProcessMap = [
+  {
+    name: 'We deliver. Swiftly!',
+    body: 'All software and design is directly and exclusively developed by our 30 person team in Eastern Europe. We know how to create production-ready solutions.',
+  },
+  {
+    name: 'We cooperate ',
+    body: 'We are quick to respond, actively engage in requirement discussions, and provide regular updates, ensuring utmost transparency in our work.',
+  },
+  {
+    name: 'We meet your needs',
+    body: 'With a solid technical background, we effortlessly translate the intricate technology of your project into visually captivating and easily understandable graphics.',
+  },
+];
+---
+
+<div id="work-stages">
+  <WorkStages
+    stages={workProcessMap}
+    title="Extensive expertise and work process"
+    description="We follow a proven product innovation process. We are guided by decades of experience developing products. We assemble world-class, yet highly affordable, offshore design & engineering teams. We scale as you do and operate and optimize your platforms whether they run at the edge or in the cloud."
+  />
+</div>
+
+<style></style>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import twConfig from '../../../tailwind.config';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  let mm = gsap.matchMedia();
+  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.from('#work-stages', {
+      scrollTrigger: {
+        trigger: '#work-stages',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      translateY: 160,
+      duration: 1,
+    });
+  });
+  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.from('#work-stages', {
+      scrollTrigger: {
+        trigger: '#work-stages',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      translateY: 80,
+      duration: 1,
+    });
+  });
+</script>

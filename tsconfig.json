@@ -1,21 +1,38 @@
 {
-  "include": ["src", "types"],
-  "files": ["vite.config.ts", "tailwind.config.ts"],
+  "extends": "astro/tsconfigs/strict",
+  "files": ["tailwind.config.ts"],
+  "module": "esnext",
+  "target": "ES2020",
+  "moduleResolution": "node",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*",
+    "src",
+    "types"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "baseUrl": "./",
     "paths": {
-      "~/*": ["./src/*"],
-      "~/public/*": ["./public/*"]
+      "~/react/*": ["./src/react/*"],
+      "~/assets/*": ["./src/assets/*"],
+      "~/constants/*": ["./src/constants/*"],
+      "~/components/*": ["./src/components/*"],
+      "~/utilities/*": ["./src/utilities/*"],
+      "~/layouts/*": ["./src/layouts/*"],
+      "~/public/*": ["./public/*"],
     },
+    "strictNullChecks": true, // add if using `astro/tsconfigs` template
     "noEmit": true,
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   }
 }

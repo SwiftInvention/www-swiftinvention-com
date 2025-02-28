@@ -1,0 +1,44 @@
+---
+import { Team } from '~/react/components/Team';
+---
+
+<div id="about-team" class="">
+  <Team />
+</div>
+
+<style>
+  .www {
+    transform: rotateX(-120deg);
+  }
+</style>
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import twConfig from '../../../tailwind.config';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  let mm = gsap.matchMedia();
+  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.from('#about-team', {
+      scrollTrigger: {
+        trigger: '#about-team',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      translateY: 160,
+      duration: 1,
+    });
+  });
+  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+    gsap.from('#about-team', {
+      scrollTrigger: {
+        trigger: '#about-team',
+        start: 'top 80%',
+      },
+      opacity: 0,
+      translateY: 80,
+      duration: 1,
+    });
+  });
+</script>

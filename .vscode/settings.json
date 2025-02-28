@@ -1,9 +1,5 @@
 {
-  "css.validate": false,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "files.watcherExclude": {
-    "**/target": true
-  }
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }

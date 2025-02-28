@@ -1,0 +1,192 @@
+---
+import ArrowRight from '~/assets/images/arrow-right.svg';
+import spotlightBgImage from '~/assets/images/spotlight-bg.png';
+import { type ClientPageProps } from '~/constants/clientsStack.astro';
+import ButtonLink from '~/components/ButtonLink.astro';
+import { Image } from 'astro:assets';
+
+type Props = Required<Pick<ClientPageProps, 'screenshotsInfo'>> &
+  Pick<ClientPageProps, 'links' | 'name'>;
+const { name, screenshotsInfo, links } = Astro.props;
+---
+
+<div class="relative overflow-hidden py-24 md:py-32">
+  <Image
+    format="webp"
+    width={spotlightBgImage.width}
+    height={spotlightBgImage.height}
+    src={spotlightBgImage}
+    class="absolute -left-1/2 top-0 z-[-1] w-[200%] max-w-none md:left-0 md:w-full"
+    alt="spotlight background"
+  />
+  <div class="container">
+    <div
+      class="mb-8 flex flex-col justify-between md:mb-20 md:flex-row md:items-end"
+    >
+      <div class="md:w-[60%]">
+        <div class="mb-4 text-6xl text-white md:text-6xl-desktop">
+          Our work for {name}
+        </div>
+        <div class="mb-5 text-lg text-white opacity-80">
+          {screenshotsInfo.subtitle}
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative mx-auto w-full overflow-hidden rounded-xl border border-white/[0.07] bg-white/[0.07] p-0.5 md:rounded-3xl md:p-4"
+    >
+      <div class="w-full overflow-hidden">
+        <!-- max-h here only for old browsers where aspect ratio does not work -->
+        <ul
+          class="carousel-track flex aspect-[1248/700] max-h-[25vh] w-full transition-transform duration-500 ease-in-out xs:max-h-[50vh] lg:max-h-[700px]"
+        >
+          {
+            screenshotsInfo.images.map((screenshot, index) => (
+              <li class="box-border min-w-full overflow-hidden rounded-xl md:rounded-3xl">
+                <Image
+                  format="webp"
+                  width={screenshot.width}
+                  height={screenshot.height}
+                  src={screenshot}
+                  class="w-full"
+                  alt={`${name} screenshot ${index + 1}`}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <div
+      class="mt-8 flex flex-col gap-8 md:flex-row-reverse md:justify-between md:gap-1"
+    >
+      {
+        screenshotsInfo.images.length > 1 && (
+          <div class="flex w-full justify-center gap-3 md:w-auto">
+            <button class="arrow left flex-center h-14 w-14 rounded-[50%] border border-white/10 bg-white/5 [&>svg]:hover:opacity-80">
+              <ArrowRight class="h-7 w-7 rotate-180" />
+            </button>
+            <button class="arrow right flex-center h-14 w-14 rounded-[50%] border border-white/10 bg-white/5 [&>svg]:hover:opacity-80">
+              <ArrowRight class="h-7 w-7" />
+            </button>
+          </div>
+        )
+      }
+      <div class="flex flex-col gap-4 lg:flex-row">
+        <div class="flex flex-col gap-2 xl:flex-row">
+          {
+            links?.map((link) => (
+              <ButtonLink
+                href={`https://${link}`}
+                target="_blank"
+                variant="outlined"
+                classes="px-3 lg:px-6 w-full md:w-auto"
+                arrowClasses="-rotate-45"
+              >
+                Visit {link}
+              </ButtonLink>
+            ))
+          }
+        </div>
+        <ButtonLink
+          href="/case-studies"
+          variant="ghost"
+          classes="w-full md:w-auto">Visit more case studies</ButtonLink
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track') as HTMLUListElement;
+    if (track) {
+      const slides = Array.from(track.children);
+      const nextButton = document.querySelector('.arrow.right');
+      const prevButton = document.querySelector('.arrow.left');
+
+      // Get slide width (assumes all slides have the same width)
+      let slideWidth = slides[0].getBoundingClientRect().width;
+
+      // --- Clone first and last slides for the infinite loop effect ---
+      const firstClone = slides[0].cloneNode(true) as HTMLElement;
+      const lastClone = slides[slides.length - 1].cloneNode(
+        true
+      ) as HTMLElement;
+
+      // Add a marker class to the clones for detection later
+      firstClone.classList.add('clone');
+      lastClone.classList.add('clone');
+
+      // Append/prepend clones to the track
+      track.appendChild(firstClone);
+      track.insertBefore(lastClone, slides[0]);
+
+      // After cloning, update the list of all slides
+      const allSlides = Array.from(track.children);
+
+      // Start with the first original slide, which is now at index 1
+      let currentIndex = 1;
+
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+
+      // Update slide width on window resize
+      window.addEventListener('resize', () => {
+        slideWidth = allSlides[0].getBoundingClientRect().width;
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+      });
+
+      // Function to move to a given slide index
+      function moveToSlide(index: number) {
+        track.style.transition = 'transform 0.5s ease-in-out';
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+      }
+
+      const onNextSlideAppear = () => {
+        if (currentIndex >= allSlides.length - 1) return; // Prevent extra clicks
+        currentIndex++;
+        moveToSlide(currentIndex);
+      };
+
+      let intervalId =
+        slides.length > 1 && setInterval(onNextSlideAppear, 3000);
+
+      // Right arrow click – move to next slide
+      nextButton?.addEventListener('click', () => {
+        intervalId && clearInterval(intervalId);
+
+        onNextSlideAppear();
+      });
+
+      // Left arrow click – move to previous slide
+      prevButton?.addEventListener('click', () => {
+        intervalId && clearInterval(intervalId);
+
+        if (currentIndex <= 0) return; // Prevent extra clicks
+        currentIndex--;
+        moveToSlide(currentIndex);
+      });
+
+      // When a transition ends, check if we're at a clone slide and jump without animation
+      track.addEventListener('transitionend', () => {
+        // If at the rightmost clone (which is the clone of the first slide)
+        if (
+          (allSlides[currentIndex] as HTMLElement).classList.contains('clone')
+        ) {
+          track.style.transition = 'none';
+          if (currentIndex === allSlides.length - 1) {
+            // Jump to the first original slide (index 1)
+            currentIndex = 1;
+          } else if (currentIndex === 0) {
+            // Jump to the last original slide (index before the last clone)
+            currentIndex = allSlides.length - 2;
+          }
+          track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        }
+      });
+    }
+  });
+</script>
+<style></style>

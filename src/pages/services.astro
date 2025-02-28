@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHead from '~/components/PageHead.astro';
+import SecondBlock from '~/components/pages-blocks/SecondBlock.astro';
+import servicesBlockImage from '~/assets/images/services-block.png';
+import TechStackBlock from '~/components/pages-blocks/TechStackBlock.astro';
+---
+
+<Layout>
+  <div class="mb-24 md:mb-[200px]">
+    <PageHead
+      pageTitle="Services"
+      title="We <span class='line-through'>code</span> build for success that’s ready to scale."
+      subtitle="We assist startups and businesses in developing innovative products and services, offering expertise in strategy, design, iOS, Android, web apps, and infrastructure development."
+      image={servicesBlockImage}
+      classes="[&>:nth-child(1)]:max-w-[740px]"
+    />
+  </div>
+  <SecondBlock />
+  <TechStackBlock />
+</Layout>

@@ -1,0 +1,28 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'button'> {
+  classes?: string;
+  type?: 'button' | 'submit';
+  variant?: 'white' | 'orange';
+}
+
+const { classes, type, variant = 'white', ...buttonProps } = Astro.props;
+---
+
+<button
+  class:list={[
+    'flex h-[46px] items-center justify-center rounded-md px-2.5 text-base font-semibold transition-all duration-300 ease-in-out',
+    variant === 'orange' &&
+      'border border-warning-500 bg-warning text-white hover:border-warning hover:bg-warning-hover',
+    variant === 'white' &&
+      'not:hover:border-none bg-white text-gray-solid hover:border hover:border-white hover:bg-white/80',
+    classes,
+  ]}
+  type={type ?? 'button'}
+  {...buttonProps}
+>
+  <slot />
+</button>
+
+<style></style>

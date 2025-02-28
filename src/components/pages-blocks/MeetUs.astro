@@ -1,0 +1,44 @@
+---
+import swiftInventionIcon from '~/assets/images/swift-white-logo.svg';
+import meetUsImage from '~/assets/images/meet-us.png';
+import { Image } from 'astro:assets';
+---
+
+<div class="container relative mb-24 mt-8 pb-4 md:mb-32 md:mt-24">
+  <div
+    id="meet-us-block__text"
+    class="animate-page-head relative z-10 mb-4 md:mb-0 md:w-[60%]"
+  >
+    <div class="">
+      <div class="transparent-text inline-block text-7xl md:text-9xl-desktop">
+        Meet
+      </div>
+    </div>
+    <Image
+      src={swiftInventionIcon}
+      width={swiftInventionIcon.width}
+      height={swiftInventionIcon.height}
+      alt="Swift Invention logo"
+      class="h-8 w-full max-w-[355px] md:h-16 md:max-w-[795px]"
+    />
+    <div
+      class="mb-12 mt-4 text-xl !font-normal text-white opacity-80 md:text-xl-desktop"
+    >
+      Swift was founded in 2012 to help clients transform bold visions into
+      breakthrough software products. Our clients collaborate with our
+      cost-effective offshore team of designers, analysts, data scientists, and
+      software developers. Together we'll ensure that every project is executed
+      swiftly with precision and excellence.
+    </div>
+  </div>
+  <Image
+    format="webp"
+    width={meetUsImage.width}
+    height={meetUsImage.height}
+    src={meetUsImage}
+    class="absolute -top-16 right-8 w-1/2 max-w-[525px] md:h-auto md:w-[40%]"
+    alt="Meet us"
+    fetchpriority="high"
+  />
+</div>
+<style></style>
