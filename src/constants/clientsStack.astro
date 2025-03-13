@@ -53,9 +53,9 @@ import privoLaptopImage from '~/assets/images/devices/privo.png';
 import quanthealthLaptop2xImage from '~/assets/images/devices/quanthealth-2x.png';
 import quanthealthLaptopImage from '~/assets/images/devices/quanthealth.png';
 import vierallyLaptop2xImage from '~/assets/images/devices/vierally-desktop-2x.png';
-import vierallyLaptopImage from '~/assets/images/devices/vierally-desktop.png';
+import vierallyLaptop1p5xImage from '~/assets/images/devices/vierally-desktop-1.5x.png';
 import vierallyMobile2xImage from '~/assets/images/devices/vierally-mobile-2x.png';
-import vierallyMobileImage from '~/assets/images/devices/vierally-mobile.png';
+import vierallyMobile1p5xImage from '~/assets/images/devices/vierally-mobile-1.5x.png';
 import blankSlateLogoImage from '~/assets/images/logos/blankslate-white.png';
 import eversanaLogoImage from '~/assets/images/logos/eversana-white.png';
 import mbsLogoImage from '~/assets/images/logos/mbs-logo.png';
@@ -208,12 +208,12 @@ export const ClientsShort: ClientPageProps[] = [
       { title: 'Terraform', SvgComponent: TerraformImage },
     ],
     classes:
-      'bg-[#005A88] md:[&_.desktop-img]:bottom-[-30px] md:[&_.desktop-img]:w-[70%] ',
+      'bg-[#005A88]',
   },
   {
-    desktopImg: { default: vierallyLaptopImage, x2: vierallyLaptop2xImage },
+    desktopImg: { default: vierallyLaptop1p5xImage, x2: vierallyLaptop2xImage },
     logoImg: vierallyLogoImage,
-    mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
+    mobileImg: { default: vierallyMobile1p5xImage, x2: vierallyMobile2xImage },
     description: 'AI tool to predict virality and maximize marketing ROI',
     name: 'VieRally',
     pageTopImg: { default: vierallyPageImage, x2: vierallyPagex2Image },
