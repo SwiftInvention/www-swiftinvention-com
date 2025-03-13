@@ -48,14 +48,15 @@ import plumcheckLaptop2xImage from '~/assets/images/devices/plumcheck-desktop-2x
 import plumcheckLaptopImage from '~/assets/images/devices/plumcheck-desktop.png';
 import plumcheckMobile2xImage from '~/assets/images/devices/plumcheck-mobile-2x.png';
 import plumcheckMobileImage from '~/assets/images/devices/plumcheck-mobile.png';
+import privoLaptop3xImage from '~/assets/images/devices/privo-3x.png';
 import privoLaptop2xImage from '~/assets/images/devices/privo-2x.png';
 import privoLaptopImage from '~/assets/images/devices/privo.png';
 import quanthealthLaptop2xImage from '~/assets/images/devices/quanthealth-2x.png';
 import quanthealthLaptopImage from '~/assets/images/devices/quanthealth.png';
 import vierallyLaptop2xImage from '~/assets/images/devices/vierally-desktop-2x.png';
-import vierallyLaptop1p5xImage from '~/assets/images/devices/vierally-desktop-1.5x.png';
+import vierallyLaptopImage from '~/assets/images/devices/vierally-desktop.png';
 import vierallyMobile2xImage from '~/assets/images/devices/vierally-mobile-2x.png';
-import vierallyMobile1p5xImage from '~/assets/images/devices/vierally-mobile-1.5x.png';
+import vierallyMobileImage from '~/assets/images/devices/vierally-mobile.png';
 import blankSlateLogoImage from '~/assets/images/logos/blankslate-white.png';
 import eversanaLogoImage from '~/assets/images/logos/eversana-white.png';
 import mbsLogoImage from '~/assets/images/logos/mbs-logo.png';
@@ -148,7 +149,11 @@ export type ClientPageProps = ClientProps & {
 };
 export const ClientsShort: ClientPageProps[] = [
   {
-    desktopImg: { default: privoLaptopImage, x2: privoLaptop2xImage },
+    desktopImg: {
+      default: privoLaptopImage,
+      x2: privoLaptop2xImage,
+      x3: privoLaptop3xImage,
+    },
     logoImg: privoLogoImage,
     pageTopImg: { default: privoPageImage, x2: privoPage2xImage },
     description: 'Children’s online identity & consent management',
@@ -207,13 +212,12 @@ export const ClientsShort: ClientPageProps[] = [
       { title: 'Grafana', SvgComponent: GrafanaImage },
       { title: 'Terraform', SvgComponent: TerraformImage },
     ],
-    classes:
-      'bg-[#005A88]',
+    classes: 'bg-[#005A88]',
   },
   {
-    desktopImg: { default: vierallyLaptop1p5xImage, x2: vierallyLaptop2xImage },
+    desktopImg: { default: vierallyLaptopImage, x2: vierallyLaptop2xImage },
     logoImg: vierallyLogoImage,
-    mobileImg: { default: vierallyMobile1p5xImage, x2: vierallyMobile2xImage },
+    mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
     description: 'AI tool to predict virality and maximize marketing ROI',
     name: 'VieRally',
     pageTopImg: { default: vierallyPageImage, x2: vierallyPagex2Image },

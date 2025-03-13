@@ -47,25 +47,19 @@ const {
 const pageImagesConfig =
   pageTopImg &&
   ([
-    pageTopImg.x2 && {
-      image: pageTopImg.x2,
-      sourceProps: {
-        type: 'image/webp',
-        media: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)',
-      },
-    },
-    pageTopImg.x2 && {
-      image: pageTopImg.x2,
-      sourceProps: {
-        media: '(min-device-pixel-ratio: 2)',
-        type: 'image/webp',
-      },
-    },
     {
       image: pageTopImg.default,
       sourceProps: {
-        media: '(max-device-pixel-ratio: 1)',
+        media:
+          '(-webkit-max-device-pixel-ratio: 1.25), (max-resolution: 1.25dppx)',
         type: 'image/webp',
+      },
+    },
+    pageTopImg.x2 && {
+      image: pageTopImg.x2,
+      sourceProps: {
+        type: 'image/webp',
+        media: '(-webkit-max-device-pixel-ratio: 2), (max-resolution: 2dppx)',
       },
     },
   ].filter(Boolean) as ResponsiveImagesConfig);
