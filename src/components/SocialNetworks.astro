@@ -1,6 +1,6 @@
 ---
-import githubImage from '~/assets/images/logos/github.png';
-import linkedinImage from '~/assets/images/logos/linkedin.png';
+import githubImage from '~/assets/images/github.svg';
+import linkedinImage from '~/assets/images/linkedIn.svg';
 import { Image } from 'astro:assets';
 ---
 
@@ -9,25 +9,13 @@ import { Image } from 'astro:assets';
     href="https://github.com/SwiftInvention"
     class="flex h-9 w-9 items-center justify-center"
     target="_blank"
-    ><Image
-      format="webp"
-      src={githubImage}
-      height={20}
-      width={20}
-      alt="github logo"
-    /></a
+    ><Image src={githubImage} height={20} width={20} alt="github logo" /></a
   >
   <a
     href="https://www.linkedin.com/company/swift-invention"
     class="flex h-9 w-9 items-center justify-center"
     target="_blank"
-    ><Image
-      format="webp"
-      src={linkedinImage}
-      height={20}
-      width={20}
-      alt="linkedin logo"
-    /></a
+    ><Image src={linkedinImage} height={20} width={20} alt="linkedin logo" /></a
   >
 </div>
 
