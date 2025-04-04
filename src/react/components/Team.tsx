@@ -1,4 +1,3 @@
-import emailIcon from '~/assets/images/email.svg';
 import linkedInIcon from '~/assets/images/linkedIn.svg';
 import Alex2x from '~/assets/images/teamMembers/Alex-2x.png';
 import Alex from '~/assets/images/teamMembers/Alex.png';
@@ -20,7 +19,6 @@ const teamMembers = [
     place: 'Cupertino, California.',
     photo: Samaya.src,
     photo2x: Samaya2x.src,
-    email: 'shabibova@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/samayahabibova/',
   },
   {
@@ -31,7 +29,6 @@ const teamMembers = [
     place: 'Portugal.',
     photo: Sergey.src,
     photo2x: Sergey2x.src,
-    email: 'skucherenko@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/sergey-kucherenko-514a37100/',
   },
   {
@@ -42,7 +39,6 @@ const teamMembers = [
     place: 'Romania.',
     photo: Maria.src,
     photo2x: Maria2x.src,
-    email: 'mvasuytenko@swiftinvention.com',
     linkedIn: '',
   },
   {
@@ -53,7 +49,6 @@ const teamMembers = [
     place: 'Portugal.',
     photo: Alex.src,
     photo2x: Alex2x.src,
-    email: 'ayuhimenko@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/alexander-yuhimenko-75b41846/',
   },
   {
@@ -64,7 +59,6 @@ const teamMembers = [
     place: 'Boston, Massachusetts.',
     photo: Paul.src,
     photo2x: Paul2x.src,
-    email: 'ptrevithick@swiftinvention.com',
     linkedIn: 'https://www.linkedin.com/in/paultrevithick/',
   },
 ];
@@ -108,9 +102,6 @@ export const Team = () => {
                 <div className="mt-4 flex font-inter text-lg">
                   <a href={member.linkedIn} className="mr-4" target="_blank">
                     <img src={linkedInIcon.src} alt={member.name} />
-                  </a>
-                  <a href={`mailto:${member.email}`} target="_blank">
-                    <img src={emailIcon.src} alt={member.email} />
                   </a>
                 </div>
               </div>
