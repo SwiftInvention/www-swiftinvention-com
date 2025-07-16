@@ -1,48 +1,97 @@
-# Astro Starter Kit: Basics
+# SwiftInvention Website
 
-```sh
-npm create astro@latest -- --template basics
+This repository contains the source code for the SwiftInvention company website, built with modern web technologies to showcase our services, team, and expertise.
+
+## 🚀 Tech Stack
+
+- [Astro](https://astro.build/) - The web framework for content-driven websites
+- [React](https://reactjs.org/) - For interactive UI components
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [TypeScript](https://www.typescriptlang.org/) - For type-safe code
+- [GSAP](https://greensock.com/gsap/) - For smooth animations
+
+## 📦 Project Structure
+
+```
+src/
+├── assets/      # Static assets (images, icons)
+├── components/  # Reusable Astro and React components
+├── constants/   # Application constants and configurations
+├── content/     # Content files (markdown, etc.)
+├── layouts/     # Page layouts
+├── pages/       # Route pages
+└── react/       # React-specific components
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🛠️ Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Prerequisites
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- Node.js >= 18
+- pnpm >= 9.0.0
 
-## 🚀 Project Structure
+### Getting Started
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Clone the repository:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+   ```bash
+   git clone https://github.com/SwiftInvention/www-swiftinvention-com.git
+   cd www-swiftinvention-com
+   ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+2. Install dependencies:
 
-## 🧞 Commands
+   ```bash
+   pnpm install
+   ```
 
-All commands are run from the root of the project, from a terminal:
+3. Start the development server:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+   ```bash
+   pnpm dev
+   ```
 
-## 👀 Want to learn more?
+4. Open [http://localhost:3000](http://localhost:3000) to view the site
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm format` - Format code with Prettier
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
+- `pnpm tsc` - Run TypeScript compiler
+
+## 🚀 Deployment
+
+The website is automatically deployed to production when changes are pushed to the `master` branch.
+
+## 📝 Content Management
+
+Content for various sections (vacancies, case studies, etc.) can be found in the `src/content` directory. Update the markdown files to modify the website content.
+
+## 🎨 Styling
+
+The project uses Tailwind CSS for styling. Configuration can be found in:
+
+- `tailwind.config.ts`
+- `postcss.config.js`
+
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+
+- Desktop
+- Tablet
+- Mobile devices
+
+## 🤝 Contributing
+
+1. Create a new branch
+2. Make your changes
+3. Submit a pull request
+
+## 📄 License
+
+Copyright © SwiftInvention. All rights reserved.
