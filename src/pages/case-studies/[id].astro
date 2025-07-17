@@ -1,21 +1,17 @@
 ---
-import {
-  ClientsAll,
-  ProvidedServiceIdToIcon,
-  type ClientPageProps,
-} from '~/constants/clientsStack.astro';
-import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import aboutBackgroundImage from '~/assets/images/about/about-bg.png';
+import ChatLeftQuoteImage from '~/assets/images/about/chat-left-quote.svg';
 import GeoAltImage from '~/assets/images/about/geo-alt.svg';
 import PeopleImage from '~/assets/images/about/people.svg';
 import RocketTakeoffImage from '~/assets/images/about/rocket-takeoff.svg';
-import ChatLeftQuoteImage from '~/assets/images/about/chat-left-quote.svg';
-import aboutBackgroundImage from '~/assets/images/about/about-bg.png';
 import ShieldCheckImage from '~/assets/images/about/shield-check.svg';
-import { Image } from 'astro:assets';
-import ImageCarousel from '~/components/ImageCarousel.astro';
 import ButtonLink from '~/components/ButtonLink.astro';
+import ImageCarousel from '~/components/ImageCarousel.astro';
 import type { ResponsiveImagesConfig } from '~/components/ResponsiveImage.astro';
 import ResponsiveImage from '~/components/ResponsiveImage.astro';
+import { ClientsAll, ProvidedServiceIdToIcon, type ClientPageProps } from '~/constants/clientsStack.astro';
+import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
   return ClientsAll.filter((c) => c.id).map((client) => ({
@@ -50,8 +46,7 @@ const pageImagesConfig =
     {
       image: pageTopImg.default,
       sourceProps: {
-        media:
-          '(-webkit-max-device-pixel-ratio: 1.25), (max-resolution: 1.25dppx)',
+        media: '(-webkit-max-device-pixel-ratio: 1.25), (max-resolution: 1.25dppx)',
         type: 'image/webp',
       },
     },
@@ -67,34 +62,19 @@ const pageImagesConfig =
 
 <Layout>
   <div class="relative">
-    <div
-      class="container relative mb-4 mt-8 flex flex-col items-start justify-between md:mb-32 md:mt-24 md:flex-row"
-    >
+    <div class="container relative mb-4 mt-8 flex flex-col items-start justify-between md:mb-32 md:mt-24 md:flex-row">
       <div class="relative z-10 mb-8 md:mb-0 md:w-[45%] lg:pt-[45px]">
-        <Image
-          format="webp"
-          src={logoImg}
-          width={logoImg.width}
-          height={logoImg.height}
-          alt={`${name} logo`}
-        />
+        <Image format="webp" src={logoImg} width={logoImg.width} height={logoImg.height} alt={`${name} logo`} />
         <div class="md:text-4xl-desktop my-4 text-4xl text-white">
           {title ?? description}
         </div>
-        <div
-          class="text-xl !font-normal text-white opacity-80 md:text-xl-desktop"
-        >
+        <div class="text-xl !font-normal text-white opacity-80 md:text-xl-desktop">
           {subtitle}
         </div>
         <div class="mt-8 flex flex-wrap gap-2 md:mt-10">
           {
             links?.map((link) => (
-              <ButtonLink
-                href={`https://${link}`}
-                target="_blank"
-                variant="outlined"
-                arrowClasses="-rotate-45"
-              >
+              <ButtonLink href={`https://${link}`} target="_blank" variant="outlined" arrowClasses="-rotate-45">
                 Visit {link}
               </ButtonLink>
             ))
@@ -131,27 +111,19 @@ const pageImagesConfig =
               <div class="text-xl text-white md:text-xl-desktop">
                 About {name}
               </div>
-              <div
-                class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop"
-              >
+              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
                 <RocketTakeoffImage class="h-6 w-6 min-w-[24px]" />
                 Founded in {about?.founded}
               </div>
-              <div
-                class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop"
-              >
+              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
                 <PeopleImage class="h-6 w-6 min-w-[24px]" />
                 {about?.employees} employees
               </div>
-              <div
-                class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop"
-              >
+              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
                 <GeoAltImage class="h-6 w-6 min-w-[24px]" />
                 {about?.location}
               </div>
-              <div
-                class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop"
-              >
+              <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
                 <ShieldCheckImage class="h-6 w-6 min-w-[24px]" />
                 {about?.purpose}
               </div>
@@ -159,9 +131,7 @@ const pageImagesConfig =
             <div
               class="flex grow basis-full flex-col gap-4 border border-white/[0.07] bg-white/5 p-6 md:p-8 lg:basis-1/3"
             >
-              <div class="text-xl text-white md:text-xl-desktop">
-                Provided services
-              </div>
+              <div class="text-xl text-white md:text-xl-desktop">Provided services</div>
               {
                 providedServices?.map((service) => {
                   const Icon = ProvidedServiceIdToIcon[service.id];
@@ -177,9 +147,7 @@ const pageImagesConfig =
             {
               technologies && (
                 <div class="flex grow basis-full flex-col gap-4 border border-white/[0.07] bg-white/5 p-4 md:p-8 lg:basis-1/3">
-                  <div class="text-xl text-white md:text-xl-desktop">
-                    Technology used
-                  </div>
+                  <div class="text-xl text-white md:text-xl-desktop">Technology used</div>
 
                   <div class="grid grid-cols-1 gap-x-0.5 gap-y-4 xs:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                     {technologies.map((technology) => {
@@ -210,9 +178,7 @@ const pageImagesConfig =
             comment && (
               <div class="mt-1 flex basis-full flex-col gap-4 border border-white/[0.07] bg-white/5 p-6 md:p-8 lg:basis-1/3">
                 <ChatLeftQuoteImage />
-                <div class="text-3xl !leading-[1.6] text-white md:text-3xl-desktop">
-                  {comment.text}
-                </div>
+                <div class="text-3xl !leading-[1.6] text-white md:text-3xl-desktop">{comment.text}</div>
                 <div class="mt-6 flex gap-4 md:mt-10">
                   {comment.author.avatar && (
                     <Image
@@ -225,12 +191,8 @@ const pageImagesConfig =
                     />
                   )}
                   <div class="flex flex-col justify-center">
-                    <div class="text-xl text-white md:text-xl-desktop">
-                      {comment.author.name}
-                    </div>
-                    <div class="text-lg text-white">
-                      {comment.author.position}
-                    </div>
+                    <div class="text-xl text-white md:text-xl-desktop">{comment.author.name}</div>
+                    <div class="text-lg text-white">{comment.author.position}</div>
                   </div>
                 </div>
               </div>
@@ -240,15 +202,7 @@ const pageImagesConfig =
       </div>
     </div>
   </div>
-  {
-    screenshotsInfo && (
-      <ImageCarousel
-        name={name}
-        screenshotsInfo={screenshotsInfo}
-        links={links}
-      />
-    )
-  }
+  {screenshotsInfo && <ImageCarousel name={name} screenshotsInfo={screenshotsInfo} links={links} />}
   {
     !screenshotsInfo && (
       <ButtonLink href="/case-studies" variant="ghost" classes="w-full">
