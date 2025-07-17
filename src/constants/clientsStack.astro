@@ -30,6 +30,8 @@ import ZapImage from '~/assets/images/stack/zap.svg';
 import ZioImage from '~/assets/images/stack/zio.svg';
 
 // clients
+import beghouLaptop2xImage from '~/assets/images/devices/beghou-2x.png';
+import beghouLaptopImage from '~/assets/images/devices/beghou.png';
 import blankSlateLaptop2xImage from '~/assets/images/devices/blankslate-2x.png';
 import blankSlateLaptopImage from '~/assets/images/devices/blankslate.png';
 import eversanaLaptop2xImage from '~/assets/images/devices/eversana-2x.png';
@@ -57,6 +59,7 @@ import vierallyLaptop2xImage from '~/assets/images/devices/vierally-desktop-2x.p
 import vierallyLaptopImage from '~/assets/images/devices/vierally-desktop.png';
 import vierallyMobile2xImage from '~/assets/images/devices/vierally-mobile-2x.png';
 import vierallyMobileImage from '~/assets/images/devices/vierally-mobile.png';
+import beghouLogoImage from '~/assets/images/logos/beghou.png';
 import blankSlateLogoImage from '~/assets/images/logos/blankslate-white.png';
 import eversanaLogoImage from '~/assets/images/logos/eversana-white.png';
 import mbsLogoImage from '~/assets/images/logos/mbs-logo.png';
@@ -106,6 +109,8 @@ import vieRallyScreenshot5Image from '~/assets/images/screenshots/VieRally scree
 import vieRallyScreenshot6Image from '~/assets/images/screenshots/VieRally screenshot - 6.png';
 import vieRallyScreenshot7Image from '~/assets/images/screenshots/VieRally screenshot - 7.png';
 
+import beghouPage2xImage from '~/assets/images/clients/beghou-page-2x.png';
+import beghouPageImage from '~/assets/images/clients/beghou-page.png';
 import blankslatePage2xImage from '~/assets/images/clients/blankslate-page-2x.png';
 import blankslatePageImage from '~/assets/images/clients/blankslate-page.png';
 import eversanaPageImage from '~/assets/images/clients/eversana-page.png';
@@ -215,59 +220,6 @@ export const ClientsShort: ClientPageProps[] = [
     classes: 'bg-[#005A88]',
   },
   {
-    pageTopImg: { default: plumcheckPageImage },
-    desktopImg: { default: plumcheckLaptopImage, x2: plumcheckLaptop2xImage },
-    logoImg: plumcheckLogoImage,
-    mobileImg: { default: plumcheckMobileImage, x2: plumcheckMobile2xImage },
-    description: 'Allow dating and social media app users to share verified ID and health information',
-    subtitle: 'PlumCheck empowers people to safely share personal information.',
-    comment: {
-      author: {
-        avatar: joshPhotoImage,
-        name: 'Josh Karetny',
-        position: 'PlumCheck CEO',
-      },
-      text: "From design and UX/UI to engineering and integrations, Swift Invention is a full service development shop that provides top notch work. As first-time founders, we've appreciated their guidance, creativity, and experience at building and evolving startups",
-    },
-    screenshotsInfo: {
-      subtitle:
-        'We developed a web application that allows users to verify their identity, and connect their healthcare provider accounts to share verified health information. We continue to maintain and enhance the solution.',
-      images: [plumCheckScreenshot1Image, plumCheckScreenshot2Image, plumCheckScreenshot3Image],
-    },
-    links: ['plumcheck.io'],
-    name: 'PlumCheck',
-    id: 'plumcheck',
-    about: {
-      founded: '2024',
-      employees: '5+',
-      location: 'New York City, NY',
-      purpose: 'Health data processing',
-    },
-    providedServices: [
-      { id: 'devops', title: 'DevOps' },
-      { id: 'backend', title: 'Back-end development' },
-      { id: 'frontend', title: 'Front-end development' },
-      {
-        id: 'additional',
-        title: 'Health information processing and secure sharing',
-      },
-      { id: 'design', title: 'UI/UX design' },
-    ],
-    technologies: [
-      { title: 'Scala', object: scalaImage },
-      { title: 'Typescript', object: tsImage },
-      { title: 'Zio', SvgComponent: ZioImage },
-      { title: 'Aws', SvgComponent: AwsImage },
-      { title: 'React', SvgComponent: ReactImage },
-      { title: 'Kubernetes', SvgComponent: KubernetesImage },
-      { title: 'Terraform', SvgComponent: TerraformImage },
-    ],
-    classes: 'bg-[#911C53]',
-  },
-];
-
-export const ClientsAll: ClientPageProps[] = [
-  {
     desktopImg: { default: vierallyLaptopImage, x2: vierallyLaptop2xImage },
     logoImg: vierallyLogoImage,
     mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
@@ -325,6 +277,60 @@ export const ClientsAll: ClientPageProps[] = [
     classes: 'bg-[#1E3A8A]',
   },
   {
+    pageTopImg: { default: plumcheckPageImage },
+    desktopImg: { default: plumcheckLaptopImage, x2: plumcheckLaptop2xImage },
+    logoImg: plumcheckLogoImage,
+    mobileImg: { default: plumcheckMobileImage, x2: plumcheckMobile2xImage },
+    description: 'Allow dating and social media app users to share verified ID and health information',
+    subtitle: 'PlumCheck empowers people to safely share personal information.',
+    comment: {
+      author: {
+        avatar: joshPhotoImage,
+        name: 'Josh Karetny',
+        position: 'PlumCheck CEO',
+      },
+      text: "From design and UX/UI to engineering and integrations, Swift Invention is a full service development shop that provides top notch work. As first-time founders, we've appreciated their guidance, creativity, and experience at building and evolving startups",
+    },
+    screenshotsInfo: {
+      subtitle:
+        'We developed a web application that allows users to verify their identity, and connect their healthcare provider accounts to share verified health information. We continue to maintain and enhance the solution.',
+      images: [plumCheckScreenshot1Image, plumCheckScreenshot2Image, plumCheckScreenshot3Image],
+    },
+    links: ['plumcheck.io'],
+    name: 'PlumCheck',
+    id: 'plumcheck',
+    about: {
+      founded: '2024',
+      employees: '5+',
+      location: 'New York City, NY',
+      purpose: 'Health data processing',
+    },
+    providedServices: [
+      { id: 'devops', title: 'DevOps' },
+      { id: 'backend', title: 'Back-end development' },
+      { id: 'frontend', title: 'Front-end development' },
+      {
+        id: 'additional',
+        title: 'Health information processing and secure sharing',
+      },
+      { id: 'design', title: 'UI/UX design' },
+    ],
+    technologies: [
+      { title: 'Scala', object: scalaImage },
+      { title: 'Typescript', object: tsImage },
+      { title: 'Zio', SvgComponent: ZioImage },
+      { title: 'Aws', SvgComponent: AwsImage },
+      { title: 'React', SvgComponent: ReactImage },
+      { title: 'Kubernetes', SvgComponent: KubernetesImage },
+      { title: 'Terraform', SvgComponent: TerraformImage },
+    ],
+    classes: 'bg-[#911C53]',
+  },
+];
+
+export const ClientsAll: ClientPageProps[] = [
+  ClientsShort[1], // Vierally
+  {
     desktopImg: { default: pakiraLaptopImage, x2: pakiraLaptop2xImage },
     mobileImg: { default: pakiraMobileImage, x2: pakiraMobile2xImage },
     logoImg: pakiraLogoImage,
@@ -363,12 +369,13 @@ export const ClientsAll: ClientPageProps[] = [
     ],
     classes: 'bg-[#15431A]',
   },
-  ...ClientsShort,
+  ClientsShort[0], // Privo
+  ClientsShort[2], // Plumcheck
   {
     desktopImg: { default: meeLaptopImage, x2: meeLaptop2xImage },
     mobileImg: { default: meeMobileImage, x2: meeMobile2xImage },
     logoImg: meeLogoImage,
-    description: 'A human-centered user experience for the internet',
+    description: 'A human-centered approach to personal data',
     name: 'Mee',
     pageTopImg: { default: meePageImage, x2: meePage2xImage },
     title: 'Mee is about putting you in control of your data relationships with other people and companies.',
@@ -448,7 +455,7 @@ export const ClientsAll: ClientPageProps[] = [
   {
     desktopImg: { default: blankSlateLaptopImage, x2: blankSlateLaptop2xImage },
     logoImg: blankSlateLogoImage,
-    description: 'Pushing the Limits of the Human Brain',
+    description: 'Enterprise Microlearning App. Pushing the limits of the human brain',
     name: 'Blank Slate',
     pageTopImg: { default: blankslatePageImage, x2: blankslatePage2xImage },
     subtitle: 'BlankSlate is a deeptech cognitive science firm dedicated to pushing the limits of the human brain.',
@@ -542,6 +549,31 @@ export const ClientsAll: ClientPageProps[] = [
       { id: 'frontend', title: 'Front-end development' },
     ],
     classes: `bg-[#0F172A]`,
+  },
+  {
+    desktopImg: {
+      default: beghouLaptopImage,
+      x2: beghouLaptop2xImage,
+    },
+    logoImg: beghouLogoImage,
+    description: 'Direct life sciences companies toward more efficient and higher-performing commercial operations. ',
+    name: 'Beghou',
+    pageTopImg: { default: beghouPageImage, x2: beghouPage2xImage },
+    subtitle: 'View, manage and adjust everything related to incentive compensation plans in one platform.',
+    links: ['beghouconsulting.com'],
+    id: 'Beghou',
+    about: {
+      founded: '2020',
+      employees: '10+',
+      location: 'Tel Aviv, Israel',
+      purpose: 'Drug Simulation, Bioinformatics, Computational Biology, Trial Simulation',
+    },
+    providedServices: [
+      { id: 'devops', title: 'DevOps' },
+      { id: 'backend', title: 'Back-end development' },
+      { id: 'frontend', title: 'Front-end development' },
+    ],
+    classes: `bg-[#2D3038]`,
   },
 ];
 
