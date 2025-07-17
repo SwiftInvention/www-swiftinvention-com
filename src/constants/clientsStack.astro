@@ -12,17 +12,21 @@ import irohImage from '~/assets/images/stack/iroh.png';
 import IstioImage from '~/assets/images/stack/istio.svg';
 import javaImage from '~/assets/images/stack/java.png';
 import jsImage from '~/assets/images/stack/js.png';
+import KnexjsImage from '~/assets/images/stack/knexjs.png';
 import KubernetesImage from '~/assets/images/stack/kubernetes.svg';
 import nestjsImage from '~/assets/images/stack/nestjs.png';
 import openidImage from '~/assets/images/stack/openid.png';
 import pgsqlImage from '~/assets/images/stack/pgsql.png';
+import PrismaImage from '~/assets/images/stack/prisma.svg';
 import pythonImage from '~/assets/images/stack/python.webp';
 import PytorchImage from '~/assets/images/stack/pytorch.svg';
 import ReactImage from '~/assets/images/stack/reactnative.svg';
 import RestImage from '~/assets/images/stack/rest.svg';
 import rustImage from '~/assets/images/stack/rust.png';
 import scalaImage from '~/assets/images/stack/scala.png';
+import singlestoreImage from '~/assets/images/stack/singlestore.svg';
 import TerraformImage from '~/assets/images/stack/terraform.svg';
+import tRPCmage from '~/assets/images/stack/trpc.svg';
 import tsImage from '~/assets/images/stack/ts.png';
 import typeormImage from '~/assets/images/stack/typeorm.png';
 import WillowImage from '~/assets/images/stack/willow.svg';
@@ -565,6 +569,17 @@ export const ClientsAll: ClientPageProps[] = [
       { id: 'devops', title: 'DevOps' },
       { id: 'backend', title: 'Back-end development' },
       { id: 'frontend', title: 'Front-end development' },
+    ],
+    technologies: [
+      { title: 'Nestjs', object: nestjsImage },
+      { title: 'tRPC', object: tRPCmage },
+      { title: 'React', SvgComponent: ReactImage },
+      { title: 'Prisma', SvgComponent: PrismaImage },
+      { title: 'Pgsql', object: pgsqlImage },
+      { title: 'Knex.js', object: KnexjsImage },
+      { title: 'SongleStore', object: singlestoreImage },
+      { title: 'Python', object: pythonImage },
+      { title: 'Aws', SvgComponent: AwsImage },
     ],
     classes: `bg-[#0F172A]`,
   },
