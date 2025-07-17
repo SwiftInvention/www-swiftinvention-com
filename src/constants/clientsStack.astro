@@ -81,8 +81,10 @@ import ShieldLockImage from '~/assets/images/about/shield-lock.svg';
 import WindowSidebarImage from '~/assets/images/about/window-sidebar.svg';
 
 import adamPhotoImage from '~/assets/images/photos/Adam_VieRally.png';
+import DenisePhotoImage from '~/assets/images/photos/Denise_PRIVO.jpg';
 import joshPhotoImage from '~/assets/images/photos/Josh_Plumcheck.png';
 import katePhotoImage from '~/assets/images/photos/Kate_MBS.png';
+import OrrPhotoImage from '~/assets/images/photos/Orr_QuantHealth.jpg';
 import mbsScreenshot1Image from '~/assets/images/screenshots/MBSM screenshot - 1.png';
 import mbsScreenshot2Image from '~/assets/images/screenshots/MBSM screenshot - 2.png';
 import mbsScreenshot3Image from '~/assets/images/screenshots/MBSM screenshot - 3.png';
@@ -187,6 +189,14 @@ export const ClientsShort: ClientPageProps[] = [
       employees: '30+',
       location: 'Dumfries, VA',
       purpose: 'Privacy management',
+    },
+    comment: {
+      author: {
+        avatar: DenisePhotoImage,
+        name: 'Denise Taylor',
+        position: 'CEO at PRIVO',
+      },
+      text: 'PRIVO relies on Swift’s engineering expertise and identity management experts to develop and operate our world-class privacy services for dozens of major corporations',
     },
     providedServices: [
       { id: 'file', title: 'Consent Management Service' },
@@ -535,6 +545,14 @@ export const ClientsAll: ClientPageProps[] = [
     pageTopImg: { default: quanthealthPageImage },
     subtitle:
       'QuantHealth is an AI company conducting patient-centric drug simulations to accelerate and de-risk drug development.',
+    comment: {
+      author: {
+        avatar: OrrPhotoImage,
+        name: 'Orr Inbar',
+        position: 'Co-founder & CEO at QuantHealth',
+      },
+      text: "Swift's software engineering teams provide an important extension of our core engineering team, providing complementary skill sets, redundancies in critical areas, and accelerated development on strategic projects. Given the mission critical work that QuantHealth does in clinical trial research, Swift's support has been invaluable",
+    },
     links: ['quanthealth.ai'],
     id: 'quantHealth',
     about: {
@@ -563,15 +581,14 @@ export const ClientsAll: ClientPageProps[] = [
     links: ['beghouconsulting.com'],
     id: 'Beghou',
     about: {
-      founded: '2020',
-      employees: '10+',
-      location: 'Tel Aviv, Israel',
-      purpose: 'Drug Simulation, Bioinformatics, Computational Biology, Trial Simulation',
+      founded: '1993',
+      employees: '400+',
+      location: 'Evanston, IL',
+      purpose: 'Consulting Services, Advanced Analytics, Technology Services, Pharmaceutical and Healthcare',
     },
     providedServices: [
       { id: 'devops', title: 'DevOps' },
       { id: 'backend', title: 'Back-end development' },
-      { id: 'frontend', title: 'Front-end development' },
     ],
     classes: `bg-[#2D3038]`,
   },
