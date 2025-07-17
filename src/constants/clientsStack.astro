@@ -48,8 +48,8 @@ import plumcheckLaptop2xImage from '~/assets/images/devices/plumcheck-desktop-2x
 import plumcheckLaptopImage from '~/assets/images/devices/plumcheck-desktop.png';
 import plumcheckMobile2xImage from '~/assets/images/devices/plumcheck-mobile-2x.png';
 import plumcheckMobileImage from '~/assets/images/devices/plumcheck-mobile.png';
-import privoLaptop3xImage from '~/assets/images/devices/privo-3x.png';
 import privoLaptop2xImage from '~/assets/images/devices/privo-2x.png';
+import privoLaptop3xImage from '~/assets/images/devices/privo-3x.png';
 import privoLaptopImage from '~/assets/images/devices/privo.png';
 import quanthealthLaptop2xImage from '~/assets/images/devices/quanthealth-2x.png';
 import quanthealthLaptopImage from '~/assets/images/devices/quanthealth.png';
@@ -67,19 +67,19 @@ import privoLogoImage from '~/assets/images/logos/privo-white.png';
 import quanthealthLogoImage from '~/assets/images/logos/quanthealth-white.png';
 import vierallyLogoImage from '~/assets/images/logos/vierally-logo.png';
 
+import CardChecklistImage from '~/assets/images/about/card-checklist.svg';
 import CodeSlashImage from '~/assets/images/about/code-slash.svg';
 import CodeSquareImage from '~/assets/images/about/code-square.svg';
-import HddStackImage from '~/assets/images/about/hdd-stack.svg';
-import PersonVcardImage from '~/assets/images/about/person-vcard.svg';
-import WindowSidebarImage from '~/assets/images/about/window-sidebar.svg';
 import FileEarmarkImage from '~/assets/images/about/file-earmark.svg';
-import CardChecklistImage from '~/assets/images/about/card-checklist.svg';
-import ShieldLockImage from '~/assets/images/about/shield-lock.svg';
+import HddStackImage from '~/assets/images/about/hdd-stack.svg';
 import PersonCheckImage from '~/assets/images/about/person-check.svg';
+import PersonVcardImage from '~/assets/images/about/person-vcard.svg';
+import ShieldLockImage from '~/assets/images/about/shield-lock.svg';
+import WindowSidebarImage from '~/assets/images/about/window-sidebar.svg';
 
+import adamPhotoImage from '~/assets/images/photos/Adam_VieRally.png';
 import joshPhotoImage from '~/assets/images/photos/Josh_Plumcheck.png';
 import katePhotoImage from '~/assets/images/photos/Kate_MBS.png';
-import adamPhotoImage from '~/assets/images/photos/Adam_VieRally.png';
 import mbsScreenshot1Image from '~/assets/images/screenshots/MBSM screenshot - 1.png';
 import mbsScreenshot2Image from '~/assets/images/screenshots/MBSM screenshot - 2.png';
 import mbsScreenshot3Image from '~/assets/images/screenshots/MBSM screenshot - 3.png';
@@ -215,14 +215,66 @@ export const ClientsShort: ClientPageProps[] = [
     classes: 'bg-[#005A88]',
   },
   {
+    pageTopImg: { default: plumcheckPageImage },
+    desktopImg: { default: plumcheckLaptopImage, x2: plumcheckLaptop2xImage },
+    logoImg: plumcheckLogoImage,
+    mobileImg: { default: plumcheckMobileImage, x2: plumcheckMobile2xImage },
+    description: 'Allow dating and social media app users to share verified ID and health information',
+    subtitle: 'PlumCheck empowers people to safely share personal information.',
+    comment: {
+      author: {
+        avatar: joshPhotoImage,
+        name: 'Josh Karetny',
+        position: 'PlumCheck CEO',
+      },
+      text: "From design and UX/UI to engineering and integrations, Swift Invention is a full service development shop that provides top notch work. As first-time founders, we've appreciated their guidance, creativity, and experience at building and evolving startups",
+    },
+    screenshotsInfo: {
+      subtitle:
+        'We developed a web application that allows users to verify their identity, and connect their healthcare provider accounts to share verified health information. We continue to maintain and enhance the solution.',
+      images: [plumCheckScreenshot1Image, plumCheckScreenshot2Image, plumCheckScreenshot3Image],
+    },
+    links: ['plumcheck.io'],
+    name: 'PlumCheck',
+    id: 'plumcheck',
+    about: {
+      founded: '2024',
+      employees: '5+',
+      location: 'New York City, NY',
+      purpose: 'Health data processing',
+    },
+    providedServices: [
+      { id: 'devops', title: 'DevOps' },
+      { id: 'backend', title: 'Back-end development' },
+      { id: 'frontend', title: 'Front-end development' },
+      {
+        id: 'additional',
+        title: 'Health information processing and secure sharing',
+      },
+      { id: 'design', title: 'UI/UX design' },
+    ],
+    technologies: [
+      { title: 'Scala', object: scalaImage },
+      { title: 'Typescript', object: tsImage },
+      { title: 'Zio', SvgComponent: ZioImage },
+      { title: 'Aws', SvgComponent: AwsImage },
+      { title: 'React', SvgComponent: ReactImage },
+      { title: 'Kubernetes', SvgComponent: KubernetesImage },
+      { title: 'Terraform', SvgComponent: TerraformImage },
+    ],
+    classes: 'bg-[#911C53]',
+  },
+];
+
+export const ClientsAll: ClientPageProps[] = [
+  {
     desktopImg: { default: vierallyLaptopImage, x2: vierallyLaptop2xImage },
     logoImg: vierallyLogoImage,
     mobileImg: { default: vierallyMobileImage, x2: vierallyMobile2xImage },
     description: 'AI tool to predict virality and maximize marketing ROI',
     name: 'VieRally',
     pageTopImg: { default: vierallyPageImage, x2: vierallyPagex2Image },
-    subtitle:
-      'VieRally is the cutting edge platform for Predictive Viral Marketing.',
+    subtitle: 'VieRally is the cutting edge platform for Predictive Viral Marketing.',
     comment: {
       author: {
         avatar: adamPhotoImage,
@@ -273,64 +325,6 @@ export const ClientsShort: ClientPageProps[] = [
     classes: 'bg-[#1E3A8A]',
   },
   {
-    pageTopImg: { default: plumcheckPageImage },
-    desktopImg: { default: plumcheckLaptopImage, x2: plumcheckLaptop2xImage },
-    logoImg: plumcheckLogoImage,
-    mobileImg: { default: plumcheckMobileImage, x2: plumcheckMobile2xImage },
-    description:
-      'Allow dating and social media app users to share verified ID and health information',
-    subtitle: 'PlumCheck empowers people to safely share personal information.',
-    comment: {
-      author: {
-        avatar: joshPhotoImage,
-        name: 'Josh Karetny',
-        position: 'PlumCheck CEO',
-      },
-      text: "From design and UX/UI to engineering and integrations, Swift Invention is a full service development shop that provides top notch work. As first-time founders, we've appreciated their guidance, creativity, and experience at building and evolving startups",
-    },
-    screenshotsInfo: {
-      subtitle:
-        'We developed a web application that allows users to verify their identity, and connect their healthcare provider accounts to share verified health information. We continue to maintain and enhance the solution.',
-      images: [
-        plumCheckScreenshot1Image,
-        plumCheckScreenshot2Image,
-        plumCheckScreenshot3Image,
-      ],
-    },
-    links: ['plumcheck.io'],
-    name: 'PlumCheck',
-    id: 'plumcheck',
-    about: {
-      founded: '2024',
-      employees: '5+',
-      location: 'New York City, NY',
-      purpose: 'Health data processing',
-    },
-    providedServices: [
-      { id: 'devops', title: 'DevOps' },
-      { id: 'backend', title: 'Back-end development' },
-      { id: 'frontend', title: 'Front-end development' },
-      {
-        id: 'additional',
-        title: 'Health information processing and secure sharing',
-      },
-      { id: 'design', title: 'UI/UX design' },
-    ],
-    technologies: [
-      { title: 'Scala', object: scalaImage },
-      { title: 'Typescript', object: tsImage },
-      { title: 'Zio', SvgComponent: ZioImage },
-      { title: 'Aws', SvgComponent: AwsImage },
-      { title: 'React', SvgComponent: ReactImage },
-      { title: 'Kubernetes', SvgComponent: KubernetesImage },
-      { title: 'Terraform', SvgComponent: TerraformImage },
-    ],
-    classes: 'bg-[#40169C]',
-  },
-];
-
-export const ClientsAll: ClientPageProps[] = [
-  {
     desktopImg: { default: pakiraLaptopImage, x2: pakiraLaptop2xImage },
     mobileImg: { default: pakiraMobileImage, x2: pakiraMobile2xImage },
     logoImg: pakiraLogoImage,
@@ -377,19 +371,12 @@ export const ClientsAll: ClientPageProps[] = [
     description: 'A human-centered user experience for the internet',
     name: 'Mee',
     pageTopImg: { default: meePageImage, x2: meePage2xImage },
-    title:
-      'Mee is about putting you in control of your data relationships with other people and companies.',
-    subtitle:
-      'Giving individuals more control. More privacy. More convenience.',
+    title: 'Mee is about putting you in control of your data relationships with other people and companies.',
+    subtitle: 'Giving individuals more control. More privacy. More convenience.',
     screenshotsInfo: {
       subtitle:
         'Swift is a supporter of the Mee Foundation. We contribute to the Foundation’s open source projects on Github.',
-      images: [
-        meeScreenshot1Image,
-        meeScreenshot2Image,
-        meeScreenshot3Image,
-        meeScreenshot4Image,
-      ],
+      images: [meeScreenshot1Image, meeScreenshot2Image, meeScreenshot3Image, meeScreenshot4Image],
     },
     links: ['mee.foundation', 'itsmee.org'],
     id: 'meefoundation',
@@ -464,8 +451,7 @@ export const ClientsAll: ClientPageProps[] = [
     description: 'Pushing the Limits of the Human Brain',
     name: 'Blank Slate',
     pageTopImg: { default: blankslatePageImage, x2: blankslatePage2xImage },
-    subtitle:
-      'BlankSlate is a deeptech cognitive science firm dedicated to pushing the limits of the human brain.',
+    subtitle: 'BlankSlate is a deeptech cognitive science firm dedicated to pushing the limits of the human brain.',
     links: ['blankslatetech.co'],
     id: 'blankslate',
     about: {
@@ -503,8 +489,7 @@ export const ClientsAll: ClientPageProps[] = [
       'Integrated commercial services platform to solve any drug pricing, reimbursement, or product delivery challenge',
     name: 'Eversana',
     pageTopImg: { default: eversanaPageImage },
-    subtitle:
-      'Leading independent provider of global services to the life sciences industry.',
+    subtitle: 'Leading independent provider of global services to the life sciences industry.',
     links: ['eversana.com'],
     id: 'eversana',
     about: {
@@ -549,8 +534,7 @@ export const ClientsAll: ClientPageProps[] = [
       founded: '2020',
       employees: '10+',
       location: 'Tel Aviv, Israel',
-      purpose:
-        'Drug Simulation, Bioinformatics, Computational Biology, Trial Simulation',
+      purpose: 'Drug Simulation, Bioinformatics, Computational Biology, Trial Simulation',
     },
     providedServices: [
       { id: 'devops', title: 'DevOps' },
