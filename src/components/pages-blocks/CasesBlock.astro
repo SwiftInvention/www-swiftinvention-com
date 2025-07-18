@@ -4,6 +4,8 @@ import vierallyLogoImage from '~/assets/images/logos/vierally-white.png';
 import plumcheckLogoImage from '~/assets/images/logos/plumcheck-logo.png';
 import eversanaLogoImage from '~/assets/images/logos/eversana-white.png';
 import blankslateLogoImage from '~/assets/images/logos/blankslate-white.png';
+import quanthealthLogoImage from '~/assets/images/logos/quanthealth-white.png';
+import beghouLogoImage from '~/assets/images/logos/beghou-white.png';
 import mbsLogoImage from '~/assets/images/logos/myblueskies-white.png';
 import pakiraLogoImage from '~/assets/images/logos/pakira-logo.png';
 import meeLogoImage from '~/assets/images/logos/mee-white.png';
@@ -97,15 +99,33 @@ import { Image } from 'astro:assets';
         class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
       />
     </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={quanthealthLogoImage.width}
+        height={quanthealthLogoImage.height}
+        src={quanthealthLogoImage}
+        alt="pakira logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
+    <div class="flex h-6 items-center md:h-8">
+      <Image
+        format="webp"
+        width={beghouLogoImage.width}
+        height={beghouLogoImage.height}
+        src={beghouLogoImage}
+        alt="pakira logo"
+        class="max-h-[1.5rem] max-w-[200px] object-contain md:max-h-[2rem]"
+      />
+    </div>
   </div>
   <div class="case-studies-link flex justify-center py-4 md:py-8">
     <a
       class="cursor-pointer p-3 text-xl text-white hover:opacity-80 md:text-xl-desktop"
       href={NavRoutes.caseStudies.path}
     >
-      View all case studies <ArrowRight
-        class="ml-2.5 inline-block h-5 w-5 md:h-7 md:w-7"
-      /></a
+      View all case studies <ArrowRight class="ml-2.5 inline-block h-5 w-5 md:h-7 md:w-7" /></a
     >
   </div>
 </div>
