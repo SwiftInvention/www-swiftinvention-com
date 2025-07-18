@@ -19,5 +19,5 @@ requiredSkills:
   - Experience with React or Vue
   - Understanding of teamwork rules, software development lifecycle
   - 5+ years of work experience in Frontend Developing
-  - Minimum English proficiency level — B2 (Upper Intermediate)
+  - 'Minimum English proficiency level: B2 (Upper Intermediate)'
 ---
