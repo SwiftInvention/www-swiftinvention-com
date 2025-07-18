@@ -75,6 +75,7 @@ import quanthealthLogoImage from '~/assets/images/logos/quanthealth-white.png';
 import vierallyLogoImage from '~/assets/images/logos/vierally-logo.png';
 
 import CardChecklistImage from '~/assets/images/about/card-checklist.svg';
+import CloudCheckImage from '~/assets/images/about/cloud-check.svg';
 import CodeSlashImage from '~/assets/images/about/code-slash.svg';
 import CodeSquareImage from '~/assets/images/about/code-square.svg';
 import FileEarmarkImage from '~/assets/images/about/file-earmark.svg';
@@ -275,7 +276,7 @@ export const ClientsShort: ClientPageProps[] = [
       { id: 'frontend', title: 'Front-end development' },
       {
         id: 'additional',
-        title: 'Secure data management and sharing',
+        title: 'Predictive modeling and analytics algorythms',
       },
       { id: 'design', title: 'UI/UX design' },
     ],
@@ -557,7 +558,8 @@ export const ClientsAll: ClientPageProps[] = [
     description: 'Direct life sciences companies toward more efficient and higher-performing commercial operations. ',
     name: 'Beghou',
     pageTopImg: { default: beghouPageImage, x2: beghouPage2xImage },
-    subtitle: 'View, manage and adjust everything related to incentive compensation plans in one platform.',
+    subtitle:
+      'Beghou consultants bring life sciences industry experience and deep strategic and technical knowledge to every project.',
     links: ['beghouconsulting.com'],
     id: 'Beghou',
     about: {
@@ -568,7 +570,7 @@ export const ClientsAll: ClientPageProps[] = [
     },
     providedServices: [
       { id: 'devops', title: 'DevOps' },
-      { id: 'backend', title: 'Back-end development' },
+      { id: 'infra', title: 'Infrastructure automation' },
     ],
     classes: `bg-[#2D3038]`,
   },
@@ -619,5 +621,6 @@ export const ProvidedServiceIdToIcon = {
   checklist: CardChecklistImage,
   guard: ShieldLockImage,
   person: PersonCheckImage,
+  infra: CloudCheckImage,
 };
 ---
