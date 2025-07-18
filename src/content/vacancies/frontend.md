@@ -1,5 +1,5 @@
 ---
-title: Front End Engineer
+title: Frontend Engineer
 id: frontend
 image: /images/frontend-white.png
 disabled: false
@@ -18,6 +18,6 @@ requiredSkills:
   - Strong Typescript skills
   - Experience with React or Vue
   - Understanding of teamwork rules, software development lifecycle
-  - 5+ years of work experience in Frontend Developing
+  - 5+ years of work experience in frontend development
   - 'Minimum English proficiency level: B2 (Upper Intermediate)'
 ---
