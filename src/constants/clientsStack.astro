@@ -343,7 +343,9 @@ export const ClientsShort: ClientPageProps[] = [
 ];
 
 export const ClientsAll: ClientPageProps[] = [
+  ClientsShort[0], // Privo
   ClientsShort[1], // Vierally
+  ClientsShort[2], // Plumcheck
   {
     desktopImg: { default: pakiraLaptopImage, x2: pakiraLaptop2xImage },
     mobileImg: { default: pakiraMobileImage, x2: pakiraMobile2xImage },
@@ -383,8 +385,6 @@ export const ClientsAll: ClientPageProps[] = [
     ],
     classes: 'bg-[#15431A]',
   },
-  ClientsShort[0], // Privo
-  ClientsShort[2], // Plumcheck
   {
     desktopImg: { default: meeLaptopImage, x2: meeLaptop2xImage },
     mobileImg: { default: meeMobileImage, x2: meeMobile2xImage },
@@ -504,41 +504,6 @@ export const ClientsAll: ClientPageProps[] = [
     classes: `bg-[#0F172A]`,
   },
   {
-    desktopImg: { default: eversanaLaptopImage, x2: eversanaLaptop2xImage },
-    logoImg: eversanaLogoImage,
-    description:
-      'Integrated commercial services platform to solve any drug pricing, reimbursement, or product delivery challenge',
-    name: 'Eversana',
-    pageTopImg: { default: eversanaPageImage },
-    subtitle: 'Leading independent provider of global services to the life sciences industry.',
-    links: ['eversana.com'],
-    id: 'eversana',
-    about: {
-      founded: '1995',
-      employees: '5000+',
-      location: 'Chicago, IL',
-      purpose: 'Life sciences',
-    },
-    providedServices: [
-      { id: 'devops', title: 'DevOps' },
-      { id: 'backend', title: 'Back-end development' },
-      { id: 'frontend', title: 'Business Analytics' },
-      {
-        id: 'additional',
-        title: 'Life sciences technology services',
-      },
-    ],
-    technologies: [
-      { title: 'React', SvgComponent: ReactImage },
-      { title: 'Scala', object: scalaImage },
-      { title: 'Typescript', object: tsImage },
-      { title: 'REST', SvgComponent: RestImage },
-      { title: 'Aws', SvgComponent: AwsImage },
-      { title: 'Ansible', SvgComponent: AnsibleImage },
-    ],
-    classes: `bg-[#00214D]`,
-  },
-  {
     desktopImg: {
       default: quanthealthLaptopImage,
       x2: quanthealthLaptop2xImage,
@@ -606,6 +571,41 @@ export const ClientsAll: ClientPageProps[] = [
       { id: 'backend', title: 'Back-end development' },
     ],
     classes: `bg-[#2D3038]`,
+  },
+  {
+    desktopImg: { default: eversanaLaptopImage, x2: eversanaLaptop2xImage },
+    logoImg: eversanaLogoImage,
+    description:
+      'Integrated commercial services platform to solve any drug pricing, reimbursement, or product delivery challenge',
+    name: 'Eversana',
+    pageTopImg: { default: eversanaPageImage },
+    subtitle: 'Leading independent provider of global services to the life sciences industry.',
+    links: ['eversana.com'],
+    id: 'eversana',
+    about: {
+      founded: '1995',
+      employees: '5000+',
+      location: 'Chicago, IL',
+      purpose: 'Life sciences',
+    },
+    providedServices: [
+      { id: 'devops', title: 'DevOps' },
+      { id: 'backend', title: 'Back-end development' },
+      { id: 'frontend', title: 'Business Analytics' },
+      {
+        id: 'additional',
+        title: 'Life sciences technology services',
+      },
+    ],
+    technologies: [
+      { title: 'React', SvgComponent: ReactImage },
+      { title: 'Scala', object: scalaImage },
+      { title: 'Typescript', object: tsImage },
+      { title: 'REST', SvgComponent: RestImage },
+      { title: 'Aws', SvgComponent: AwsImage },
+      { title: 'Ansible', SvgComponent: AnsibleImage },
+    ],
+    classes: `bg-[#00214D]`,
   },
 ];
 
