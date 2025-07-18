@@ -111,20 +111,20 @@ const pageImagesConfig =
               <div class="text-xl text-white md:text-xl-desktop">
                 About {name}
               </div>
-              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
-                <RocketTakeoffImage class="h-6 w-6 min-w-[24px]" />
+              <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
+                <RocketTakeoffImage class="mt-[3px] h-6 w-6 min-w-[24px]" />
                 Founded in {about?.founded}
               </div>
-              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
-                <PeopleImage class="h-6 w-6 min-w-[24px]" />
+              <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
+                <PeopleImage class="mt-[3px] h-6 w-6 min-w-[24px]" />
                 {about?.employees} employees
               </div>
-              <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
-                <GeoAltImage class="h-6 w-6 min-w-[24px]" />
+              <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
+                <GeoAltImage class="mt-[3px] h-6 w-6 min-w-[24px]" />
                 {about?.location}
               </div>
               <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
-                <ShieldCheckImage class="h-6 w-6 min-w-[24px]" />
+                <ShieldCheckImage class="mt-[3px] h-6 w-6 min-w-[24px]" />
                 {about?.purpose}
               </div>
             </div>
@@ -136,8 +136,8 @@ const pageImagesConfig =
                 providedServices?.map((service) => {
                   const Icon = ProvidedServiceIdToIcon[service.id];
                   return (
-                    <div class="flex items-center gap-2 text-xl !font-normal text-white md:text-xl-desktop">
-                      <Icon class="h-6 w-6 min-w-[24px]" />
+                    <div class="flex items-start gap-2 text-xl !font-normal text-white md:text-xl-desktop">
+                      <Icon class="mt-[3px] h-6 w-6 min-w-[24px]" />
                       {service.title}
                     </div>
                   );
@@ -156,7 +156,7 @@ const pageImagesConfig =
                           width={24}
                           height={24}
                           src={technology.object}
-                          class="inline-block h-6 w-6 min-w-[1.5rem] object-contain"
+                          class="mt-1 inline-block h-6 w-6 min-w-[1.5rem] object-contain"
                           alt={technology.title + ' logo'}
                         />
                       ) : (
@@ -178,7 +178,7 @@ const pageImagesConfig =
             comment && (
               <div class="mt-1 flex basis-full flex-col gap-4 border border-white/[0.07] bg-white/5 p-6 md:p-8 lg:basis-1/3">
                 <ChatLeftQuoteImage />
-                <div class="text-3xl !leading-[1.6] text-white md:text-3xl-desktop">{comment.text}</div>
+                <p class="text-3xl italic !leading-[1.6] text-white md:text-3xl-desktop">{comment.text}</p>
                 <div class="mt-6 flex gap-4 md:mt-10">
                   {comment.author.avatar && (
                     <Image
