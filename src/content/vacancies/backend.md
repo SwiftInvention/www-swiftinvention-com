@@ -2,7 +2,7 @@
 title: Senior Software Engineer (Scala)
 id: backend
 image: /images/backend-white.png
-disabled: true
+disabled: false
 employment: Full-time
 location: Remote
 project: BlankSlate is a deeptech cognitive science firm dedicated to pushing the limits of the human brain.
