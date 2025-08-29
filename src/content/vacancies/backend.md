@@ -7,7 +7,7 @@ employment: Full-time
 location: Remote
 project: BlankSlate is a deeptech cognitive science firm dedicated to pushing the limits of the human brain.
 offerings:
-  - Paid time off (12 working days per year)
+  - Paid time off
   - "Equipment: laptop (Apple M1/M2/M3, Intel i7/i9)"
   - Flexible working hours
 requiredSkills:
