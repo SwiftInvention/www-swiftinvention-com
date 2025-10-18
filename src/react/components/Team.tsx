@@ -42,7 +42,7 @@ const teamMembers = [
     linkedIn: '',
   },
   {
-    name: 'Alex Yuhimenko',
+    name: 'Alex Yukhymenko',
     position: 'Chief Architect',
     description:
       'Software Architect with 20 years in scalable systems, cloud architecture, identity, and privacy.',
