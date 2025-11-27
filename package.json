@@ -3,7 +3,7 @@
   "type": "module",
   "engines": {
     "node": ">=18",
-    "pnpm": "^9.0.0"
+    "pnpm": "^9.0.0 || ^10.0.0"
   },
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,astro}\"",

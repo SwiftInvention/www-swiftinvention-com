@@ -31,7 +31,7 @@ const {
   subtitle,
   logoImg,
   description,
-  comment,
+  comments,
   links,
   pageTopImg,
   about,
@@ -175,9 +175,9 @@ const pageImagesConfig =
             }
           </div>
           {
-            comment && (
+            !!comments && !!comments.length && comments.map((comment, index) => (
               <div class="mt-1 flex basis-full flex-col gap-4 border border-white/[0.07] bg-white/5 p-6 md:p-8 lg:basis-1/3">
-                <ChatLeftQuoteImage />
+                {index === 0 && <ChatLeftQuoteImage />}
                 <p class="text-3xl italic !leading-[1.6] text-white md:text-3xl-desktop">{comment.text}</p>
                 <div class="mt-6 flex gap-4 md:mt-10">
                   {comment.author.avatar && (
@@ -196,7 +196,7 @@ const pageImagesConfig =
                   </div>
                 </div>
               </div>
-            )
+            ))
           }
         </div>
       </div>

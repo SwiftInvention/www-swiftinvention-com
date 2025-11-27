@@ -90,6 +90,7 @@ import DenisePhotoImage from '~/assets/images/photos/Denise_PRIVO.jpg';
 import joshPhotoImage from '~/assets/images/photos/Josh_Plumcheck.png';
 import katePhotoImage from '~/assets/images/photos/Kate_MBS.png';
 import OrrPhotoImage from '~/assets/images/photos/Orr_QuantHealth.jpg';
+import JulienPhotoImage from '~/assets/images/photos/Julien_QuantHealth.jpg';
 import mbsScreenshot1Image from '~/assets/images/screenshots/MBSM screenshot - 1.png';
 import mbsScreenshot2Image from '~/assets/images/screenshots/MBSM screenshot - 2.png';
 import mbsScreenshot3Image from '~/assets/images/screenshots/MBSM screenshot - 3.png';
@@ -140,10 +141,10 @@ export type ClientPageProps = ClientProps & {
   title?: string;
   subtitle?: string;
   links?: string[];
-  comment?: {
+  comments?: {
     text: string;
     author: { avatar?: ImageMetadata; name: string; position: string };
-  };
+  }[];
   pageTopImg?: { default: ImageMetadata; x2?: ImageMetadata };
   screenshotsInfo?: {
     subtitle: string;
@@ -196,14 +197,14 @@ export const ClientsShort: ClientPageProps[] = [
       location: 'Dumfries, VA',
       purpose: 'Privacy management',
     },
-    comment: {
+    comments: [{
       author: {
         avatar: DenisePhotoImage,
         name: 'Denise Taylor',
         position: 'CEO at PRIVO',
       },
       text: 'PRIVO relies on Swift’s engineering expertise and identity management experts to develop and operate our world-class privacy services for dozens of major corporations',
-    },
+    }],
     providedServices: [
       { id: 'file', title: 'Consent Management Service' },
       { id: 'guard', title: 'Customizable Authorization Service' },
@@ -243,14 +244,14 @@ export const ClientsShort: ClientPageProps[] = [
     name: 'VieRally',
     pageTopImg: { default: vierallyPageImage, x2: vierallyPagex2Image },
     subtitle: 'VieRally is the cutting edge platform for Predictive Viral Marketing.',
-    comment: {
+    comments: [{
       author: {
         avatar: adamPhotoImage,
         name: 'Adam Almozlino',
         position: 'CEO at VieRally',
       },
       text: 'Swift Invention has been my go-to partner for all software engineering needs. For over a decade, they’ve proven to be reliable, high quality, and reasonably priced compared to alternatives. They’re collaborative and deliver what they say when they say they will. I cannot recommend Swift enough for any software development needs.',
-    },
+    }],
     screenshotsInfo: {
       subtitle: 'Swift is the leading developer of the VieRally solution.',
       images: [
@@ -299,14 +300,14 @@ export const ClientsShort: ClientPageProps[] = [
     mobileImg: { default: plumcheckMobileImage, x2: plumcheckMobile2xImage },
     description: 'Allow dating and social media app users to share verified ID and health information',
     subtitle: 'PlumCheck empowers people to safely share personal information.',
-    comment: {
+    comments: [{
       author: {
         avatar: joshPhotoImage,
         name: 'Josh Karetny',
         position: 'PlumCheck CEO',
       },
       text: "From design and UX/UI to engineering and integrations, Swift Invention is a full service development shop that provides top notch work. As first-time founders, we've appreciated their guidance, creativity, and experience at building and evolving startups",
-    },
+    }],
     screenshotsInfo: {
       subtitle:
         'We developed a web application that allows users to verify their identity, and connect their healthcare provider accounts to share verified health information. We continue to maintain and enhance the solution.',
@@ -440,14 +441,14 @@ export const ClientsAll: ClientPageProps[] = [
     pageTopImg: { default: mbsPageImage, x2: mbsPage2xImage },
     subtitle:
       'Experience studio-quality sound, exceptional video performance, and real-time collaboration. Master, teach, and create music anytime, anywhere. Join a secure, global community of musicians.',
-    comment: {
+    comments: [{
       author: {
         avatar: katePhotoImage,
         name: 'Kate Dillingham',
         position: 'CEO at MyBlueSkiesMusic',
       },
       text: 'Collaborating with Swift Invention, Inc on myblueskiesmusic.com is an exceptional experience. Their technical expertise, creativity, and commitment to excellence brought my vision to life, delivering a beautifully crafted platform that exceeded my expectations. I truly enjoy working with this talented team!',
-    },
+    }],
     screenshotsInfo: {
       subtitle:
         'We developed the entire solution from concept to production-ready web application, and continue to maintain and enhance it.',
@@ -521,14 +522,22 @@ export const ClientsAll: ClientPageProps[] = [
     pageTopImg: { default: quanthealthPageImage },
     subtitle:
       'QuantHealth is an AI company conducting patient-centric drug simulations to accelerate and de-risk drug development.',
-    comment: {
+    comments: [{
       author: {
         avatar: OrrPhotoImage,
         name: 'Orr Inbar',
         position: 'Co-founder & CEO at QuantHealth',
       },
       text: "Swift's software engineering teams provide an important extension of our core engineering team, providing complementary skill sets, redundancies in critical areas, and accelerated development on strategic projects. Given the mission critical work that QuantHealth does in clinical trial research, Swift's support has been invaluable",
-    },
+    }, 
+    {
+      author: {
+        avatar: JulienPhotoImage,
+        name: 'Julien Benchetrit',
+        position: 'VP Engineering at QuantHealth',
+      },
+      text: "Working with the Swift engineers has been a fantastic experience. They’ve been embedded with us for over a year now, consistently delivering high-quality work and handling some of our most strategic, complex features with remarkable reliability and ownership. We trust them fully and consider them an integral part of our team.",
+    }],
     links: ['quanthealth.ai'],
     id: 'quantHealth',
     about: {
