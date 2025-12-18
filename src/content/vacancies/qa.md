@@ -15,7 +15,7 @@ responsibilities:
   - 'Coach and mentor other QAs and developers on quality practices and risk-based testing.'
 offerings:
   - Paid time off
-  - 'Equipment: laptop (Mac, 16/32GB RAM)'
+  - Laptop allowance to select and purchase the equipment that works best for you
   - Flexible working hours
 desiredSkills:
   - Experience with mobile testing
