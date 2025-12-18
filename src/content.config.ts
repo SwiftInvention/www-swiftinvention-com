@@ -15,6 +15,7 @@ const vacancies = defineCollection({
     offerings: z.array(z.string()).optional(),
     desiredSkills: z.array(z.string()).optional(),
     requiredSkills: z.array(z.string()).optional(),
+    responsibilities: z.array(z.string().optional()).optional(),
   }),
 });
 

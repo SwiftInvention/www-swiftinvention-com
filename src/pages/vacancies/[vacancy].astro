@@ -28,26 +28,46 @@ const { vacancy } = Astro.props;
         <li>{vacancy.data.employment}</li>
         <li>{vacancy.data.location}</li>
       </ul>
-
+{
+     vacancy.data.description &&
+      <p class="pt-8">Description:</p>
+      <p class="">
+        {vacancy.data.description}
+      </p>  
+}
+{
+     vacancy.data.responsibilities &&
+      <p class="pt-8">Responsibilities:</p>
+      <ul class="list-disc pl-4">
+        {vacancy.data.responsibilities?.map((r) => <li>{r}</li>)}
+      </ul>     
+}
+{
+      vacancy.data.requiredSkills && 
       <p class="pt-8">Required skills:</p>
       <ul class="list-disc pl-4">
         {vacancy.data.requiredSkills?.map((skill) => <li>{skill}</li>)}
       </ul>
+}
 
+{
+      vacancy.data.desiredSkills &&
       <p class="pt-8">Desired skills:</p>
       <ul class="list-disc pl-4">
         {vacancy.data.desiredSkills?.map((skill) => <li>{skill}</li>)}
       </ul>
-
+}
       <p class="pt-8">We offer:</p>
       <ul class="list-disc pl-4">
         {vacancy.data.offerings?.map((skill) => <li>{skill}</li>)}
       </ul>
-
+{
+  vacancy.data.project &&
       <p class="pt-8">About the project:</p>
       <p class="">
         {vacancy.data.project}
       </p>
+}
     </div>
   </div>
 </Layout>

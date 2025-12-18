@@ -2,7 +2,7 @@
 title: Frontend Engineer
 id: frontend
 image: /images/frontend-white.png
-disabled: false
+disabled: true
 employment: Full-time
 location: Remote
 project: Commercial effectiveness platform for Life Sciences
