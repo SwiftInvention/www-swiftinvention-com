@@ -49,7 +49,7 @@ const teamMembers = [
     place: 'Portugal.',
     photo: Alex.src,
     photo2x: Alex2x.src,
-    linkedIn: 'https://www.linkedin.com/in/alexander-yuhimenko-75b41846/',
+    linkedIn: 'https://www.linkedin.com/in/alex-yukhymenko/',
   },
   {
     name: 'Paul Trevithick',
