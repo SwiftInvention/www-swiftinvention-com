@@ -2,7 +2,7 @@
 title: Senior QA Engineer
 id: qa
 image: /images/frontend-white.png
-disabled: false
+disabled: true
 employment: Full-time
 location: Remote
 description: We’re looking for a Senior QA Engineer to raise the quality bar across multiple client projects. You’ll own test strategy and execution end-to-end, coach engineers on quality practices, and help us build scalable QA processes.
