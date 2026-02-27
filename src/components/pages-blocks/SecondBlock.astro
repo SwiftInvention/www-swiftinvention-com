@@ -1,8 +1,10 @@
 ---
+import ArrowRight from '~/assets/images/arrow-right.svg';
 import iphoneMockupImage from '~/assets/images/iphone-mockup.png';
 import webappMockupImage from '~/assets/images/webapp-mockup.png';
 import infraMockupImage from '~/assets/images/infra-mockup.png';
 import websiteMockupImage from '~/assets/images/website-mockup.png';
+import keriMockupImage from '~/assets/images/keri-mockup.png';
 
 import { Image } from 'astro:assets';
 
@@ -35,6 +37,14 @@ const Expertises = [
     image: infraMockupImage,
     imageAlt: 'Infrastructure mockup',
   },
+  {
+    title: 'KERI services',
+    subtitle:
+      'Swift Invention supports the movement toward secure, decentralized, and data-privacy-rights-respecting infrastructure.',
+    image: keriMockupImage,
+    imageAlt: 'KERI mockup',
+    link: '/services/keri',
+  },
 ];
 ---
 
@@ -52,7 +62,9 @@ const Expertises = [
         apps, and infrastructure development.
       </div>
     </div>
-    <div class="flex flex-col flex-wrap md:flex-row md:gap-x-[5%]">
+    <div
+      class="flex flex-col flex-wrap items-center justify-center md:flex-row md:gap-x-[5%]"
+    >
       {
         Expertises.map((expertise) => (
           <div class="md:w-[47.5%]">
@@ -72,6 +84,17 @@ const Expertises = [
               <span class="text-lg text-body opacity-80 md:text-lg-desktop">
                 {expertise.subtitle}
               </span>
+              {!!expertise.link && (
+                <div class="mt-4">
+                  <a
+                    href={expertise.link}
+                    class="items-center font-medium text-body hover:opacity-80"
+                  >
+                    Learn more{' '}
+                    <ArrowRight class="ml-2.5 inline-block h-5 w-5 fill-body" />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         ))

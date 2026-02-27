@@ -1,0 +1,36 @@
+    <svg
+      width="1440"
+      height="1097"
+      viewBox="0 0 1440 1097"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-shrink-0 flex-grow-0 opacity-50"
+      preserveAspectRatio="none"
+    >
+      <g opacity="0.5" filter="url(#filter0_f_249_25716)">
+        <path
+          d="M155.364 593.152C248.932 741.558 668.631 884.206 937.479 730.916C1219.49 570.121 1454.69 537.946 1361.13 389.54C1267.56 241.135 1164.91 520.668 766.838 441.751C130.887 110.076 61.796 444.747 155.364 593.152Z"
+          fill="#1E40AF"></path>
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_249_25716"
+          x="-178.486"
+          y="-0.00000762939"
+          width="1860.48"
+          height="1096.82"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"></feBlend>
+          <feGaussianBlur
+            stdDeviation="150"
+            result="effect1_foregroundBlur_249_25716"></feGaussianBlur>
+        </filter>
+      </defs>
+    </svg>

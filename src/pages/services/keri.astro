@@ -1,0 +1,168 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import PageHead from '~/components/PageHead.astro';
+import servicesKeriBlockImage from '~/assets/images/services-keri-block.png';
+import PersonVCardIcon from '~/assets/images/person-vcard.svg';
+import ShieldLockIcon from '~/assets/images/shield-lock.svg';
+import WalletIcon from '~/assets/images/wallet.svg';
+import ShieldCheckIcon from '~/assets/images/shield-check.svg';
+import RocketTakeoffIcon from '~/assets/images/rocket-takeoff.svg';
+---
+
+<Layout>
+  <div class="mb-24 md:mb-[200px]">
+    <PageHead
+      pageTitle="KERI"
+      title="Key Event Receipt Infrastructure (KERI)"
+      subtitle="KERI is a powerful new identity technology that supports secure, decentralized, and data-privacy-rights-respecting infrastructure. “Key Event Receipt Infrastructure (KERI) is the first truly fully decentralized identity system”"
+      image={servicesKeriBlockImage}
+      classes="[&>:nth-child(1)]:max-w-[740px]"
+      link="https://keri.one/"
+      linkText="keri.one"
+    />
+  </div>
+  <div class="container mt-24 pb-24 md:mt-32 md:pb-32">
+    <div
+      class="test relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-start self-stretch"
+    >
+      <div
+        class="flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-1 self-stretch overflow-hidden"
+      >
+        <div
+          class="flex flex-shrink-0 flex-grow-0 items-start justify-center gap-10 self-stretch rounded-tl-xl rounded-tr-xl bg-white/5 p-8"
+        >
+          <div class="flex flex-grow flex-col items-start justify-start gap-4">
+            <div
+              class="relative flex flex-shrink-0 flex-grow-0 items-start justify-start self-stretch"
+            >
+              <p
+                class="flex-grow text-left text-xl font-semibold text-white md:text-3xl"
+              >
+                Engineering services to integrate <a
+                  class="underline hover:opacity-80"
+                  href="https://keri.one/"
+                  target="_blank">KERI</a
+                > into your solution. Swift can help you:
+              </p>
+            </div>
+            <div
+              class="flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-4 self-stretch"
+            >
+              <div
+                class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-2 self-stretch"
+              >
+                <div
+                  class="relative flex flex-shrink-0 flex-grow-0 items-center justify-start gap-2 pt-[3px]"
+                >
+                  <PersonVCardIcon />
+                </div>
+                <div class="relative flex flex-grow items-start justify-start">
+                  <p class="flex-grow text-left text-xl font-normal text-white">
+                    Accept and verify KERI identifiers
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-2 self-stretch"
+              >
+                <div
+                  class="relative flex flex-shrink-0 flex-grow-0 items-center justify-start gap-2 pt-[3px]"
+                >
+                  <ShieldLockIcon />
+                </div>
+                <div class="relative flex flex-grow items-start justify-start">
+                  <p class="flex-grow text-left text-xl font-normal text-white">
+                    Issue KERI-compatible credentials, including for complex
+                    delegation (e.g. parental delegation)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-2 self-stretch"
+              >
+                <div
+                  class="relative flex flex-shrink-0 flex-grow-0 items-center justify-start gap-2 pt-[3px]"
+                >
+                  <WalletIcon />
+                </div>
+                <div class="relative flex flex-grow items-start justify-start">
+                  <p class="flex-grow text-left text-xl font-normal text-white">
+                    Develop local-first KERI-compatible wallets that store
+                    private keys in the Trusted Execution Environment (Android)
+                    or the Secure Enclave API (iOS), while still allowing the
+                    user to transport their KERI identity to other wallets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-10 self-stretch rounded-bl-xl rounded-br-xl bg-white/5 p-8"
+        >
+          <div class="flex flex-grow flex-col items-start justify-start gap-4">
+            <div
+              class="relative flex flex-shrink-0 flex-grow-0 items-start justify-start self-stretch"
+            >
+              <p
+                class="flex-grow text-left text-xl font-semibold text-white md:text-3xl"
+              >
+                Swift is a contributor to the <a
+                  class="underline hover:opacity-80"
+                  href="https://privacy.utah.gov/wp-content/uploads/SEDI_ProtectingLiberty.pdf"
+                  target="_blank">SEDI</a
+                > initiative
+              </p>
+            </div>
+            <div
+              class="flex flex-shrink-0 flex-grow-0 flex-col items-start justify-start gap-4 self-stretch"
+            >
+              <div
+                class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-2 self-stretch"
+              >
+                <div
+                  class="relative flex flex-shrink-0 flex-grow-0 items-center justify-start gap-2 pt-[3px]"
+                >
+                  <ShieldCheckIcon />
+                </div>
+                <div class="relative flex flex-grow items-start justify-start">
+                  <p class="flex-grow text-left text-xl font-normal text-white">
+                    State-Endorsed Digital Identity, or SEDI, is the first
+                    rights-first framework for digital identity, founded on the
+                    American value that identity is inherently decentralized and
+                    innate to the individual and not created by governments or
+                    corporations. SEDI requires that individuals fully control
+                    their digital identifiers.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-shrink-0 flex-grow-0 items-start justify-start gap-2 self-stretch"
+              >
+                <div
+                  class="relative flex flex-shrink-0 flex-grow-0 items-center justify-start gap-2 pt-[3px]"
+                >
+                  <RocketTakeoffIcon />
+                </div>
+                <div class="relative flex flex-grow items-start justify-start">
+                  <p class="flex-grow text-left text-xl font-normal text-white">
+                    Although SEDI doesn’t mandate KERI technology, we believe it
+                    is the best, and perhaps the only technology, that can
+                    SEDI’s objectives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+<style>
+  .test {
+    background-image: url('/src/assets/images/ellipse.svg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>

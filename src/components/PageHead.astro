@@ -2,15 +2,19 @@
 import Button from '~/components/Button.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
+import ButtonLink from './ButtonLink.astro';
 
 interface Props {
   pageTitle: string;
   title: string;
   subtitle: string;
   classes?: string;
+  link?: string;
+  linkText?: string;
   image?: ImageMetadata;
 }
-const { pageTitle, title, subtitle, image, classes } = Astro.props;
+const { pageTitle, title, subtitle, image, classes, link, linkText } =
+  Astro.props;
 
 const vacancies = await getCollection('vacancies');
 const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
@@ -24,7 +28,7 @@ const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
 >
   <div
     id="page-head-block__text"
-    class="animate-page-head relative z-10 mb-4 max-w-[910px] md:mb-0"
+    class="relative z-10 mb-4 max-w-[910px] animate-page-head md:mb-0"
   >
     <div class="">
       <div class="transparent-text inline-block text-7xl md:text-9xl-desktop">
@@ -38,6 +42,19 @@ const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
     <div class="text-xl !font-normal text-white opacity-80 md:text-xl-desktop">
       {subtitle}
     </div>
+    {
+      link && (
+        <ButtonLink
+          href={link}
+          target="_blank"
+          variant="outlined"
+          classes="px-3 lg:px-6 w-full w-auto mt-8 md:mt-10"
+          arrowClasses="-rotate-45"
+        >
+          {linkText ? linkText : 'Learn more'}
+        </ButtonLink>
+      )
+    }
   </div>
   {
     hasOpenedVacancies && (
@@ -51,6 +68,7 @@ const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
       </a>
     )
   }
+
   {
     image && (
       <Image
