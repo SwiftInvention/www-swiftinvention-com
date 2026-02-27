@@ -1,6 +1,7 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 import ArrowRight from '~/assets/images/arrow-right.svg';
+import { twMerge } from 'tailwind-merge';
 
 interface Props extends HTMLAttributes<'a'> {
   classes?: string;
@@ -20,16 +21,19 @@ const {
 
 <a
   href={href}
-  class:list={[
+  class:list={twMerge(
     'inline-block rounded-2lg px-6 py-3 text-center text-xl text-white hover:opacity-80 md:text-xl-desktop',
     variant === 'outlined' && 'border border-white/60 hover:border-white',
-    classes,
-  ]}
+    classes
+  )}
   {...linkProps}
 >
   <slot />
   <ArrowRight
-    class:list={['ml-3 inline-block h-7 w-7 fill-white md:h-8', arrowClasses]}
+    class:list={twMerge(
+      'ml-3 inline-block h-7 w-7 fill-white md:h-8',
+      arrowClasses
+    )}
   />
 </a>
 
