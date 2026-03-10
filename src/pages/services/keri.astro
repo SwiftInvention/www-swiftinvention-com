@@ -17,8 +17,14 @@ import RocketTakeoffIcon from '~/assets/images/rocket-takeoff.svg';
       subtitle="KERI is a powerful new identity technology that supports secure, decentralized, and data-privacy-rights-respecting infrastructure. “Key Event Receipt Infrastructure (KERI) is the first truly fully decentralized identity system”"
       image={servicesKeriBlockImage}
       classes="[&>:nth-child(1)]:max-w-[740px]"
-      link="https://keri.one/"
-      linkText="keri.one"
+      links={[
+        { link: 'https://keri.one/', linkText: 'keri.one', target: '_blank' },
+        {
+          link: 'https://keri.foundation/',
+          linkText: 'keri.foundation',
+          target: '_blank',
+        },
+      ]}
     />
   </div>
   <div class="container mt-24 pb-24 md:mt-32 md:pb-32">

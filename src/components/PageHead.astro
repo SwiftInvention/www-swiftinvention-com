@@ -9,12 +9,14 @@ interface Props {
   title: string;
   subtitle: string;
   classes?: string;
-  link?: string;
-  linkText?: string;
+  links?: {
+    link: string;
+    linkText?: string;
+    target?: string;
+  }[];
   image?: ImageMetadata;
 }
-const { pageTitle, title, subtitle, image, classes, link, linkText } =
-  Astro.props;
+const { pageTitle, title, subtitle, image, classes, links } = Astro.props;
 
 const vacancies = await getCollection('vacancies');
 const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
@@ -43,16 +45,20 @@ const hasOpenedVacancies = !!vacancies.filter((v) => !v.data.disabled).length;
       {subtitle}
     </div>
     {
-      link && (
-        <ButtonLink
-          href={link}
-          target="_blank"
-          variant="outlined"
-          classes="px-3 lg:px-6 w-full w-auto mt-8 md:mt-10"
-          arrowClasses="-rotate-45"
-        >
-          {linkText ? linkText : 'Learn more'}
-        </ButtonLink>
+      links && (
+        <div class="flex flex-col md:flex-row md:gap-6">
+          {links.map((link) => (
+            <ButtonLink
+              href={link.link}
+              target={link.target ? link.target : '_self'}
+              variant="outlined"
+              classes="px-3 lg:px-6 w-fit mt-8 md:mt-10"
+              arrowClasses="-rotate-45"
+            >
+              {link.linkText ? link.linkText : 'Learn more'}
+            </ButtonLink>
+          ))}
+        </div>
       )
     }
   </div>
