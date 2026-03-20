@@ -41,12 +41,12 @@ const workProcessMap = [
 <script>
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import twConfig from '../../../tailwind.config';
+  const mdBreakpoint = '768px';
 
   gsap.registerPlugin(ScrollTrigger);
 
   let mm = gsap.matchMedia();
-  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+  mm.add(`(min-width: ${mdBreakpoint})`, () => {
     gsap.to('#home-work-stages', {
       scrollTrigger: '#home-work-stages',
       opacity: 1,
@@ -57,7 +57,7 @@ const workProcessMap = [
       },
     });
   });
-  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+  mm.add(`(max-width: ${mdBreakpoint})`, () => {
     gsap.to('#home-work-stages', {
       scrollTrigger: '#home-work-stages',
       opacity: 1,

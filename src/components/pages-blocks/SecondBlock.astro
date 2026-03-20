@@ -107,12 +107,12 @@ const Expertises = [
 <script>
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import twConfig from '../../../tailwind.config';
+  const mdBreakpoint = '768px';
 
   gsap.registerPlugin(ScrollTrigger);
 
   let mm = gsap.matchMedia();
-  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+  mm.add(`(min-width: ${mdBreakpoint})`, () => {
     gsap.to('#expertises-block', {
       scrollTrigger: '#expertises-block',
       opacity: 1,
@@ -123,7 +123,7 @@ const Expertises = [
       },
     });
   });
-  mm.add(`(max-width: ${twConfig.theme.screens.md})`, () => {
+  mm.add(`(max-width: ${mdBreakpoint})`, () => {
     gsap.to('#expertises-block', {
       scrollTrigger: '#expertises-block',
       opacity: 1,

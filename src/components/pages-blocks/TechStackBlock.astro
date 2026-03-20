@@ -11,12 +11,12 @@ import { TechStack } from '~/react/components/careers/TechStack';
 <script>
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import twConfig from '../../../tailwind.config';
+  const mdBreakpoint = '768px';
 
   gsap.registerPlugin(ScrollTrigger);
 
   let mm = gsap.matchMedia();
-  mm.add(`(min-width: ${twConfig.theme.screens.md})`, () => {
+  mm.add(`(min-width: ${mdBreakpoint})`, () => {
     gsap.from('#tech-stack-block', {
       scrollTrigger: '#tech-stack-block__wrapper',
       duration: 1,

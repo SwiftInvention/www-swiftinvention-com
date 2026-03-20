@@ -1,6 +1,114 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-transparent: transparent;
+  --color-white: #fff;
+  --color-secondaryCol1: #F3F3F3;
+  --color-primaryCol3WithOpacity: rgba(255, 123, 83, 0.05);
+
+  --color-surface: #020617;
+  --color-title: #0F172A;
+  --color-body: #1E293B;
+  --color-subtle: #475569;
+
+  --color-warning: #E03400;
+  --color-warning-hover: #B82B00;
+  --color-warning-500: #FF5F2E;
+
+  --color-gray-solid: #334155;
+  --color-gray-accent: #CBD5E1;
+  --color-gray-accentText: #E2E8F0;
+
+  --radius-2lg: 10px;
+
+  --breakpoint-xs: 480px;
+
+  --max-width-15xl: 874px;
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-25: 6.25rem;
+  --spacing-30: 7.5rem;
+  --spacing-34: 8.5rem;
+  --spacing-37: 9.25rem;
+  --spacing-50: 3.75rem;
+  --spacing-100: 25rem;
+
+  --shadow-card: 0 0 23px 0 rgba(0,0,0,0.5);
+  --shadow-cardHovered: 0 0 35px 0 rgba(0,0,0,0.7);
+
+  --font-size-lg: 1rem;
+  --font-size-lg--line-height: 1.5rem;
+  --font-size-lg--letter-spacing: 0.08px;
+
+  --font-size-lg-desktop: 1.125rem;
+  --font-size-lg-desktop--line-height: 1.75rem;
+  --font-size-lg-desktop--letter-spacing: 0.09px;
+
+  --font-size-xl: 1.125rem;
+  --font-size-xl--line-height: 1.5rem;
+  --font-size-xl--font-weight: 600;
+  --font-size-xl--letter-spacing: 0.09px;
+
+  --font-size-xl-desktop: 1.25rem;
+  --font-size-xl-desktop--line-height: 1.9375rem;
+  --font-size-xl-desktop--font-weight: 600;
+  --font-size-xl-desktop--letter-spacing: 0.1px;
+
+  --font-size-2xl: 1.25rem;
+  --font-size-2xl--line-height: 1.875rem;
+  --font-size-2xl--font-weight: 600;
+  --font-size-2xl--letter-spacing: 0.1px;
+
+  --font-size-2xl-desktop: 1.5rem;
+  --font-size-2xl-desktop--line-height: 2rem;
+  --font-size-2xl-desktop--font-weight: 600;
+  --font-size-2xl-desktop--letter-spacing: 0.12px;
+
+  --font-size-3xl: 1.375rem;
+  --font-size-3xl--line-height: 2rem;
+  --font-size-3xl--font-weight: 600;
+  --font-size-3xl--letter-spacing: 0.11px;
+
+  --font-size-3xl-desktop: 1.875rem;
+  --font-size-3xl-desktop--line-height: 2.5rem;
+  --font-size-3xl-desktop--font-weight: 600;
+  --font-size-3xl-desktop--letter-spacing: 0.15px;
+
+  --font-size-6xl: 2.25rem;
+  --font-size-6xl--line-height: 3rem;
+  --font-size-6xl--font-weight: 600;
+  --font-size-6xl--letter-spacing: 0.18px;
+
+  --font-size-6xl-desktop: 3.75rem;
+  --font-size-6xl-desktop--line-height: 4.25rem;
+  --font-size-6xl-desktop--font-weight: 600;
+  --font-size-6xl-desktop--letter-spacing: 0.3px;
+
+  --font-size-7xl: 3rem;
+  --font-size-7xl--line-height: 3.5rem;
+  --font-size-7xl--font-weight: 600;
+  --font-size-7xl--letter-spacing: 0.24px;
+
+  --font-size-7xl-desktop: 4.5rem;
+  --font-size-7xl-desktop--line-height: 5rem;
+  --font-size-7xl-desktop--font-weight: 600;
+  --font-size-7xl-desktop--letter-spacing: 0.36px;
+
+  --font-size-9xl-desktop: 8rem;
+  --font-size-9xl-desktop--line-height: 8.5rem;
+  --font-size-9xl-desktop--font-weight: 700;
+  --font-size-9xl-desktop--letter-spacing: 0.64px;
+
+  --font-inter: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --animate-page-head: page-head 1s ease-in-out;
+
+  @keyframes page-head {
+    0% { transform: translateY(-60px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+  }
+}
 
 @layer base {
   @font-face {
@@ -23,7 +131,7 @@
   }
   body {
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: theme(colors.surface.DEFAULT);
+    background-color: var(--color-surface);
   }
 
   * {
@@ -123,10 +231,8 @@
   }
 }
 
-@layer utilities {
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
