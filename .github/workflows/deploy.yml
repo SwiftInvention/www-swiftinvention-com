@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
@@ -21,8 +21,8 @@ jobs:
         uses: withastro/action@v3
         with:
           path: .
-          node-version: 20 
-          package-manager: pnpm@9.x
+          node-version: 20
+          package-manager: pnpm@10.x
   deploy:
     needs: build
     runs-on: ubuntu-latest
