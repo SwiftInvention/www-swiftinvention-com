@@ -10,7 +10,7 @@ import MobileNavMenu from './MobileNavMenu.astro';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed left-0 top-0 z-[100] w-screen bg-transparent">
+<header class="fixed top-0 left-0 z-[100] w-screen bg-transparent">
   <nav>
     <div class="container">
       <div class="flex h-24 items-center justify-between">
@@ -31,7 +31,7 @@ const currentPath = Astro.url.pathname;
           <a href={NavRoutes.services.path}>
             <div
               class:list={[
-                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                'group -mb-1 cursor-pointer rounded-md px-3 py-2 text-base font-semibold whitespace-nowrap text-white',
                 currentPath === NavRoutes.home.path ||
                 currentPath.includes(NavRoutes.services.path)
                   ? 'opacity-100'
@@ -46,7 +46,7 @@ const currentPath = Astro.url.pathname;
           <a href={NavRoutes.caseStudies.path}>
             <div
               class:list={[
-                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                'group -mb-1 cursor-pointer rounded-md px-3 py-2 text-base font-semibold whitespace-nowrap text-white',
                 currentPath === NavRoutes.home.path ||
                 currentPath.includes(NavRoutes.caseStudies.path)
                   ? 'opacity-100'
@@ -61,7 +61,7 @@ const currentPath = Astro.url.pathname;
           <a href={NavRoutes.careers.path}>
             <div
               class:list={[
-                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                'group -mb-1 cursor-pointer rounded-md px-3 py-2 text-base font-semibold whitespace-nowrap text-white',
                 currentPath === NavRoutes.home.path ||
                 currentPath.includes(NavRoutes.careers.path)
                   ? 'opacity-100'
@@ -76,7 +76,7 @@ const currentPath = Astro.url.pathname;
           <a href={NavRoutes.aboutUs.path}>
             <div
               class:list={[
-                'group -mb-1 cursor-pointer whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-white',
+                'group -mb-1 cursor-pointer rounded-md px-3 py-2 text-base font-semibold whitespace-nowrap text-white',
                 currentPath === NavRoutes.home.path ||
                 currentPath.includes(NavRoutes.aboutUs.path)
                   ? 'opacity-100'
@@ -115,9 +115,6 @@ const currentPath = Astro.url.pathname;
 <style></style>
 <script>
   import { gsap } from 'gsap';
-  import { Flip } from 'gsap/Flip';
-
-  gsap.registerPlugin(Flip);
 
   const disableScrollEvents = (e: Event) => {
     e.preventDefault();
@@ -146,54 +143,61 @@ const currentPath = Astro.url.pathname;
 
   hamburgerEl?.addEventListener('click', () => {
     if (mobileNavEl) {
+      gsap.killTweensOf(mobileNavEl);
+      gsap.set(mobileNavEl, { clearProps: 'all' });
+
       hamburgerEl?.classList.replace('flex', 'hidden');
       closeBtnEl?.classList.replace('hidden', 'flex');
-      mobileNavEl?.classList.replace('hidden', 'flex');
+      mobileNavEl.classList.remove(
+        'hidden',
+        'scale-[0.1]',
+        'rounded-[50%]'
+      );
+      mobileNavEl.classList.add(
+        'flex',
+        'scale-100',
+        'rounded-none',
+        'translate-x-0',
+        'translate-y-24'
+      );
       lockScroll();
       document
         .getElementsByTagName('header')[0]
         ?.classList.replace('bg-transparent', 'bg-surface');
 
-      const state = Flip.getState(mobileNavEl, {
-        props: 'transform,border-radius',
-      });
-
-      mobileNavEl.classList.remove(
-        'scale-[0.1]',
-        'rounded-[50%]',
-        'translate-x-[60%]',
-        '-translate-y-[60%]'
-      );
-      mobileNavEl.classList.add(
-        'scale-100',
-        'rounded-none',
-        'translate-x-0',
-        'translate-y-24'
-      );
-
-      Flip.from(state, {
+      const tl = gsap.timeline();
+      tl.from(mobileNavEl, {
+        scale: 0.1,
         duration: 0.4,
         ease: 'circ.out',
+        clearProps: 'scale',
       });
+      tl.from(
+        mobileNavEl,
+        {
+          borderRadius: '50%',
+          duration: 0.6,
+          ease: 'power2.in',
+          clearProps: 'borderRadius',
+        },
+        0
+      );
     }
   });
   closeBtnEl?.addEventListener('click', () => {
     if (mobileNavEl) {
-      mobileNavEl.classList.add(
-        'scale-[0.1]',
-        'rounded-[50%]',
-        'translate-x-[60%]',
-        '-translate-y-[60%]'
-      );
+      gsap.killTweensOf(mobileNavEl);
+      gsap.set(mobileNavEl, { clearProps: 'all' });
       mobileNavEl.classList.remove(
+        'flex',
         'scale-100',
         'rounded-none',
         'translate-x-0',
         'translate-y-24'
       );
+      mobileNavEl.classList.add('hidden', 'rounded-[50%]');
       hamburgerEl?.classList.replace('hidden', 'flex');
       closeBtnEl?.classList.replace('flex', 'hidden');
-      mobileNavEl?.classList.replace('flex', 'hidden');
       unlockScroll();
       if (window.scrollY < 30) {
         document
