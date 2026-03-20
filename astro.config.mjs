@@ -14,7 +14,4 @@ export default defineConfig({
     }),
     playformInline(),
   ],
-  experimental: {
-    svg: true,
-  },
 });
