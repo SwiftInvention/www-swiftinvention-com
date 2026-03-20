@@ -35,7 +35,7 @@
   --spacing-100: 25rem;
 
   --shadow-card: 0 0 23px 0 rgba(0,0,0,0.5);
-  --shadow-cardHovered: 0 0 35px 0 rgba(0,0,0,0.7);
+  --shadow-card-hovered: 0 0 35px 0 rgba(0,0,0,0.7);
 
   --font-size-lg: 1rem;
   --font-size-lg--line-height: 1.5rem;
@@ -226,7 +226,7 @@
     background: linear-gradient(180deg, rgba(0, 10, 13, 0.97) 5.72%, rgba(0, 10, 13, 0.50) 32.6%, rgba(0, 10, 13, 0.25) 100%), url('/images/mbs-bg.png');
   }
 
-  .case-study-hover {
+  .case-study-hover:hover {
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.40), 0px 0px 0px 4px rgba(255, 255, 255, 0.45);
   }
 }

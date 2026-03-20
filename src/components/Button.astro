@@ -16,7 +16,7 @@ const { classes, type, variant = 'white', ...buttonProps } = Astro.props;
     variant === 'orange' &&
       'border border-warning-500 bg-warning text-white hover:border-warning hover:bg-warning-hover',
     variant === 'white' &&
-      'not:hover:border-none bg-white text-gray-solid hover:border hover:border-white hover:bg-white/80',
+      'border-none bg-white text-gray-solid hover:border hover:border-white hover:bg-white/80',
     classes,
   ]}
   type={type ?? 'button'}
