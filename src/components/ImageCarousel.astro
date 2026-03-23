@@ -16,7 +16,7 @@ const { name, screenshotsInfo, links } = Astro.props;
     width={spotlightBgImage.width}
     height={spotlightBgImage.height}
     src={spotlightBgImage}
-    class="absolute -left-1/2 top-0 z-[-1] w-[200%] max-w-none md:left-0 md:w-full"
+    class="absolute top-0 -left-1/2 z-[-1] w-[200%] max-w-none md:left-0 md:w-full"
     alt="spotlight background"
   />
   <div class="container">
@@ -24,7 +24,7 @@ const { name, screenshotsInfo, links } = Astro.props;
       class="mb-8 flex flex-col justify-between md:mb-20 md:flex-row md:items-end"
     >
       <div class="md:w-[60%]">
-        <div class="mb-4 text-6xl text-white md:text-6xl-desktop">
+        <div class="md:text-6xl-desktop mb-4 text-6xl text-white">
           Our work for {name}
         </div>
         <div class="mb-5 text-lg text-white opacity-80">
@@ -38,7 +38,7 @@ const { name, screenshotsInfo, links } = Astro.props;
       <div class="w-full overflow-hidden">
         <!-- max-h here only for old browsers where aspect ratio does not work -->
         <ul
-          class="carousel-track flex aspect-[1248/700] max-h-[25vh] w-full transition-transform duration-500 ease-in-out xs:max-h-[50vh] lg:max-h-[700px]"
+          class="carousel-track xs:max-h-[50vh] flex aspect-1248/700 max-h-[25vh] w-full transition-transform duration-500 ease-in-out lg:max-h-175"
         >
           {
             screenshotsInfo.images.map((screenshot, index) => (
@@ -91,7 +91,7 @@ const { name, screenshotsInfo, links } = Astro.props;
         <ButtonLink
           href="/case-studies"
           variant="ghost"
-          classes="w-full md:w-auto">Visit more case studies</ButtonLink
+          classes="w-full md:w-auto">View more case studies</ButtonLink
         >
       </div>
     </div>
