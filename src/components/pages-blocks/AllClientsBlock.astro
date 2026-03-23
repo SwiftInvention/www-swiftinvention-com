@@ -3,7 +3,7 @@ import Client from '../clients/Client.astro';
 import { ClientsAll } from '~/constants/clientsStack.astro';
 ---
 
-<div class="container relative pt-16 md:pb-32 md:pt-20">
+<div class="relative container pt-16 md:pt-20 md:pb-32">
   <div class="flex flex-col gap-5 md:gap-20">
     {ClientsAll.map((clientData) => <Client {...clientData} />)}
   </div>

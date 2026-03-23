@@ -99,7 +99,7 @@ const mobileImagesConfig = (
   ]}
 >
   <div
-    class="relative z-10 flex flex-col gap-6 py-8 md:min-h-[600px] md:w-[40%] md:pb-16 md:pt-20"
+    class="relative z-10 flex flex-col gap-6 py-8 md:min-h-150 md:w-[40%] md:pt-20 md:pb-16"
   >
     <Image
       format="webp"
@@ -108,8 +108,8 @@ const mobileImagesConfig = (
       height={logoImg.height}
       alt={`${name} logo`}
     />
-    <div class="text-3xl text-white md:text-3xl-desktop">{description}</div>
-    <div class="text-xl text-white hover:opacity-80 md:text-xl-desktop">
+    <div class="md:text-3xl-desktop text-3xl text-white">{description}</div>
+    <div class="md:text-xl-desktop text-xl text-white hover:opacity-80">
       {name} case study <ArrowRight
         class="ml-2.5 inline-block h-5 w-5 fill-white md:h-7 md:w-7"
       />
@@ -124,11 +124,11 @@ const mobileImagesConfig = (
                   width={52}
                   height={52}
                   src={technologyImage.object}
-                  class="h-[26px] w-[26px] object-contain"
+                  class="h-6.5 w-6.5 object-contain"
                   alt={technologyImage.title + ' logo'}
                 />
               ) : (
-                <technologyImage.SvgComponent class="h-[26px] w-[26px]" />
+                <technologyImage.SvgComponent class="h-6.5 w-6.5" />
               )}
             </div>
           ))}
@@ -137,7 +137,7 @@ const mobileImagesConfig = (
     }
   </div>
   <div
-    class="relative -mx-12 sm:-ml-18 sm:-mr-12 md:absolute md:inset-0 md:mx-0"
+    class="relative -mx-12 sm:-mr-12 sm:-ml-18 md:absolute md:inset-0 md:mx-0"
   >
     <ResponsiveImage
       imagesConfig={desktopImagesConfig}
