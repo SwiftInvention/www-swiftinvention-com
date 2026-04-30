@@ -12,11 +12,11 @@ const { classes, type, variant = 'white', ...buttonProps } = Astro.props;
 
 <button
   class:list={[
-    'flex h-[46px] items-center justify-center rounded-md px-2.5 text-base font-semibold transition-all duration-300 ease-in-out',
+    'flex h-11.5 items-center justify-center rounded-md px-2.5 text-base font-semibold transition-all duration-300 ease-in-out',
     variant === 'orange' &&
-      'border border-warning-500 bg-warning text-white hover:border-warning hover:bg-warning-hover',
+      'border-warning-500 bg-warning hover:border-warning hover:bg-warning-hover border text-white',
     variant === 'white' &&
-      'border-none bg-white text-gray-solid hover:border hover:border-white hover:bg-white/80',
+      'text-gray-solid border-none bg-white hover:border hover:border-white hover:bg-white/80',
     classes,
   ]}
   type={type ?? 'button'}

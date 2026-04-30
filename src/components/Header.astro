@@ -10,18 +10,18 @@ import MobileNavMenu from './MobileNavMenu.astro';
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 z-[100] w-screen bg-transparent">
+<header class="fixed top-0 left-0 z-100 w-screen bg-transparent">
   <nav>
     <div class="container">
       <div class="flex h-24 items-center justify-between">
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <a href={'/'} aria-label="Go to Swift home page">
             <Image
               src={swiftInventionIcon}
               width={swiftInventionIcon.width}
               height={swiftInventionIcon.height}
               alt="Swift Invention logo"
-              class="h-5 w-[252px] md:h-6 md:w-[296px]"
+              class="h-5 w-63 md:h-6 md:w-74"
             />
           </a>
         </div>
@@ -148,11 +148,7 @@ const currentPath = Astro.url.pathname;
 
       hamburgerEl?.classList.replace('flex', 'hidden');
       closeBtnEl?.classList.replace('hidden', 'flex');
-      mobileNavEl.classList.remove(
-        'hidden',
-        'scale-[0.1]',
-        'rounded-[50%]'
-      );
+      mobileNavEl.classList.remove('hidden', 'scale-[0.1]', 'rounded-[50%]');
       mobileNavEl.classList.add(
         'flex',
         'scale-100',
